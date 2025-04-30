@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}"><Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="Background" status="Background" image="7" changed="2018-10-06 14:59:59" uid="{65F89FC7-9CF5-4115-A166-23DEF9A8A91B}"><Properties action="U" displayDecimal="0" default="0" hive="HKEY_CURRENT_USER" key="Control Panel\Colors" name="Background" type="REG_SZ" value="79 79 79"/></Registry>
+	<Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="WallPaper" status="WallPaper" image="7" changed="2018-10-06 14:52:31" uid="{E0453707-9FD9-4BC8-A45D-82659E044B9E}"><Properties action="U" displayDecimal="0" default="0" hive="HKEY_CURRENT_USER" key="Control Panel\Desktop" name="WallPaper" type="REG_SZ" value=""/></Registry>
+</RegistrySettings>

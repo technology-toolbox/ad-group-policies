@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}"><Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="EnumerateECCCerts" status="EnumerateECCCerts" image="12" changed="2021-05-14 16:23:37" uid="{67C0EA6F-EA5F-428E-905D-DBC415101060}"><Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SOFTWARE\Policies\Microsoft\Windows\SmartCardCredentialProvider" name="EnumerateECCCerts" type="REG_DWORD" value="00000001"/></Registry>
+</RegistrySettings>

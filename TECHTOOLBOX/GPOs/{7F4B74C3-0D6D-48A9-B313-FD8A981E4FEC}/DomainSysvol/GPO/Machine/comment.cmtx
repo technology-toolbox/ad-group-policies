@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Microsoft.Policies.DNSClient"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:DNS_RegisterAdapterName" commentText="$(resource.ns0_DNS_RegisterAdapterName)"></comment>
+      <comment policyRef="ns0:Turn_Off_Multicast" commentText="$(resource.ns0_Turn_Off_Multicast)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_DNS_RegisterAdapterName">References:
+
+Reverse DNS records not registered when using DHCP
+https://serverfault.com/questions/639398/reverse-dns-records-not-registered-when-using-dhcp
+
+Windows 7 &amp; Reverse Lookup DNS Registration [Update]
+http://setspn.blogspot.be/2013/06/windows-7-reverse-lookup-dns.html</string>
+      <string id="ns0_Turn_Off_Multicast">Reference:
+
+Link Local Multicast Name Resolution (LLMNR) and NetBIOS Name Service (NBT-NS)
+https://www.cccsecuritycenter.org/remediation/llmnr-nbt-ns</string>
+    </stringTable>
+  </resources>
+</policyComments>

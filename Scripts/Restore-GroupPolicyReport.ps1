@@ -13,7 +13,9 @@ If no domain is specified, the domain for the current environment is used.
 .\Restore-GroupPolicyReport.ps1 -DomainNetBiosName CONTOSO -Verbose
 #>
 [CmdletBinding()]
-Param([string] $DomainNetBiosName)
+Param(
+    [Parameter(Position=1, Mandatory=$false)]
+    [string] $DomainNetBiosName)
 
 Begin
 {
@@ -56,7 +58,8 @@ Begin
         # Restore the specified group policy report if -- and only if -- the
         # report differs by the date/time the report was generated
 
-        Write-Verbose "Examining differences in group policy report ($reportName)..."
+        Write-Verbose ("Examining differences in group policy report" `
+            + " ($reportName)...")
 
         [string] $gitStatus = GetFileGitStatus $reportPath
 
@@ -103,7 +106,6 @@ Begin
                                 }
                             }
                         }
-                            
                     }
                 }
             }                    
@@ -116,22 +118,21 @@ Begin
     {
         # Restore all group policy reports for the specified domain
 
-        Write-Verbose "Restoring group policy reports for domain ($domainNetBiosName)..."
+        Write-Verbose ("Restoring group policy reports for domain" `
+            + " ($domainNetBiosName)...")
 
-        [string] $basePath = [System.IO.Path]::Combine(
-            $PSScriptRoot,
-            "..",
-            $domainNetBiosName,
-            "GP Reports")
+        [string] $reportFolder = `
+            & "$PSScriptRoot\Get-GroupPolicyReportsPath.ps1" `
+                $domainNetBiosName
 
-        if ((Test-Path $basePath) -eq $false) {
-            Write-Warning "No group policy reports found for domain ($domainNetBiosName)."
+        if ((Test-Path $reportFolder) -eq $false) {
+            Write-Warning ("No group policy reports found for domain" `
+                + " ($domainNetBiosName).")
+
             return
         }
 
-        $basePath = Resolve-Path $basePath
-
-        Get-ChildItem $basePath -Filter *.html |
+        Get-ChildItem $reportFolder -Filter *.html |
             ForEach-Object {
                 [string] $reportName = $_.Name
                 [string] $reportPath = $_.FullName

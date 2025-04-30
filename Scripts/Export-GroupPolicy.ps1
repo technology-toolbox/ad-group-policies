@@ -71,6 +71,29 @@ Begin
 
         Get-GPOReport -Guid $gpo.Id -ReportType HTML -Path $reportPath -Server $server
     }
+
+    Function FormatGpoManifestFile()
+    {
+        Write-Verbose "Formatting GPO manifest file..."
+
+        [string] $path = [System.IO.Path]::Combine($PSScriptRoot, "..\\GPOs\manifest.xml")
+
+        $path = Resolve-Path $path
+
+        $xml = [xml] (Get-Content $path)
+
+        # HACK: XmlDocument.Save *should* simply overwrite the existing file.
+        # Unfortunately it actually throws an error:
+        #
+        # Exception calling "Save" with "1" argument(s): "Access to the path
+        # 'C:\...\ad-group-policies\GPOs\manifest.xml' is denied."
+        #
+        # To avoid this issue, forcefully delete the file (to avoid the "access
+        # denied" error) and then save the formatted XML.
+        Remove-Item $path -Force
+
+        $xml.Save($path)
+    }
 }
 
 Process
@@ -92,4 +115,6 @@ Process
 
             ExportGroupPolicyReport $_ $server
         }
+
+    FormatGpoManifestFile
 }

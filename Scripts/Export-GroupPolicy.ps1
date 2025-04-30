@@ -10,7 +10,12 @@ is based on the one used in the Microsoft Security Compliance Toolkit 1.0
 (https://www.microsoft.com/en-us/download/details.aspx?id=55319).
 
 .EXAMPLE
-.\Export-GroupPolicy.ps1 -Verbose
+.\Export-GroupPolicy.ps1
+
+Domain  DisplayName
+------  -----------
+CONTOSO Default Domain Policy
+CONTOSO Default Domain Controllers Policy
 #>
 [CmdletBinding()]
 Param([string] $Server)
@@ -113,6 +118,11 @@ Begin
 
 Process
 {
+    # Configure default display set for output type
+    Update-TypeData `
+        -TypeName GroupPolicy.Export `
+        -DefaultDisplayPropertySet Domain, DisplayName -Force
+
     if ([string]::IsNullOrEmpty($Server) -eq $true) {
         Write-Verbose "Server not specified, defaulting to `"first`" DC..."
 
@@ -132,6 +142,16 @@ Process
             ExportGroupPolicyObject $_ $domainNetBiosName $server
 
             ExportGroupPolicyReport $_ $domainNetBiosName $server
+
+            [PSCustomObject] $output = [PSCustomObject][Ordered] @{
+                Domain = $domainNetBiosName
+                DisplayName = $_.DisplayName
+                Id = $_.Id
+            }
+
+            $output.PSTypeNames.Insert(0,'GroupPolicy.Export')
+
+            $output
         }
 
     FormatGpoManifestFile $domainNetBiosName

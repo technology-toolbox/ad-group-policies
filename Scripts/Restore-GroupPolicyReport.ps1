@@ -12,18 +12,18 @@ If no domain is specified, the domain for the current environment is used.
 .EXAMPLE
 .\Restore-GroupPolicyReport.ps1
 
-Domain  ReportName                             Reason
-------   ----------                             ------
-CONTOSO Default Domain Controllers Policy.html Differs only by report date
-CONTOSO Default Domain Policy.html             Differs only by report date
+Domain  ReportName                             DiffSummary                   DiffersByDateOnly
+------  ----------                             -----------                   -----------------
+CONTOSO Default Domain Controllers Policy.html (no changes)                              False
+CONTOSO Default Domain Policy.html             1 insertion(+), 1 deletion(-)              True
 
 .EXAMPLE
 .\Restore-GroupPolicyReport.ps1 FABRIKAM
 
-Domain   ReportName                             Reason
-------   ----------                             ------
-FABRIKAM Default Domain Controllers Policy.html Differs only by report date
-FABRIKAM Default Domain Policy.html             Differs only by report date
+Domain   ReportName                             DiffSummary                    DiffersByDateOnly
+------   ----------                             -----------                    -----------------
+FABRIKAM Default Domain Controllers Policy.html 2 insertions(+), 1 deletion(-)             False
+FABRIKAM Default Domain Policy.html             1 insertion(+), 1 deletion(-)               True
 #>
 [CmdletBinding()]
 Param(
@@ -34,33 +34,6 @@ Begin
 {
     Set-StrictMode -Version Latest
     $ErrorActionPreference = "Stop"
-
-    Function GetFileGitStatus(
-        [string] $path =
-            $(Throw "Value cannot be null: path"))
-    {
-        Write-Debug "GetFileGitStatus($path)..."
-
-        [string] $output = $(git status --short -- $path)
-
-        Write-Debug "Git status: $output"
-
-        if ([string]::IsNullOrEmpty($output) -eq $true) {
-            return "unmodified"
-        }
-        elseif ($output.StartsWith("A") -eq $true) {
-            return "new file"
-        }
-        elseif ($output.StartsWith(" M ") -eq $true) {
-            return "modified"
-        }
-        elseif ($output.StartsWith("?? ") -eq $true) {
-            return "untracked"
-        }
-        else {
-            throw "Unexpected output from 'git status': $output"
-        }
-    }
 
     Function RestoreGroupPolicyReport(
         [string] $domainNetBiosName =
@@ -76,17 +49,29 @@ Begin
         # Configure default display set for output type
         Update-TypeData `
             -TypeName GroupPolicyReport.Restore `
-            -DefaultDisplayPropertySet Domain, ReportName, Reason -Force
+            -DefaultDisplayPropertySet Domain, ReportName, DiffSummary, DiffersByDateOnly -Force
     
         Write-Verbose ("Examining differences in group policy report" `
             + " ($reportName)...")
 
-        [string] $gitStatus = GetFileGitStatus $reportPath
+        [string] $reportPath = $_.FullName
 
-        if ($gitStatus -eq "modified") {
+        [string] $diffSummary = $(git diff --shortstat --text -- $reportPath)
+        Write-Debug "diffSummary: $diffSummary"
+
+        if ([string]::IsNullOrEmpty($diffSummary) -eq $true) {
+            $diffSummary = "(no changes)"
+        }
+
+        if ($diffSummary.StartsWith(" 1 file changed, ") -eq $true) {
+            $diffSummary = $diffSummary.Substring(" 1 file changed, ".Length)
+        }
+
+        [bool] $reportDiffersByDateOnly = $false
+
+        if ($diffSummary -eq "1 insertion(+), 1 deletion(-)") {
             Write-Verbose "Group policy report ($reportName) is modified..."
-
-            [string] $reportPath = $_.FullName
+            Write-Verbose "Group policy report ($reportName) may differ only by date."
 
             [string[]] $diff = $(git diff --text -- $reportPath)
             Write-Debug "diff:"
@@ -101,40 +86,37 @@ Begin
             Write-Debug "additions:"
             Write-Debug ($additions -join [Environment]::NewLine)
 
-            if ($deletions.Count -eq 1) {
-                if ($additions.Count -eq 1) {
-                    Write-Verbose "Group policy report ($reportName) may differ only by date."
+            [string] $matchString = "<td id=`"dtstamp`">Data collected on: "
 
-                    [string] $matchString = "<td id=`"dtstamp`">Data collected on: "
+            # Check if the length of content deleted/added falls within the expected limit
+            # (i.e. we expect the "<td ...>Data collected on: ..." line of HTML that was modified to be less than or equal to 68 characters)
+            if (($deletions[0].Length -le 68) `
+                    -and ($additions[0].Length -le 68)) {
+                if ($deletions[0].Contains($matchString) -eq $true) {
+                    Write-Verbose "Deletion refers to report date"
 
-                    # Check if the length of content deleted/added falls within the expected limit
-                    # (i.e. we expect the "<td ...>Data collected on: ..." line of HTML that was modified to be less than or equal to 68 characters)
-                    if (($deletions[0].Length -le 68) `
-                            -and ($additions[0].Length -le 68)) {
-                        if ($deletions[0].Contains($matchString) -eq $true) {
-                            Write-Verbose "Deletion refers to report date"
+                    if ($additions[0].Contains($matchString) -eq $true) {
+                        Write-Verbose "Group policy report ($reportName) differs only by date."
 
-                            if ($additions[0].Contains($matchString) -eq $true) {
-                                Write-Verbose "Group policy report ($reportName) differs only by date."
+                        $reportDiffersByDateOnly = $true
 
-                                git restore -- $reportPath
-
-                                [PSCustomObject] $output = [PSCustomObject][Ordered] @{
-                                    Domain = $domainNetBiosName
-                                    ReportName = $reportName
-                                    Reason = "Differs only by report date"
-                                    Path = $reportPath
-                                }
-
-                                $output.PSTypeNames.Insert(0,'GroupPolicyReport.Restore')
-
-                                $output
-                            }
-                        }
+                        git restore -- $reportPath
                     }
                 }
-            }                    
+            }
         }
+
+        [PSCustomObject] $output = [PSCustomObject][Ordered] @{
+            Domain = $domainNetBiosName
+            ReportName = $reportName
+            DiffSummary = $diffSummary
+            DiffersByDateOnly = $reportDiffersByDateOnly
+            Path = $reportPath
+        }
+
+        $output.PSTypeNames.Insert(0,'GroupPolicyReport.Restore')
+
+        $output
     }
 
     Function RestoreGroupPolicyReports(

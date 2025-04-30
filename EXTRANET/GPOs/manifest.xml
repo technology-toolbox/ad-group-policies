@@ -1,0 +1,232 @@
+<Backups xmlns="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" xmlns:mfst="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" mfst:version="1.0">
+  <BackupInst>
+    <GPOGuid><![CDATA[{6ac1786c-016f-11d2-945f-00c04fb984f9}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:20]]></BackupTime>
+    <ID><![CDATA[{7108E809-BF3A-4009-A6FF-ED3AEFF6DD1F}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Default Domain Controllers Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{31b2f340-016d-11d2-945f-00c04fb984f9}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:20]]></BackupTime>
+    <ID><![CDATA[{E511B76E-889A-47E3-A964-45577E41B8C8}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Default Domain Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{4a647fe3-f844-443b-b50c-6c98f14f404d}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:19]]></BackupTime>
+    <ID><![CDATA[{DF3CB60A-D1D1-4D26-9A38-66FB0C1F17EA}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Remote Desktop Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{d7339900-c300-42dd-ab89-9e03f058c7bf}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:19]]></BackupTime>
+    <ID><![CDATA[{53718C94-9602-4079-BE61-14B6CC1A7084}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - WSUS]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{439a7490-1a5e-47c9-b3ef-92f477644a5a}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:18]]></BackupTime>
+    <ID><![CDATA[{65B02134-28E0-4B7D-AC1E-B9C32FC04391}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Restricted Groups - SharePoint Servers]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{4a6dcdca-1597-471d-8274-f32651e85698}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:18]]></BackupTime>
+    <ID><![CDATA[{F94628FB-CBF9-4798-8D77-EA1ED8E3FA18}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Restricted Groups - SQL Servers]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{13aa5d3a-13e6-40eb-84c5-e18b2287609b}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:17]]></BackupTime>
+    <ID><![CDATA[{C3C06651-4B03-445B-9B48-874903D9FC00}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Restricted Groups - SharePoint Servers (DEV)]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{a259cf8b-5252-4b69-a13f-d7342d461ecb}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:17]]></BackupTime>
+    <ID><![CDATA[{948A0C19-2B23-4B36-8558-47CBCFF7369B}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Manual]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{2104323e-2ea5-4d87-8a51-6594d6f52b19}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:16]]></BackupTime>
+    <ID><![CDATA[{7BA0865B-AB0E-4381-A6DB-8C377365C6E5}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Technology Toolbox PKI Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{37a10010-ede0-493c-9658-51b4bae7f461}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:16]]></BackupTime>
+    <ID><![CDATA[{DAFE834D-47EF-47DF-B139-99A83E840E32}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 1]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{475463f3-d407-4852-97cf-8508083fa150}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:15]]></BackupTime>
+    <ID><![CDATA[{CBDD5D3B-3657-4837-B07E-C9EA8EF1757F}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 2]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{4583b0dc-33cc-41ae-acad-fdcb83046f63}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:15]]></BackupTime>
+    <ID><![CDATA[{84C2EC66-C388-4CB8-88AE-BCD7E5EDC4DF}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 3]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{15de6adb-3c16-420d-9dc1-b82b2008e2aa}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:15]]></BackupTime>
+    <ID><![CDATA[{28A1E53C-0347-4F16-8B03-2C0C61900D20}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 4]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{f042f7a4-8942-498b-aa78-7791573f0762}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:14]]></BackupTime>
+    <ID><![CDATA[{D1147839-CD3C-4C89-8334-6CF1D94C1900}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 0]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{7094dae5-56fe-4ba3-a44a-9519d522307d}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:14]]></BackupTime>
+    <ID><![CDATA[{AB607983-CD59-42AB-8D3D-D3C08EF0F6A4}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 9]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{8c287c0f-808d-4c83-b458-a49f448a9819}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:13]]></BackupTime>
+    <ID><![CDATA[{0C37E99A-C064-46BB-B517-08D176657392}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 20]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{7730cf66-962e-4c44-9e21-c381faf75706}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:13]]></BackupTime>
+    <ID><![CDATA[{946C1905-638B-4F6A-9D02-256F784B4850}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 7]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{ce42ada6-bad5-4b18-9125-48c98b60b28e}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:12]]></BackupTime>
+    <ID><![CDATA[{138F66E8-87E8-4B56-8DEE-82B6EA612069}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Network Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{d336ca51-78f0-4654-8df8-4a59d2acddc4}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:12]]></BackupTime>
+    <ID><![CDATA[{7BC9A720-AC99-4103-934B-F340381C3D31}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Disable Extraneous Services]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{19fda61c-67ee-460b-94d1-9b2939db88c6}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:10]]></BackupTime>
+    <ID><![CDATA[{7A77FB21-FD02-4139-9DFE-36776D2D217A}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Logon/Logoff Scripts Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{5a4f4a0b-eff9-4121-9fdb-a28fb7e2abe7}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:10]]></BackupTime>
+    <ID><![CDATA[{23D5C750-05E8-4BD8-B97B-A5039BF02790}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Security Settings Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{87cb3221-f08d-4dc1-83c6-6d63f39b3feb}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:09]]></BackupTime>
+    <ID><![CDATA[{6448AD31-3313-4F55-B31A-652677F56915}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Enable LDAP Query Logging]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{85c7d42e-ea89-41fe-a4f4-ae796c51323c}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-04-30T19:37:08]]></BackupTime>
+    <ID><![CDATA[{B4C083EB-A001-482C-B576-9E0EF071CF7A}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Disable LDAP Query Logging]]></GPODisplayName>
+  </BackupInst>
+</Backups>

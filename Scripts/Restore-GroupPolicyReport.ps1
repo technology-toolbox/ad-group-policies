@@ -10,7 +10,20 @@ stored in the local Git repository by the date/time the report was generated.
 If no domain is specified, the domain for the current environment is used.
 
 .EXAMPLE
-.\Restore-GroupPolicyReport.ps1 -DomainNetBiosName CONTOSO -Verbose
+.\Restore-GroupPolicyReport.ps1
+
+Domain  ReportName                             Reason
+------   ----------                             ------
+CONTOSO Default Domain Controllers Policy.html Differs only by report date
+CONTOSO Default Domain Policy.html             Differs only by report date
+
+.EXAMPLE
+.\Restore-GroupPolicyReport.ps1 FABRIKAM
+
+Domain   ReportName                             Reason
+------   ----------                             ------
+FABRIKAM Default Domain Controllers Policy.html Differs only by report date
+FABRIKAM Default Domain Policy.html             Differs only by report date
 #>
 [CmdletBinding()]
 Param(
@@ -50,6 +63,8 @@ Begin
     }
 
     Function RestoreGroupPolicyReport(
+        [string] $domainNetBiosName =
+            $(Throw "Value cannot be null: domainNetBiosName"),
         [string] $reportName =
             $(Throw "Value cannot be null: reportName"),
         [string] $reportPath =
@@ -58,6 +73,11 @@ Begin
         # Restore the specified group policy report if -- and only if -- the
         # report differs by the date/time the report was generated
 
+        # Configure default display set for output type
+        Update-TypeData `
+            -TypeName GroupPolicyReport.Restore `
+            -DefaultDisplayPropertySet Domain, ReportName, Reason -Force
+    
         Write-Verbose ("Examining differences in group policy report" `
             + " ($reportName)...")
 
@@ -99,11 +119,16 @@ Begin
 
                                 git restore -- $reportPath
 
-                                [PSCustomObject][Ordered] @{
+                                [PSCustomObject] $output = [PSCustomObject][Ordered] @{
+                                    Domain = $domainNetBiosName
                                     ReportName = $reportName
                                     Reason = "Differs only by report date"
                                     Path = $reportPath
                                 }
+
+                                $output.PSTypeNames.Insert(0,'GroupPolicyReport.Restore')
+
+                                $output
                             }
                         }
                     }
@@ -137,7 +162,7 @@ Begin
                 [string] $reportName = $_.Name
                 [string] $reportPath = $_.FullName
 
-                RestoreGroupPolicyReport $reportName $reportPath
+                RestoreGroupPolicyReport $domainNetBiosName $reportName $reportPath
             }
     }
 }

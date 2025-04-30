@@ -56,46 +56,27 @@ Begin
 
         [string] $reportPath = $_.FullName
 
-        [string] $diffSummary = $(git diff --shortstat --text -- $reportPath)
-        Write-Debug "diffSummary: $diffSummary"
-
-        if ([string]::IsNullOrEmpty($diffSummary) -eq $true) {
-            $diffSummary = "(no changes)"
-        }
-
-        if ($diffSummary.StartsWith(" 1 file changed, ") -eq $true) {
-            $diffSummary = $diffSummary.Substring(" 1 file changed, ".Length)
-        }
+        [PSCustomObject] $comparison = `
+            & "$PSScriptRoot\Compare-GitRepositoryFile.ps1" $reportPath
 
         [bool] $reportDiffersByDateOnly = $false
 
-        if ($diffSummary -eq "1 insertion(+), 1 deletion(-)") {
+        if ($comparison.DiffSummary -eq "1 insertion(+), 1 deletion(-)") {
             Write-Verbose "Group policy report ($reportName) is modified..."
             Write-Verbose "Group policy report ($reportName) may differ only by date."
 
-            [string[]] $diff = $(git diff --text -- $reportPath)
-            Write-Debug "diff:"
-            Write-Debug ($diff -join [Environment]::NewLine)
-
-            [string[]] $deletions = $diff | Where-Object { $_ -like '- *' }
-            [string[]] $additions = $diff | Where-Object { $_ -like '+ *' }
-
-            Write-Debug "deletions:"
-            Write-Debug ($deletions -join [Environment]::NewLine)
-
-            Write-Debug "additions:"
-            Write-Debug ($additions -join [Environment]::NewLine)
+            [string[]] $changes = $comparison.Changes
 
             [string] $matchString = "<td id=`"dtstamp`">Data collected on: "
 
             # Check if the length of content deleted/added falls within the expected limit
             # (i.e. we expect the "<td ...>Data collected on: ..." line of HTML that was modified to be less than or equal to 68 characters)
-            if (($deletions[0].Length -le 68) `
-                    -and ($additions[0].Length -le 68)) {
-                if ($deletions[0].Contains($matchString) -eq $true) {
+            if (($changes[0].Length -le 68) `
+                    -and ($changes[1].Length -le 68)) {
+                if ($changes[0].Contains($matchString) -eq $true) {
                     Write-Verbose "Deletion refers to report date"
 
-                    if ($additions[0].Contains($matchString) -eq $true) {
+                    if ($changes[1].Contains($matchString) -eq $true) {
                         Write-Verbose "Group policy report ($reportName) differs only by date."
 
                         $reportDiffersByDateOnly = $true
@@ -109,7 +90,7 @@ Begin
         [PSCustomObject] $output = [PSCustomObject][Ordered] @{
             Domain = $domainNetBiosName
             ReportName = $reportName
-            DiffSummary = $diffSummary
+            DiffSummary = $comparison.DiffSummary
             DiffersByDateOnly = $reportDiffersByDateOnly
             Path = $reportPath
         }

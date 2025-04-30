@@ -147,8 +147,7 @@ Process
         Write-Verbose ("DomainNetBiosName not specified, " `
             + "defaulting to current domain...")
 
-        $DomainNetBiosName = Get-ADDomain |
-            Select-Object -ExpandProperty NetBIOSName
+        $DomainNetBiosName = & "$PSScriptRoot\Get-DefaultDomainNetBiosName.ps1"
     }
 
     RestoreGroupPolicyReports $DomainNetBiosName

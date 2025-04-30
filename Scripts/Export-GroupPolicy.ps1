@@ -59,7 +59,7 @@ Begin
         $basePath = Resolve-Path $basePath
 
         [string[]] $invalidFileNameChars = ([System.IO.Path]::GetInvalidFileNameChars() |
-            where { 32 -le [int]$_ -and [int]$_ -le 127 })
+            Where-Object { 32 -le [int]$_ -and [int]$_ -le 127 })
 
         [string] $fileNameReplacePattern = "[" + [Regex]::Escape($invalidFileNameChars -join "") + "]"
 
@@ -79,15 +79,15 @@ Process
         Write-Verbose "Server not specified, defaulting to `"first`" DC..."
 
         $Server = Get-ADDomainController -Filter * |
-            sort HostName |
-            select -First 1 -ExpandProperty HostName
+            Sort-Object HostName |
+            Select-Object -First 1 -ExpandProperty HostName
     }
 
     $groupPolicies = Get-GPO -Server $server -All |
-        Sort-Object CreationTime
+        Sort-Object CreationTime -Descending
 
     $groupPolicies |
-        foreach {
+        ForEach-Object {
             ExportGroupPolicyObject $_ $server
 
             ExportGroupPolicyReport $_ $server

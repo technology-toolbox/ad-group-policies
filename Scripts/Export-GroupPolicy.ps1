@@ -19,13 +19,15 @@ Begin
     Set-StrictMode -Version Latest
     $ErrorActionPreference = "Stop"
 
-    Function ExportGroupPolicyObjects(
+    Function ExportGroupPolicyObject(
+        [Microsoft.GroupPolicy.Gpo] $gpo =
+            $(Throw "Value cannot be null: gpo"),
         [string] $server =
             $(Throw "Value cannot be null: server"))
     {
-        # Export group policy objects (using backup format)
+        # Export group policy object (using backup format)
 
-        Write-Verbose "Exporting group policy objects..."
+        Write-Verbose "Exporting group policy object ($($gpo.DisplayName))..."
 
         [string] $basePath = [System.IO.Path]::Combine($PSScriptRoot, "..\\GPOs")
 
@@ -35,16 +37,18 @@ Begin
 
         $basePath = Resolve-Path $basePath
 
-        Backup-GPO -Path $basePath -Server $Server -All | Out-Null
+        Backup-GPO -Guid $_.Id -Path $basePath -Server $server | Out-Null
     }
 
-    Function ExportGroupPolicyReports(
+    Function ExportGroupPolicyReport(
+        [Microsoft.GroupPolicy.Gpo] $gpo =
+            $(Throw "Value cannot be null: gpo"),
         [string] $server =
             $(Throw "Value cannot be null: server"))
     {
         # Export group policy reports
 
-        Write-Verbose "Exporting group policy reports..."
+        Write-Verbose "Exporting group policy report ($($gpo.DisplayName))..."
 
         $basePath = [System.IO.Path]::Combine($PSScriptRoot, "..\\GP Reports")
 
@@ -59,16 +63,13 @@ Begin
 
         [string] $fileNameReplacePattern = "[" + [Regex]::Escape($invalidFileNameChars -join "") + "]"
 
-        Get-GPO -Server $Server -All |
-            ForEach-Object {
-                $baseName = [Regex]::Replace($_.DisplayName, $fileNameReplacePattern, "~")
+        $baseName = [Regex]::Replace($gpo.DisplayName, $fileNameReplacePattern, "~")
 
-                [string] $reportPath = [System.IO.Path]::Combine(
-                    $basePath,
-                    $baseName + ".html")
+        [string] $reportPath = [System.IO.Path]::Combine(
+            $basePath,
+            $baseName + ".html")
 
-                $_ | Get-GPOReport -ReportType HTML -Path $reportPath -Server $Server
-            }
+        Get-GPOReport -Guid $gpo.Id -ReportType HTML -Path $reportPath -Server $server
     }
 }
 
@@ -82,7 +83,13 @@ Process
             Select-Object -First 1 -ExpandProperty HostName
     }
 
-    ExportGroupPolicyObjects $server
+    $groupPolicies = Get-GPO -Server $server -All |
+        Sort-Object CreationTime
 
-    ExportGroupPolicyReports $server    
+    $groupPolicies |
+        ForEach-Object {
+            ExportGroupPolicyObject $_ $server
+
+            ExportGroupPolicyReport $_ $server
+        }
 }

@@ -1,0 +1,82 @@
+<Backups xmlns="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" xmlns:mfst="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" mfst:version="1.0">
+  <BackupInst>
+    <GPOGuid><![CDATA[{b7f85af0-42cb-4a9a-8654-eafcae5b6b56}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.contoso.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{23ab8f37-732c-4394-a64c-c963e83bada0}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[CON-DC07.corp.contoso.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:39:26]]></BackupTime>
+    <ID><![CDATA[{7AE6B2EE-0DD7-48B1-BE31-C5EA03766B4C}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Disable Extraneous Services]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{52c46095-9178-46c2-85e5-7cf27f12d3f7}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.contoso.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{23ab8f37-732c-4394-a64c-c963e83bada0}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[CON-DC07.corp.contoso.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:39:26]]></BackupTime>
+    <ID><![CDATA[{9D00D9D9-BA7F-4ECE-8ACF-7B502BE94042}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 22]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{cff636aa-24e1-4919-9290-2c2d55953051}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.contoso.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{23ab8f37-732c-4394-a64c-c963e83bada0}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[CON-DC07.corp.contoso.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:39:26]]></BackupTime>
+    <ID><![CDATA[{D485DC9B-F7F2-4EE7-8CC0-F0789389B4C4}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 21]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{0f77c036-6bf2-4228-91a3-680dc422d213}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.contoso.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{23ab8f37-732c-4394-a64c-c963e83bada0}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[CON-DC07.corp.contoso.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:39:25]]></BackupTime>
+    <ID><![CDATA[{DE725222-9864-4438-9693-C504D3DB8100}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 17]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{f7cabbfc-5763-41cc-a932-0bb2205b3c60}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.contoso.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{23ab8f37-732c-4394-a64c-c963e83bada0}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[CON-DC07.corp.contoso.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:39:25]]></BackupTime>
+    <ID><![CDATA[{9BB6B9E5-8A27-493A-8FBD-C72DEEA673FD}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - WSUS]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{04f81986-b000-4055-a231-5155d476ef8b}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.contoso.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{23ab8f37-732c-4394-a64c-c963e83bada0}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[CON-DC07.corp.contoso.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:39:24]]></BackupTime>
+    <ID><![CDATA[{63D176CB-DFA1-4865-9A62-F8B20FA11EF3}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Remote Desktop Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{6ac1786c-016f-11d2-945f-00c04fb984f9}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.contoso.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{23ab8f37-732c-4394-a64c-c963e83bada0}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[CON-DC07.corp.contoso.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:39:24]]></BackupTime>
+    <ID><![CDATA[{A2A5AF4D-9EC9-4E3B-B905-20C8CD12862D}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Default Domain Controllers Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{31b2f340-016d-11d2-945f-00c04fb984f9}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.contoso.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{23ab8f37-732c-4394-a64c-c963e83bada0}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[CON-DC07.corp.contoso.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:39:24]]></BackupTime>
+    <ID><![CDATA[{A5551F92-7466-4F9D-84BB-A3BDA5F2E020}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Default Domain Policy]]></GPODisplayName>
+  </BackupInst>
+</Backups>

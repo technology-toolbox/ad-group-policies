@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{f7cabbfc-5763-41cc-a932-0bb2205b3c60}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.contoso.com</Domain>
+  </Identifier>
+  <Name>Windows Update Policy - WSUS</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2018-08-21T11:02:58</CreatedTime>
+  <ModifiedTime>2025-05-06T11:46:47</ModifiedTime>
+  <ReadTime>2025-05-14T14:39:25.7354231Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-1816329458-1591065924-950682089-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1816329458-1591065924-950682089-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">CONTOSO\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1816329458-1591065924-950682089-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">CONTOSO\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1816329458-1591065924-950682089-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">CONTOSO\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1816329458-1591065924-950682089-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">CONTOSO\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>5</VersionDirectory>
+    <VersionSysvol>5</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/PublicKey" xsi:type="q1:PublicKeySettings">
+        <q1:EFSSettings>
+          <q1:AllowEFS>2</q1:AllowEFS>
+          <q1:Options>0</q1:Options>
+          <q1:CacheTimeout>0</q1:CacheTimeout>
+          <q1:KeyLen>0</q1:KeyLen>
+        </q1:EFSSettings>
+        <q1:RootCertificateSettings>
+          <q1:AllowNewCAs>true</q1:AllowNewCAs>
+          <q1:TrustThirdPartyCAs>true</q1:TrustThirdPartyCAs>
+          <q1:RequireUPNNamingConstraints>false</q1:RequireUPNNamingConstraints>
+        </q1:RootCertificateSettings>
+        <q1:RootCertificate>
+          <q1:IssuedTo>Technology Toolbox Issuing Certificate Authority 01</q1:IssuedTo>
+          <q1:IssuedBy>Technology Toolbox Root Certificate Authority</q1:IssuedBy>
+          <q1:ExpirationDate>2029-05-14T18:07:57Z</q1:ExpirationDate>
+          <q1:Data>0400000001000000100000006D92311EA6C8BF894D7115BC863590520F0000000100000020000000F4FD10C699167533118F0458129D5CA2844D961114FB3425F7008CC18AA5132F1400000001000000140000003F9FDEF54C2DFD65BA2FF83D3D3F758D65040DC2190000000100000010000000C0818112E77C01E280A9308FADC5E20E5C000000010000000400000000080000030000000100000014000000B862A1E92B327099CB8A851361EDBD8A677EE23C2000000001000000500600003082064C30820434A00302010202136700000006FA90405B9DD0A323000300000006300D06092A864886F70D01010B05003038313630340603550403132D546563686E6F6C6F677920546F6F6C626F7820526F6F7420436572746966696361746520417574686F72697479301E170D3139303531343137353735375A170D3239303531343138303735375A30818C31133011060A0992268993F22C6401191603636F6D3121301F060A0992268993F22C6401191611746563686E6F6C6F6779746F6F6C626F7831143012060A0992268993F22C6401191604636F7270313C303A06035504031333546563686E6F6C6F677920546F6F6C626F782049737375696E6720436572746966696361746520417574686F7269747920303130820122300D06092A864886F70D01010105000382010F003082010A0282010100DBE89F7381E37C622924D8669E40843636DA92593F9E250256F3BD90CC07D040B9F3E67195882CDD1523BF36C985CCAF4AC26366D001CB592B79FD4EE3DC3C393616C89314D34C9FAF9BF9413CB417013ADFB4C7D05539EFEA78EFB8AEA34478435309C55B2B169501A86D7EA207DD5976D1BE4243F3B4C3D8A25A004543C31C92222FE82FAEBEE775F7E4A49FA33C6F9CCDC66B8FC6D68939463FD7F5948CC1C87B300483A95DCD6974F78D01410A7DC27D5F10264A684DAFB6AAAF0592206DC166099C49287C5720CDE731F61A64B26E95C2CC3912B0CCA9E4E80AFD4C759535F27F89D131B00CE9CE7C15E84C48F1723196D223463A2E8DD59A62F6BDB3AB0203010001A38201F8308201F4301006092B06010401823715010403020101302306092B060104018237150204160414DCA018AFFFC3CDBDB553573C472835D42C235B3F301D0603551D0E041604143F9FDEF54C2DFD65BA2FF83D3D3F758D65040DC2304D0603551D20044630443042060B2B0601040182CD010101013033303106082B060105050702011625687474703A2F2F706B692E746563686E6F6C6F6779746F6F6C626F782E636F6D2F63707300301906092B0601040182371402040C1E0A00530075006200430041300B0603551D0F04040302018630120603551D130101FF040830060101FF020100301F0603551D23041830168014BE46363B0EB7467D25846D5BBFDF930E5E9A8EF8306F0603551D1F046830663064A062A060865E687474703A2F2F706B692E746563686E6F6C6F6779746F6F6C626F782E636F6D2F63726C2F546563686E6F6C6F6779253230546F6F6C626F78253230526F6F742532304365727469666963617465253230417574686F726974792E63726C307F06082B0601050507010104733071306F06082B060105050730028663687474703A2F2F706B692E746563686E6F6C6F6779746F6F6C626F782E636F6D2F63657274732F546563686E6F6C6F6779253230546F6F6C626F78253230526F6F742532304365727469666963617465253230417574686F726974792833292E637274300D06092A864886F70D01010B050003820201001FEBC20DD940498E86BC1C00DC77C84663149C08A5D78E7B274AB989DD7D0C831852CD00306329A24EB2FF5BB80BA38D6C14EF6057B2C0D607CE7AF3B6782D2DDAA3246019CC15463536B58BC2ED89C93149C627940CB2E3B0D990A07E04E9008916809ECED41C939FA87BC57B26E6692D4BBCB1733022C4FF11C1EA832F9ABFD2BE270E09763AEA77D5362EF7DC7B2A64445A65E58FB3C4275FA7A58A05239DF6582CF064525640C9C42B36881376840D876AAFED6F2A9F80B82AB519890AF0C7F8F9166AB6201843568F4C8FF2CC643E62D23F7E6AB7E18DCCF04F6FFD380D6C014EBC76D6B26D54322B0682D3FD6A5A183841974102C4FE8F345F46F0CB409171FB786ED0CD1D5983E032E712E2796E258F7D7A4D53A610C47C3180C9F7E7499FB271FFE03E52F9C36DD1CF958FB14DC92516DB70633A7FD67216A6F1C4F0F65444DD5DA1FFFB034C561C8442F2FE1DF9567FC0ED138F66A264D71FD6D583C72F1DBF0F9FFE46A59648FE92ECD87B8C2E0E18870277C3ACA9380545AC74B4FFADA9914ED5A94F64C93EFD169D2B9D21EA179D94EA9B8461C7C3889A13CF707DF6A091C9FEB53508562449C9FAE4CB67E9AC08C550CED448251F367142282C1BE788917ED35068CD44FCCA39F1704DDB42C44C224FA99B710E7B739F67068D1AED151366D03E850DAE7B2FFD6D874C664613DF0A3DFA72A850C85F0D6AFE7B</q1:Data>
+        </q1:RootCertificate>
+        <q1:RootCertificate>
+          <q1:IssuedTo>Technology Toolbox Root Certificate Authority</q1:IssuedTo>
+          <q1:IssuedBy>Technology Toolbox Root Certificate Authority</q1:IssuedBy>
+          <q1:ExpirationDate>2039-05-14T17:01:55Z</q1:ExpirationDate>
+          <q1:Data>04000000010000001000000030361F6C6E689BC1C21D99BDF9D4E4F60F0000000100000020000000BB638007882329D8C040009A6E67124B0F2CF79617D4EF90B8E34E93163EA5D1140000000100000014000000BE46363B0EB7467D25846D5BBFDF930E5E9A8EF819000000010000001000000063D90AFE6B342BD7CA0514ED3EACAE93030000000100000014000000DA8475C9D5B85ABE0E576999BB3592C849DEAF5F5C0000000100000004000000001000002000000001000000C8050000308205C4308203ACA00302010202107826D8DCDD89998741F974D977A19D07300D06092A864886F70D01010B05003038313630340603550403132D546563686E6F6C6F677920546F6F6C626F7820526F6F7420436572746966696361746520417574686F72697479301E170D3134303330323232323031375A170D3339303531343137303135355A3038313630340603550403132D546563686E6F6C6F677920546F6F6C626F7820526F6F7420436572746966696361746520417574686F7269747930820222300D06092A864886F70D01010105000382020F003082020A0282020100AD701EEDA830FA0B9D95308654AB2A92CF9DE73E2CBB4865AA6BAAB57205EB3F133FD418F96F8F515FA82CDA74F8D27B96BE0E97ABA859AC660996BC205B61506582F2013923AEFD7B1523D0A834F1B6B96BCAD59473639E08A27E33532665CAF2F8910ADA7821A0874C4E8F1C1A3554255B821262C6284DF86ED16D9D5A06F6EBAD0D53D79CACBE5714C302FED6779745F57843E332FE363086B63C054CE94DECE1A0460FD50950A54FB03C55FC28A1341D89E08AD6D9553ACE7EE1134B2B37B60B052216D6FED580F32EE325B6A701D12971CD6432F2E32BBF47D88F491D3F54F8722302349D9588BD4825C1C28DC83721B7C17048A4A31607832F02B03C65F6AB4EDD9F09A33EFA32E0A2BD1866911DA0AD232AF688BD2B6B6C7BE5D1F69B93B1A9C48083B50AF4773B0091BAA5FC645E38F8BC5078996150B16F1E23444F76ACFF0602A047CC6E2AD1053C59FFE09329B0CCC927308BD3621A1331A8A404DD459BB26B1955F9F1C08C21103EE5BF7805842046AB904FB662A3698BB56F6F0FD0B3D27931A3D1234A8422BF35DE60DA40B0ABC3814BF89A1EC56F8DFF1EC9764EF9482C3EA20D0A027F67D9A44B5DEAAE8FD986B1A82DEDD739CE71361B52EA49230531E8FB7FDB5A63B6CE228B0B59780AB8C15FDC8952CF45303F291AADB78DEABDFADCDFFCAA14D49FD4A3273D34D29FFFAAB17E66093A2B633899EA0F0203010001A381C93081C6300B0603551D0F04040302018630120603551D130101FF040830060101FF020101301D0603551D0E04160414BE46363B0EB7467D25846D5BBFDF930E5E9A8EF8301006092B06010401823715010403020103304D0603551D20044630443042060B2B0601040182CD010101013033303106082B060105050702011625687474703A2F2F706B692E746563686E6F6C6F6779746F6F6C626F782E636F6D2F63707300302306092B0601040182371502041604140BD3281EEAA18192229123DCEBFCBA4CE04F6D2E300D06092A864886F70D01010B05000382020100A6D9BAA3DC4241F5014ABA93295E1DE70D09EFA5C3A032A64F42EEE40513964F5B584919EB0C3B515FDEBE28BC27A20FC6B6D46B345228CA3C1C0B9F892A9110722CFF426620E08DE13BA37198F09EAA253BA8600D00EB220C0EBDA64A85BAB2FD5F1C0AD6A27DFBC6B9AD92BE36739F7A0D8BD0F6A8C5C00ED34E24BA307FC7B573BCA41FC85709241E6881845911A6D21B41663264FDF716A1F90664829F4DC2BC9859A20CEB2692B962218193F3EF96E0057E170A2ADF089E8B02116C5344B88B5DEE7BE27DDD523DB7E1440A6FDB9733E1B3C606ACE4E512AC5D949134651CA9179DCE27F688D55F90A6BE272F4D02FA806965114EC79D056819C8B0530CC3E9D95A87F9817530E9A26670CE0D99E1FDED77C298B0F34FD267F95D1987CDFD2FD5A972389BFEE9FA5ECF2C2E02F6B4451C41DBC912684F5E5842BABCEE8C70E4C11CD706D2F25A4934F299C6B2F59A1B6D1F6BECD3557A29A07998B9C334AB4DBA2CDCD89872A480CB8F70CCEA77971E9F597F15063EE3BDD2728934DE24081485F9F524AC62333F26BC50F7D4BE572FB98EA9B05959191489B78A67B5C797CB11BC4F8C3F9CE3F5CB95ECFA901BD4291476951CD5BD3B95B25C2B03C104C816A494445ED712FA5C9030499CC72DD08E4732E1A87DB31A75AE60CF0CCFFF095804E9B5441B2CF3EBC17CC79A0FF66D4E0A2566E8EF152AD5C7A1E6F11D92</q1:Data>
+        </q1:RootCertificate>
+      </Extension>
+      <Name>Public Key</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q2:RegistrySettings">
+        <q2:Policy>
+          <q2:Name>Specify intranet Microsoft update service location</q2:Name>
+          <q2:State>Enabled</q2:State>
+          <q2:Explain>
+        Specifies an intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
+
+        This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
+
+        To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update Agent to download updates from an alternate download server instead of the intranet update service.
+
+        If the status is set to Enabled, the Automatic Updates client connects to the specified intranet Microsoft update service (or alternate download server), instead of Windows Update, to search for and download updates. Enabling this setting means that end users in your organization don't have to go through a firewall to get updates, and it gives you the opportunity to test updates before deploying them.
+
+        If the status is set to Disabled or Not Configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
+
+        The alternate download server configures the Windows Update Agent to download files from an alternative download server instead of the intranet update service.
+
+        The option to download files with missing Urls allows content to be downloaded from the Alternate Download Server when there are no download Urls for files in the update metadata. This option should only be used when the intranet update service does not provide download Urls in the update metadata for files which are present on the alternate download server.
+
+        Note: If the "Configure Automatic Updates" policy is disabled, then this policy has no effect.
+
+        Note: If the "Alternate Download Server" is not set, it will use the intranet update service by default to download updates.
+
+        Note: The option to "Download files with no Url..." is only used if the "Alternate Download Server" is set.
+
+        Note: This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
+
+        To ensure the highest level of security, Microsoft recommends securing WSUS with TLS/SSL protocol, thereby using HTTPS based intranet servers to keep systems secure. If a proxy is required, we recommend configuring system proxy. To ensure highest levels of security, additionally leverage WSUS TLS certificate pinning on all devices.
+
+        In order to keep clients inherently secure, we are no longer allowing intranet servers to leverage user proxy by default for detecting updates. If you need to leverage user proxy for detecting updates while using an intranet server despite the vulnerabilities it presents, you must configure the proxy behavior to "Allow user proxy to be used as a fallback if detection using system proxy fails".
+
+        Detection for updates against intranet servers will fail when user proxy is needed as a fallback and the alternate proxy behavior is not configured.</q2:Explain>
+          <q2:Supported>At least Windows XP Professional Service Pack 1 or Windows 2000 Service Pack 3, excluding Windows RT</q2:Supported>
+          <q2:Category>Windows Components/Windows Update</q2:Category>
+          <q2:EditText>
+            <q2:Name>Set the intranet update service for detecting updates:</q2:Name>
+            <q2:State>Enabled</q2:State>
+            <q2:Value>https://wsus.technologytoolbox.com:8531</q2:Value>
+          </q2:EditText>
+          <q2:EditText>
+            <q2:Name>Set the intranet statistics server:</q2:Name>
+            <q2:State>Enabled</q2:State>
+            <q2:Value>https://wsus.technologytoolbox.com:8531</q2:Value>
+          </q2:EditText>
+          <q2:EditText>
+            <q2:Name>Set the alternate download server:</q2:Name>
+            <q2:State>NotConfigured</q2:State>
+          </q2:EditText>
+          <q2:Text>
+            <q2:Name>(example: https://IntranetUpd01)</q2:Name>
+          </q2:Text>
+          <q2:CheckBox>
+            <q2:Name>Download files with no Url in the metadata if alternate download server is set.</q2:Name>
+            <q2:State>NotConfigured</q2:State>
+          </q2:CheckBox>
+          <q2:CheckBox>
+            <q2:Name>Do not enforce TLS certificate pinning for Windows Update client for detecting updates.</q2:Name>
+            <q2:State>NotConfigured</q2:State>
+          </q2:CheckBox>
+          <q2:DropDownList>
+            <q2:Name>Select the proxy behavior for Windows Update client for detecting updates:</q2:Name>
+            <q2:State>NotConfigured</q2:State>
+          </q2:DropDownList>
+        </q2:Policy>
+        <q2:RegistrySetting>
+          <q2:KeyPath>Software\Policies\Microsoft\SystemCertificates\DPNGRA\Certificates</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+        </q2:RegistrySetting>
+        <q2:RegistrySetting>
+          <q2:KeyPath>Software\Policies\Microsoft\SystemCertificates\DPNGRA\CRLs</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+        </q2:RegistrySetting>
+        <q2:RegistrySetting>
+          <q2:KeyPath>Software\Policies\Microsoft\SystemCertificates\DPNGRA\CTLs</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+        </q2:RegistrySetting>
+        <q2:RegistrySetting>
+          <q2:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE\Certificates</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+        </q2:RegistrySetting>
+        <q2:RegistrySetting>
+          <q2:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE\CRLs</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+        </q2:RegistrySetting>
+        <q2:RegistrySetting>
+          <q2:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE\CTLs</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+        </q2:RegistrySetting>
+        <q2:RegistrySetting>
+          <q2:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE_NKP\Certificates</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+        </q2:RegistrySetting>
+        <q2:RegistrySetting>
+          <q2:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE_NKP\CRLs</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+        </q2:RegistrySetting>
+        <q2:RegistrySetting>
+          <q2:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE_NKP\CTLs</q2:KeyPath>
+          <q2:AdmSetting>false</q2:AdmSetting>
+        </q2:RegistrySetting>
+        <q2:Blocked>false</q2:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>0</VersionDirectory>
+    <VersionSysvol>0</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>corp</SOMName>
+    <SOMPath>corp.contoso.com</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

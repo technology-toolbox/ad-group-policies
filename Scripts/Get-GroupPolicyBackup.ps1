@@ -45,17 +45,15 @@ Begin
             -TypeName GroupPolicyBackup.Information `
             -DefaultDisplayPropertySet Domain, DisplayName, BackupTime -Force
 
-        [string] $path = [System.IO.Path]::Combine(
-            $PSScriptRoot,
-            "..",
-            $domainNetBiosName,
-            "GPOs\manifest.xml")
+        [string] $backupFolder = & "$PSScriptRoot\Get-GroupPolicyBackupPath.ps1" `
+            -DomainNetBiosName $domainNetBiosName
 
-        $path = Resolve-Path $path
+        [string] $manifestPath = [System.IO.Path]::Combine(
+            $backupFolder, "manifest.xml")
 
         [string] $dateTimeFormat = "s"  # SortableDateTimePattern = "yyyy-MM-ddTHH:mm:ss"
 
-        [xml] $xml = [xml] (Get-Content $path)
+        [xml] $xml = [xml] (Get-Content $manifestPath)
         foreach ($backup in $xml.Backups.BackupInst) {
 
             [PSCustomObject] $output = [PSCustomObject][Ordered] @{
@@ -67,6 +65,7 @@ Begin
                     $backup.BackupTime.InnerText, $dateTimeFormat, $null)
                 BackupId = [Guid]::ParseExact($backup.ID.InnerText, "B")
                 Comment = $backup.Comment.InnerText
+                Path = [System.IO.Path]::Combine($backupFolder, $backup.ID.InnerText)
             }
 
             $output.PSTypeNames.Insert(0,'GroupPolicyBackup.Information')

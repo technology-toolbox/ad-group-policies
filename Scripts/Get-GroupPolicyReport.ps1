@@ -69,6 +69,8 @@ Begin
                     } |
                     Select-Object -First 1
 
+                [Guid] $groupPolicyId = [Guid]::Empty
+
                 if ($htmlLine -match '\{[0-9a-fA-F\-]{36}\}') {
                     $groupPolicyId = $matches[0]
                 }

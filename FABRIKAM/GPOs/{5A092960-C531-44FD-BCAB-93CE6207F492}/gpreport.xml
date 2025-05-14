@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{31b2f340-016d-11d2-945f-00c04fb984f9}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.fabrikam.com</Domain>
+  </Identifier>
+  <Name>Default Domain Policy</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2013-05-09T23:32:18</CreatedTime>
+  <ModifiedTime>2025-05-06T11:50:46</ModifiedTime>
+  <ReadTime>2025-05-14T14:33:39.8108191Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-1354021876-1831262814-3449474082-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>17</VersionDirectory>
+    <VersionSysvol>17</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Security" xsi:type="q1:SecuritySettings">
+        <q1:Account>
+          <q1:Name>ClearTextPassword</q1:Name>
+          <q1:SettingBoolean>false</q1:SettingBoolean>
+          <q1:Type>Password</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>LockoutBadCount</q1:Name>
+          <q1:SettingNumber>0</q1:SettingNumber>
+          <q1:Type>Account Lockout</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>MaximumPasswordAge</q1:Name>
+          <q1:SettingNumber>42</q1:SettingNumber>
+          <q1:Type>Password</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>MinimumPasswordAge</q1:Name>
+          <q1:SettingNumber>1</q1:SettingNumber>
+          <q1:Type>Password</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>MinimumPasswordLength</q1:Name>
+          <q1:SettingNumber>7</q1:SettingNumber>
+          <q1:Type>Password</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>PasswordComplexity</q1:Name>
+          <q1:SettingBoolean>true</q1:SettingBoolean>
+          <q1:Type>Password</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>PasswordHistorySize</q1:Name>
+          <q1:SettingNumber>24</q1:SettingNumber>
+          <q1:Type>Password</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>MaxClockSkew</q1:Name>
+          <q1:SettingNumber>5</q1:SettingNumber>
+          <q1:Type>Kerberos</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>MaxRenewAge</q1:Name>
+          <q1:SettingNumber>7</q1:SettingNumber>
+          <q1:Type>Kerberos</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>MaxServiceAge</q1:Name>
+          <q1:SettingNumber>600</q1:SettingNumber>
+          <q1:Type>Kerberos</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>MaxTicketAge</q1:Name>
+          <q1:SettingNumber>10</q1:SettingNumber>
+          <q1:Type>Kerberos</q1:Type>
+        </q1:Account>
+        <q1:Account>
+          <q1:Name>TicketValidateClient</q1:Name>
+          <q1:SettingBoolean>true</q1:SettingBoolean>
+          <q1:Type>Kerberos</q1:Type>
+        </q1:Account>
+        <q1:SecurityOptions>
+          <q1:SystemAccessPolicyName>ForceLogoffWhenHourExpire</q1:SystemAccessPolicyName>
+          <q1:SettingNumber>0</q1:SettingNumber>
+        </q1:SecurityOptions>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Security</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/PublicKey" xsi:type="q2:PublicKeySettings">
+        <q2:EFSSettings>
+          <q2:AllowEFS>2</q2:AllowEFS>
+          <q2:Options>0</q2:Options>
+          <q2:CacheTimeout>0</q2:CacheTimeout>
+          <q2:KeyLen>0</q2:KeyLen>
+        </q2:EFSSettings>
+        <q2:EFSRecoveryAgent>
+          <q2:IssuedTo>Administrator</q2:IssuedTo>
+          <q2:IssuedBy>Administrator</q2:IssuedBy>
+          <q2:ExpirationDate>2016-05-08T23:44:15Z</q2:ExpirationDate>
+          <q2:CertificatePurpose>
+            <q2:Purpose>1.3.6.1.4.1.311.10.3.4.1</q2:Purpose>
+          </q2:CertificatePurpose>
+          <q2:Data>030000000100000014000000CD171A2D85E49159A1AE0D415474E4240DE0F26F0200000001000000C40000001C0000006C0000000100000000000000000000000000000001000000380062003700630036003400370039002D0039003100390030002D0034003300350064002D0062003900650031002D0061003700360039006400650034006300390036003400310000000000000000004D006900630072006F0073006F0066007400200042006100730065002000430072007900700074006F0067007200610070006800690063002000500072006F00760069006400650072002000760031002E0030000000000020000000010000003B02000030820237308201A4A0030201020210262BA34D158911B54F3B8AF32CE0328A300906052B0E03021D05003050311630140603550403130D41646D696E6973747261746F72310C300A0603550407130345465331283026060355040B131F4546532046696C6520456E6372797074696F6E204365727469666963617465301E170D3133303530393233343431355A170D3136303530383233343431355A3050311630140603550403130D41646D696E6973747261746F72310C300A0603550407130345465331283026060355040B131F4546532046696C6520456E6372797074696F6E20436572746966696361746530819F300D06092A864886F70D010101050003818D0030818902818100D044A2BD351B38DC4D0FEA047EFDFBB1D040A453EC67C900D8F4792AD66649A95A0E0DEF1EB7F638F46DA9BEF9191721E330F51DB9127B5AAA2DCA6E3ECCB3FD404FA5B9F85E2030CECE7781B9AEBB5FE39558C60F2DA68D99ED476DF83126C26729D4CC19BFBACC9483ED19DAE052B6F773891520FD55ECE1FEFFF0CCC790D70203010001A31A301830160603551D25040F300D060B2B0601040182370A030401300906052B0E03021D050003818100942A1C309551AD1B3AAA04A1EF3D0EF1B11C6940065682300AAFC1D02349DD7B190134FF3C9B43B2FCD8F8F398D0704CF1426268C24EEC8A44BDF79361764C9AE710E91EFE0B1700A0576A68E17C1D065EA2636251A419537C875046FA1BCAB48A88F57B76C97F7EA2EF248177420917092700A54B61C0205BF04A3AB43B2F2D</q2:Data>
+        </q2:EFSRecoveryAgent>
+        <q2:RootCertificateSettings>
+          <q2:AllowNewCAs>true</q2:AllowNewCAs>
+          <q2:TrustThirdPartyCAs>true</q2:TrustThirdPartyCAs>
+          <q2:RequireUPNNamingConstraints>false</q2:RequireUPNNamingConstraints>
+        </q2:RootCertificateSettings>
+      </Extension>
+      <Name>Public Key</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q3="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q3:RegistrySettings">
+        <q3:Blocked>false</q3:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>1</VersionDirectory>
+    <VersionSysvol>1</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q4="http://www.microsoft.com/GroupPolicy/Settings/RemoteInstallation" xsi:type="q4:RemoteInstallationSettings">
+        <q4:AutoSetupSetting>
+          <q4:Value>NotConfigured</q4:Value>
+        </q4:AutoSetupSetting>
+        <q4:CustomSetupSetting>
+          <q4:Value>Disabled</q4:Value>
+        </q4:CustomSetupSetting>
+        <q4:RestartSetupSetting>
+          <q4:Value>Disabled</q4:Value>
+        </q4:RestartSetupSetting>
+        <q4:ToolsSetting>
+          <q4:Value>Disabled</q4:Value>
+        </q4:ToolsSetting>
+      </Extension>
+      <Name>Remote Installation</Name>
+    </ExtensionData>
+  </User>
+  <LinksTo>
+    <SOMName>corp</SOMName>
+    <SOMPath>corp.fabrikam.com</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

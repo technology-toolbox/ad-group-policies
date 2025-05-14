@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{bdb979d6-e520-4c3d-aa01-b2ce1391dc60}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.fabrikam.com</Domain>
+  </Identifier>
+  <Name>Roaming User Profile Policy - Disable</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2015-05-14T14:51:00</CreatedTime>
+  <ModifiedTime>2025-05-06T11:54:01</ModifiedTime>
+  <ReadTime>2025-05-14T14:33:49.2636245Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-1354021876-1831262814-3449474082-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>1</VersionDirectory>
+    <VersionSysvol>1</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q1:RegistrySettings">
+        <q1:Policy>
+          <q1:Name>Only allow local user profiles</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This setting determines if roaming user profiles are available on a particular computer. By default, when roaming profile users log on to a computer, their roaming profile is copied down to the local computer. If they have already logged on to this computer in the past, the roaming profile is merged with the local profile. Similarly, when the user logs off this computer, the local copy of their profile, including any changes they have made, is merged with the server copy of their profile.
+
+Using the setting, you can prevent users configured to use roaming profiles from receiving their profile on a specific computer.
+
+If you enable this setting, the following occurs on the affected computer: At first logon, the user receives a new local  profile, rather than the roaming profile. At logoff, changes are saved to the local profile. All subsequent logons use the local profile. 
+
+If you disable this setting or do not configure it, the default behavior occurs, as indicated above.
+
+If you enable both the "Prevent Roaming Profile changes from propagating to the server" setting and the "Only allow local user profiles" setting, roaming profiles are disabled.
+
+Note: This setting only affects roaming profile users.</q1:Explain>
+          <q1:Supported>At least Windows Server 2003 operating systems or Windows XP Professional</q1:Supported>
+          <q1:Category>System/User Profiles</q1:Category>
+        </q1:Policy>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>0</VersionDirectory>
+    <VersionSysvol>0</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>Azure</SOMName>
+    <SOMPath>corp.fabrikam.com/Information Technology/Resources/Servers/Azure</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

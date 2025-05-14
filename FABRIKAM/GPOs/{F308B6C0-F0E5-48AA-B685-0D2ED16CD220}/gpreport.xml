@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{2e94efd9-ea69-4473-92eb-7edb59401f1b}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.fabrikam.com</Domain>
+  </Identifier>
+  <Name>Network Policy</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2018-08-16T21:12:02</CreatedTime>
+  <ModifiedTime>2025-05-06T11:53:59</ModifiedTime>
+  <ReadTime>2025-05-14T14:33:51.7167414Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-1354021876-1831262814-3449474082-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>2</VersionDirectory>
+    <VersionSysvol>2</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/nrpt" xsi:type="q1:NrptSettings">
+        <q1:Global>
+          <q1:Nla xsi:nil="true" />
+          <q1:Fallback xsi:nil="true" />
+          <q1:Query xsi:nil="true" />
+        </q1:Global>
+      </Extension>
+      <Name>Name Resolution Policy</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q2:RegistrySettings">
+        <q2:Policy>
+          <q2:Name>Turn off multicast name resolution</q2:Name>
+          <q2:State>Enabled</q2:State>
+          <q2:Comment>Reference:
+
+Link Local Multicast Name Resolution (LLMNR) and NetBIOS Name Service (NBT-NS)
+https://www.cccsecuritycenter.org/remediation/llmnr-nbt-ns</q2:Comment>
+          <q2:Explain>Specifies that link local multicast name resolution (LLMNR) is disabled on client computers.
+
+LLMNR is a secondary name resolution protocol. With LLMNR, queries are sent using multicast over a local network link on a single subnet from a client computer to another client computer on the same subnet that also has LLMNR enabled. LLMNR does not require a DNS server or DNS client configuration, and provides name resolution in scenarios in which conventional DNS name resolution is not possible.
+
+If you enable this policy setting, LLMNR will be disabled on all available network adapters on the client computer.
+
+If you disable this policy setting, or you do not configure this policy setting, LLMNR will be enabled on all available network adapters.</q2:Explain>
+          <q2:Supported>At least Windows Vista</q2:Supported>
+          <q2:Category>Network/DNS Client</q2:Category>
+        </q2:Policy>
+        <q2:Blocked>false</q2:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>0</VersionDirectory>
+    <VersionSysvol>0</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>corp</SOMName>
+    <SOMPath>corp.fabrikam.com</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

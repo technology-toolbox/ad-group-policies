@@ -1,0 +1,192 @@
+<Backups xmlns="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" xmlns:mfst="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" mfst:version="1.0">
+  <BackupInst>
+    <GPOGuid><![CDATA[{f703f586-e24b-4044-b773-3c4cf3c66cf1}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:51]]></BackupTime>
+    <ID><![CDATA[{4A81DCFE-1052-4FB3-B4D7-4A406B30F343}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Disable Extraneous Services]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{2e94efd9-ea69-4473-92eb-7edb59401f1b}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:51]]></BackupTime>
+    <ID><![CDATA[{F308B6C0-F0E5-48AA-B685-0D2ED16CD220}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Network Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{f37d7128-ae90-4015-bc69-ade5300141d5}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:51]]></BackupTime>
+    <ID><![CDATA[{11A392A9-8DB9-47E9-B9A4-0A04559C9D9B}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 20]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{aed6af07-4914-49b9-ac75-8fdac6ad13d2}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:50]]></BackupTime>
+    <ID><![CDATA[{843BB652-A513-47DC-A7A7-A08326D0B205}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 19]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{18c7b331-ce04-482f-b247-6f8add2cbd77}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:50]]></BackupTime>
+    <ID><![CDATA[{B5E3AB25-BA89-4917-B9A7-C8C46EE05647}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 18]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{22f31dda-f829-44b4-9b41-ce6b69c54cd8}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:50]]></BackupTime>
+    <ID><![CDATA[{AEB97C99-4D79-4985-9F8E-BE8EEF29681C}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 2]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{df9b4117-40ba-4c4f-a850-b423feea8a41}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:49]]></BackupTime>
+    <ID><![CDATA[{5670F5B8-4985-4171-8519-260D6B163DDC}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Slot 1]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{76d38d7d-fe7e-48bf-991c-899d4eb97378}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:49]]></BackupTime>
+    <ID><![CDATA[{78C6332F-8A89-4AF4-9676-F1CAA4DD6B5F}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Technology Toolbox PKI Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{bdb979d6-e520-4c3d-aa01-b2ce1391dc60}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:49]]></BackupTime>
+    <ID><![CDATA[{F6349FFB-DC3C-47D6-B697-631DE8973FAB}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Roaming User Profile Policy - Disable]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{44bbfcbe-39dd-4e17-abaf-ee81ed068adf}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:48]]></BackupTime>
+    <ID><![CDATA[{43537CE2-C675-4F2E-9972-F696D798CC58}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Roaming User Profile Policy - Enable]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{a6624e32-db52-4b1c-ae30-8a136b3a4b9a}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:47]]></BackupTime>
+    <ID><![CDATA[{F5D718B7-BAFD-437F-8195-532AB42E2E13}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Folder Redirection Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{bc82c58d-6139-44ae-a366-58ccaa11c20d}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:45]]></BackupTime>
+    <ID><![CDATA[{2A0F26A0-A8EE-4F3C-945E-0374BC849A22}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Logon/Logoff Scripts Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{d838efb3-092b-46b8-9e2e-7e1aff1326d0}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:45]]></BackupTime>
+    <ID><![CDATA[{DC1FB7D8-9709-4C32-A8FB-8FD3255C2278}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Restricted Groups Policy - Development]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{f76c597b-09cd-41d6-8df6-504e7e521369}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:44]]></BackupTime>
+    <ID><![CDATA[{D0188CD1-EBC6-4B1F-9267-F29AFDFCD0FF}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Remote Desktop Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{e1a84024-ce23-4b94-a80d-6fde017d59a2}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:43]]></BackupTime>
+    <ID><![CDATA[{59C91456-0CEC-4165-9782-75E2B62DA3D7}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - Manual]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{82bb994c-9982-42c4-b7c1-0e61a3c2f580}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:42]]></BackupTime>
+    <ID><![CDATA[{FC81E953-1E3A-4EA9-98F8-4C8A3103B098}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Windows Update Policy - WSUS]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{b738936b-c31b-4ccb-b1d3-b3e67a769074}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:41]]></BackupTime>
+    <ID><![CDATA[{5614A685-A51D-4DE4-AF1C-D59C0A9D2003}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Security Settings Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{6ac1786c-016f-11d2-945f-00c04fb984f9}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:40]]></BackupTime>
+    <ID><![CDATA[{8A578444-BA71-4478-98C3-7D76466DBFA0}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Default Domain Controllers Policy]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
+    <GPOGuid><![CDATA[{31b2f340-016d-11d2-945f-00c04fb984f9}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-14T14:33:39]]></BackupTime>
+    <ID><![CDATA[{5A092960-C531-44FD-BCAB-93CE6207F492}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Default Domain Policy]]></GPODisplayName>
+  </BackupInst>
+</Backups>

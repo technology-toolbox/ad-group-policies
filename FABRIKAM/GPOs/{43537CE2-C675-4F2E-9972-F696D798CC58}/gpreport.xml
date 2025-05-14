@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{44bbfcbe-39dd-4e17-abaf-ee81ed068adf}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.fabrikam.com</Domain>
+  </Identifier>
+  <Name>Roaming User Profile Policy - Enable</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2014-01-17T21:27:25</CreatedTime>
+  <ModifiedTime>2025-01-02T00:49:34</ModifiedTime>
+  <ReadTime>2025-05-14T14:33:48.9198817Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;S-1-5-21-1354021876-1831262814-3449474082-4605)(A;;LCRPRC;;;DC)(A;CI;LCRPRC;;;S-1-5-21-1354021876-1831262814-3449474082-4605)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-1354021876-1831262814-3449474082-519)(A;CI;LCRPRC;;;AU)(A;CI;LCRPLORC;;;ED)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-4605</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Roaming User Profiles Users and Computers</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-515</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Computers</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>false</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>2</VersionDirectory>
+    <VersionSysvol>2</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q1:RegistrySettings">
+        <q1:Policy>
+          <q1:Name>Synchronize all offline files before logging off</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Determines whether offline files are fully synchronized when users log off.
+
+This setting also disables the "Synchronize all offline files before logging off" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
+
+If you enable this setting, offline files are fully synchronized. Full synchronization ensures that offline files are complete and current.
+
+If you disable this setting, the system only performs a quick synchronization. Quick synchronization ensures that files are complete, but does not ensure that they are current.
+
+If you do not configure this setting, the system performs a quick synchronization by default, but users can change this option.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+
+Tip: To change the synchronization method without changing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then select the "Synchronize all offline files before logging off" option.</q1:Explain>
+          <q1:Supported>Windows Server 2003, Windows XP, and Windows 2000 only</q1:Supported>
+          <q1:Category>Network/Offline Files</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Synchronize offline files before suspend</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Determines whether offline files are synchonized before a computer is suspended.
+
+If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
+
+If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
+
+Note: If the computer is suspended by closing the display on a portable computer, files are not synchronized. If multiple users are logged on to the computer at the time the computer is suspended, a synchronization is not performed.</q1:Explain>
+          <q1:Supported>Windows Server 2003, Windows XP, and Windows 2000 only</q1:Supported>
+          <q1:Category>Network/Offline Files</q1:Category>
+          <q1:Text>
+            <q1:Name>Type of synchronization to perform when suspending:</q1:Name>
+          </q1:Text>
+          <q1:Text>
+            <q1:Name> </q1:Name>
+          </q1:Text>
+          <q1:DropDownList>
+            <q1:Name>Action:</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Full</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>3</VersionDirectory>
+    <VersionSysvol>3</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q2:RegistrySettings">
+        <q2:Policy>
+          <q2:Name>Exclude directories in roaming profile</q2:Name>
+          <q2:State>Enabled</q2:State>
+          <q2:Comment>2018-06-07 - On a new Windows 10 VM, when logged in as TECHTOOLBOX\jjameson-admin, the user profile size exceeded 250 MB (e.g. 127 MB in the AppData\Local\Microsoft\OneDrive folder alone). Note that AppData\Local is *supposed* to be excluded from roaming profiles by default -- so this appears to be a bug.
+
+After running the Disk Cleanup utility, the profile size was reduced to 232 MB.
+
+To resolve the issue, this group policy setting was enabled and configured with the default value ("AppData\Local;AppData\LocalLow;$Recycle.Bin"). After rebooting the VM, the user profile size was reduced to 3 MB.
+
+References:
+
+Appdata\Local and LocalLow following roaming profile?? - https://social.technet.microsoft.com/Forums/en-US/1c618a22-b48a-43ca-81cc-64836c058207/appdatalocal-and-locallow-following-roaming-profile?forum=winserverGP</q2:Comment>
+          <q2:Explain>This policy setting lets you exclude folders that are normally included in the user's profile. As a result, these folders do not need to be stored by the network server on which the profile resides and do not follow users to other computers.
+
+Note: When excluding content from the profile you should try to exclude the narrowest set of data that will address your needs. For example, if there is one application with data that should not be roamed then add only that application's specific folder under the AppData\Roaming folder rather than all of the AppData\Roaming folder to the exclusion list.
+
+By default, the Appdata\Local and Appdata\LocalLow folders and all their subfolders such as the History, Temp, and Temporary Internet Files folders are excluded from the user's roaming profile.
+
+In operating systems earlier than Microsoft Windows Vista, only the History, Local Settings, Temp, and Temporary Internet Files folders are excluded from the user's roaming profile by default.
+
+If you enable this policy setting, you can exclude additional folders.
+
+If you disable this policy setting or do not configure it, only the default folders are excluded.
+
+Note: You cannot use this policy setting to include the default folders in a roaming user profile.</q2:Explain>
+          <q2:Supported>At least Windows 2000</q2:Supported>
+          <q2:Category>System/User Profiles</q2:Category>
+          <q2:EditText>
+            <q2:Name>Prevent the following directories from roaming with the profile:</q2:Name>
+            <q2:State>Enabled</q2:State>
+            <q2:Value>AppData\Local;AppData\LocalLow;$Recycle.Bin;.docker;.dotnet;.kube;.minikube;.nuget;.vs-kubernetes;Downloads;Saved Games;Tracing;vsdbg</q2:Value>
+          </q2:EditText>
+          <q2:Text>
+            <q2:Name>You can enter multiple directory names, semi-colon separated,</q2:Name>
+          </q2:Text>
+          <q2:Text>
+            <q2:Name>all relative to the root of the user's profile</q2:Name>
+          </q2:Text>
+        </q2:Policy>
+        <q2:Policy>
+          <q2:Name>Limit profile size</q2:Name>
+          <q2:State>Enabled</q2:State>
+          <q2:Explain>This policy setting sets the maximum size of each user profile and determines the system's response when a user profile reaches the maximum size. This policy setting affects both local and roaming profiles.
+
+If you disable this policy setting or do not configure it, the system does not limit the size of user profiles.
+
+If you enable this policy setting, you can:
+
+-- Set a maximum permitted user profile size.
+-- Determine whether the registry files are included in the calculation of the profile size.
+-- Determine whether users are notified when the profile exceeds the permitted maximum size.
+-- Specify a customized message notifying users of the oversized profile.
+-- Determine how often the customized message is displayed.
+
+Note: In operating systems earlier than Microsoft Windows Vista, Windows will not allow users to log off until the profile size has been reduced to within the allowable limit. In Microsoft Windows Vista, Windows will not block users from logging off. Instead, if the user has a roaming user profile, Windows will not synchronize the user's profile with the roaming profile server if the maximum profile size limit specified here is exceeded.</q2:Explain>
+          <q2:Supported>At least Windows 2000</q2:Supported>
+          <q2:Category>System/User Profiles</q2:Category>
+          <q2:EditText>
+            <q2:Name>Custom Message</q2:Name>
+            <q2:State>Enabled</q2:State>
+            <q2:Value>You have exceeded your profile storage space. Before you can log off, you need to move some items from your profile to network or local storage.</q2:Value>
+          </q2:EditText>
+          <q2:Numeric>
+            <q2:Name>Max Profile size (KB)</q2:Name>
+            <q2:State>Enabled</q2:State>
+            <q2:Value>250000</q2:Value>
+          </q2:Numeric>
+          <q2:CheckBox>
+            <q2:Name>Show registry files in the file list</q2:Name>
+            <q2:State>Disabled</q2:State>
+          </q2:CheckBox>
+          <q2:CheckBox>
+            <q2:Name>Notify user when profile storage space is exceeded.</q2:Name>
+            <q2:State>Enabled</q2:State>
+          </q2:CheckBox>
+          <q2:Numeric>
+            <q2:Name>Remind user every X minutes:</q2:Name>
+            <q2:State>Enabled</q2:State>
+            <q2:Value>15</q2:Value>
+          </q2:Numeric>
+        </q2:Policy>
+        <q2:Blocked>false</q2:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </User>
+</GPO>

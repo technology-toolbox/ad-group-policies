@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{6ac1786c-016f-11d2-945f-00c04fb984f9}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.fabrikam.com</Domain>
+  </Identifier>
+  <Name>Default Domain Controllers Policy</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2013-05-09T23:32:18</CreatedTime>
+  <ModifiedTime>2025-05-06T11:54:00</ModifiedTime>
+  <ReadTime>2025-05-14T14:33:41.6232493Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-1354021876-1831262814-3449474082-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>17</VersionDirectory>
+    <VersionSysvol>17</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Security" xsi:type="q1:SecuritySettings">
+        <q1:Audit>
+          <q1:Name>AuditAccountLogon</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditAccountManage</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditDSAccess</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditLogonEvents</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditObjectAccess</q1:Name>
+          <q1:SuccessAttempts>false</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditPolicyChange</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditPrivilegeUse</q1:Name>
+          <q1:SuccessAttempts>false</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditProcessTracking</q1:Name>
+          <q1:SuccessAttempts>false</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditSystemEvents</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeAssignPrimaryTokenPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-20</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\NETWORK SERVICE</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-19</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\LOCAL SERVICE</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeAuditPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-20</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\NETWORK SERVICE</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-19</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\LOCAL SERVICE</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeBackupPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-551</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Backup Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeBatchLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-1126</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\IIS_WPG</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-1001</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\SUPPORT_388945a0</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-19</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\LOCAL SERVICE</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-1124</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\IUSR_FAB-DC01</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-1131</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\svc-backup</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeChangeNotifyPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-554</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Pre-Windows 2000 Compatible Access</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-1-0</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeCreatePagefilePrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeCreatePermanentPrivilege</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeCreateTokenPrivilege</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeDebugPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeDenyBatchLogonRight</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeDenyInteractiveLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-1001</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\SUPPORT_388945a0</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeDenyNetworkLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-1001</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\SUPPORT_388945a0</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeDenyServiceLogonRight</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeEnableDelegationPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeIncreaseBasePriorityPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeIncreaseQuotaPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-20</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\NETWORK SERVICE</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-19</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\LOCAL SERVICE</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeInteractiveLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-550</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Print Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-548</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Account Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-551</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Backup Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-1124</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\IUSR_FAB-DC01</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeLoadDriverPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-550</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Print Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeLockMemoryPrivilege</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeMachineAccountPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeNetworkLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-554</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Pre-Windows 2000 Compatible Access</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-1-0</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeProfileSingleProcessPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeRemoteShutdownPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeRestorePrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-551</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Backup Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeSecurityPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-4118</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Exchange Servers</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeServiceLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-20</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\NETWORK SERVICE</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeShutdownPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-550</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Print Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-551</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Backup Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeSyncAgentPrivilege</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeSystemEnvironmentPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeSystemProfilePrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeSystemTimePrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-19</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\LOCAL SERVICE</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeTakeOwnershipPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeTcbPrivilege</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeUndockPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel</q1:KeyName>
+          <q1:SettingNumber>2</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Network security: LAN Manager authentication level</q1:Name>
+            <q1:Units />
+            <q1:DisplayString>Send NTLM response only</q1:DisplayString>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\EnableSecuritySignature</q1:KeyName>
+          <q1:SettingNumber>1</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Microsoft network server: Digitally sign communications (if client agrees)</q1:Name>
+            <q1:Units />
+            <q1:DisplayBoolean>true</q1:DisplayBoolean>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\RequireSecuritySignature</q1:KeyName>
+          <q1:SettingNumber>1</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Microsoft network server: Digitally sign communications (always)</q1:Name>
+            <q1:Units />
+            <q1:DisplayBoolean>true</q1:DisplayBoolean>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireSignOrSeal</q1:KeyName>
+          <q1:SettingNumber>1</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Domain member: Digitally encrypt or sign secure channel data (always)</q1:Name>
+            <q1:Units />
+            <q1:DisplayBoolean>true</q1:DisplayBoolean>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\LDAPServerIntegrity</q1:KeyName>
+          <q1:SettingNumber>2</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Domain controller: LDAP server signing requirements</q1:Name>
+            <q1:Units />
+            <q1:DisplayString>Require signing</q1:DisplayString>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Security</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/WindowsFirewall" xsi:type="q2:WindowsFirewallSettings">
+        <q2:GlobalSettings />
+        <q2:DomainProfile>
+          <q2:EnableFirewall>
+            <q2:Value>true</q2:Value>
+          </q2:EnableFirewall>
+        </q2:DomainProfile>
+      </Extension>
+      <Name>Windows Firewall</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q3="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q3:RegistrySettings">
+        <q3:Policy>
+          <q3:Name>Windows Defender Firewall: Allow inbound file and printer sharing exception</q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>Allows inbound file and printer sharing. To do this, Windows Defender Firewall opens UDP ports 137 and 138, and TCP ports 139 and 445.
+
+If you enable this policy setting, Windows Defender Firewall opens these ports so that this computer can receive print jobs and requests for access to shared files. You must specify the IP addresses or subnets from which these incoming messages are allowed. In the Windows Defender Firewall component of Control Panel, the "File and Printer Sharing" check box is selected and administrators cannot clear it.
+
+If you disable this policy setting, Windows Defender Firewall blocks these ports, which prevents this computer from sharing files and printers. If an administrator attempts to open any of these ports by adding them to a local port exceptions list, Windows Defender Firewall does not open the port. In the Windows Defender Firewall component of Control Panel, the "File and Printer Sharing" check box is cleared and administrators cannot select it.
+
+If you do not configure this policy setting, Windows Defender Firewall does not open these ports. Therefore, the computer cannot share files or printers unless an administrator uses other policy settings to open the required ports. In the Windows Defender Firewall component of Control Panel, the "File and Printer Sharing" check box is cleared. Administrators can change this check box.
+
+Note: If any policy setting opens TCP port 445, Windows Defender Firewall allows inbound ICMP echo requests (the message sent by the Ping utility), even if the "Windows Defender Firewall: Allow ICMP exceptions" policy setting would block them. Policy settings that can open TCP port 445 include "Windows Defender Firewall: Allow inbound file and printer sharing exception," "Windows Defender Firewall: Allow inbound remote administration exception," and "Windows Defender Firewall: Define inbound port exceptions."</q3:Explain>
+          <q3:Supported>At least Windows XP Professional with SP2</q3:Supported>
+          <q3:Category>Network/Network Connections/Windows Defender Firewall/Domain Profile</q3:Category>
+          <q3:EditText>
+            <q3:Name>Allow unsolicited incoming messages from these IP addresses:</q3:Name>
+            <q3:State>Enabled</q3:State>
+            <q3:Value />
+          </q3:EditText>
+          <q3:Text>
+            <q3:Name>Syntax:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Type "*" to allow messages from any network, or</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>else type a comma-separated list that contains</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>any number or combination of these:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   IP addresses, such as 10.0.0.1</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   Subnet descriptions, such as 10.2.3.0/24</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   The string "localsubnet"</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Example: to allow messages from 10.0.0.1,</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>10.0.0.2, and from any system on the</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>local subnet or on the 10.3.4.x subnet,</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>type the following in the "Allow unsolicited" </q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>incoming messages from these IP addresses":</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>  10.0.0.1,10.0.0.2,localsubnet,10.3.4.0/24</q3:Name>
+          </q3:Text>
+        </q3:Policy>
+        <q3:Policy>
+          <q3:Name>Windows Defender Firewall: Allow inbound remote administration exception </q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>Allows remote administration of this computer using administrative tools such as the Microsoft Management Console (MMC) and Windows Management Instrumentation (WMI). To do this, Windows Defender Firewall opens TCP ports 135 and 445. Services typically use these ports to communicate using remote procedure calls (RPC) and Distributed Component Object Model (DCOM). Additionally, on Windows XP Professional with at least SP2 and Windows Server 2003 with at least SP1, this policy setting also allows SVCHOST.EXE and LSASS.EXE to receive unsolicited incoming messages and allows hosted services to open additional dynamically-assigned ports, typically in the range of 1024 to 1034.  On Windows Vista, this policy setting does not control connections to SVCHOST.EXE and LSASS.EXE.
+
+If you enable this policy setting, Windows Defender Firewall allows the computer to receive the unsolicited incoming messages associated with remote administration. You must specify the IP addresses or subnets from which these incoming messages are allowed.
+
+If you disable or do not configure this policy setting, Windows Defender Firewall does not open TCP port 135 or 445. Also, on Windows XP Professional with at least SP2 and Windows Server 2003 with at least SP1, Windows Defender Firewall prevents SVCHOST.EXE and LSASS.EXE from receiving unsolicited incoming messages, and prevents hosted services from opening additional dynamically-assigned ports. Because disabling this policy setting does not block TCP port 445, it does not conflict with the "Windows Defender Firewall: Allow file and printer sharing exception" policy setting.
+
+Note: Malicious users often attempt to attack networks and computers using RPC and DCOM. We recommend that you contact the manufacturers of your critical programs to determine if they are hosted by SVCHOST.exe or LSASS.exe or if they require RPC and DCOM communication. If they do not, then do not enable this policy setting.
+
+Note: If any policy setting opens TCP port 445, Windows Defender Firewall allows inbound ICMP echo request messages (the message sent by the Ping utility), even if the "Windows Defender Firewall: Allow ICMP exceptions" policy setting would block them. Policy settings that can open TCP port 445 include "Windows Defender Firewall: Allow inbound file and printer sharing exception," "Windows Defender Firewall: Allow inbound remote administration exception," and "Windows Defender Firewall: Define inbound port exceptions."</q3:Explain>
+          <q3:Supported>At least Windows XP Professional with SP2</q3:Supported>
+          <q3:Category>Network/Network Connections/Windows Defender Firewall/Domain Profile</q3:Category>
+          <q3:EditText>
+            <q3:Name>Allow unsolicited incoming messages from these IP addresses:</q3:Name>
+            <q3:State>Enabled</q3:State>
+            <q3:Value />
+          </q3:EditText>
+          <q3:Text>
+            <q3:Name>Syntax:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Type "*" to allow messages from any network, or</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>else type a comma-separated list that contains</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>any number or combination of these:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   IP addresses, such as 10.0.0.1</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   Subnet descriptions, such as 10.2.3.0/24</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   The string "localsubnet"</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Example: to allow messages from 10.0.0.1,</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>10.0.0.2, and from any system on the</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>local subnet or on the 10.3.4.x subnet,</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>type the following in the "Allow unsolicited" </q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>incoming messages from these IP addresses":</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>  10.0.0.1,10.0.0.2,localsubnet,10.3.4.0/24</q3:Name>
+          </q3:Text>
+        </q3:Policy>
+        <q3:Policy>
+          <q3:Name>Windows Defender Firewall: Define inbound port exceptions</q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>Allows you to view and change the inbound port exceptions list defined by Group Policy. Windows Defender Firewall uses two port exception lists: one is defined by Group Policy settings and the other is defined by the Windows Defender Firewall component in Control Panel.
+
+If you enable this policy setting, you can view and change the inbound port exceptions list defined by Group Policy. To view this port exceptions list, enable the policy setting and then click the Show button. To add a port, enable the policy setting, note the syntax, click the Show button. In the Show Contents dialog box type a definition string that uses the syntax format. To remove a port, click its definition, and then press the DELETE key. To edit a definition, remove the current definition from the list and add a new one with different parameters. To allow administrators to add ports to the local port exceptions list that is defined by the Windows Defender Firewall component in Control Panel, also enable the "Windows Defender Firewall: Allow local port exceptions" policy setting.
+
+If you disable this policy setting, the port exceptions list defined by Group Policy is deleted, but other policy settings can continue to open or block ports. Also, if a local port exceptions list exists, it is ignored unless you enable the "Windows Defender Firewall: Allow local port exceptions" policy setting.
+
+If you do not configure this policy setting, Windows Defender Firewall uses only the local port exceptions list that administrators define by using the Windows Defender Firewall component in Control Panel. Other policy settings can continue to open or block ports.
+
+Note: If you type an invalid definition string, Windows Defender Firewall adds it to the list without checking for errors, and therefore you can accidentally create multiple entries for the same port with conflicting Scope or Status values. Scope parameters are combined for multiple entries. If entries have different Status values, any definition with the Status set to "disabled" overrides all definitions with the Status set to "enabled," and the port does not receive messages. Therefore, if you set the Status of a port to "disabled," you can prevent administrators from using the Windows Defender Firewall component in Control Panel to enable the port.
+
+Note: The only effect of setting the Status value to "disabled" is that Windows Defender Firewall ignores other definitions for that port that set the Status to "enabled." If another policy setting opens a port, or if a program in the program exceptions list asks Windows Defender Firewall to open a port, Windows Defender Firewall opens the port.
+
+Note: If any policy setting opens TCP port 445, Windows Defender Firewall allows inbound ICMP echo request messages (the message sent by the Ping utility), even if the "Windows Defender Firewall: Allow ICMP exceptions" policy setting would block them. Policy settings that can open TCP port 445 include "Windows Defender Firewall: Allow inbound file and printer sharing exception," "Windows Defender Firewall: Allow inbound remote administration exception," and "Windows Defender Firewall: Define inbound port exceptions."</q3:Explain>
+          <q3:Supported>At least Windows XP Professional with SP2</q3:Supported>
+          <q3:Category>Network/Network Connections/Windows Defender Firewall/Domain Profile</q3:Category>
+          <q3:ListBox>
+            <q3:Name>Define port exceptions:</q3:Name>
+            <q3:State>Enabled</q3:State>
+            <q3:ExplicitValue>false</q3:ExplicitValue>
+            <q3:Additive>true</q3:Additive>
+            <q3:Value>
+              <q3:Element>
+                <q3:Data>123:udp:*:enabled:NTP</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>3268:tcp:*:enabled:Global Catalog LDAP</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>389:tcp:*:enabled:LDAP</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>389:udp:*:enabled:LDAP</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>53:tcp:*:enabled:DNS</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>53:udp:*:enabled:DNS</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>53211:tcp:*:enabled:AD Replication</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>53212:tcp:*:enabled:File Replication Service</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>88:tcp:*:enabled:Kerberos</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>88:udp:*:enabled:Kerberos</q3:Data>
+              </q3:Element>
+            </q3:Value>
+          </q3:ListBox>
+          <q3:Text>
+            <q3:Name>Specify the port to open or block.</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Syntax:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>  &lt;Port&gt;:&lt;Transport&gt;:&lt;Scope&gt;:&lt;Status&gt;:&lt;Name&gt;</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>    &lt;Port&gt; is a decimal port number</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>    &lt;Transport&gt; is either "TCP" or "UDP"</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>    &lt;Scope&gt; is either "*" (for all networks) or</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>      a comma-separated list that contains</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>      any number or combination of these:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>        IP addresses, such as 10.0.0.1</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>        Subnet descriptions, such as 10.2.3.0/24</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>        The string "localsubnet"</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>    &lt;Status&gt; is either "enabled" or "disabled"</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>    &lt;Name&gt; is a text string</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Example:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>The following definition string adds TCP port 80</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>to the port exceptions list and allows it to</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>receive messages from 10.0.0.1, 10.0.0.2, or any</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>system on the 10.3.4.x subnet:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>  80:TCP:10.0.0.1,10.0.0.2,10.3.4.0/24:enabled:Web service</q3:Name>
+          </q3:Text>
+        </q3:Policy>
+        <q3:Policy>
+          <q3:Name>Windows Defender Firewall: Protect all network connections</q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>Turns on Windows Defender Firewall.
+
+If you enable this policy setting, Windows Defender Firewall runs and ignores the "Computer Configuration\Administrative Templates\Network\Network Connections\Prohibit use of Internet Connection Firewall on your DNS domain network" policy setting.
+
+If you disable this policy setting, Windows Defender Firewall does not run. This is the only way to ensure that Windows Defender Firewall does not run and administrators who log on locally cannot start it.
+
+If you do not configure this policy setting, administrators can use the Windows Defender Firewall component in Control Panel to turn Windows Defender Firewall on or off, unless the "Prohibit use of Internet Connection Firewall on your DNS domain network" policy setting overrides.</q3:Explain>
+          <q3:Supported>At least Windows XP Professional with SP2</q3:Supported>
+          <q3:Category>Network/Network Connections/Windows Defender Firewall/Domain Profile</q3:Category>
+        </q3:Policy>
+        <q3:Policy>
+          <q3:Name>Windows Defender Firewall: Allow inbound file and printer sharing exception</q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>Allows inbound file and printer sharing. To do this, Windows Defender Firewall opens UDP ports 137 and 138, and TCP ports 139 and 445.
+
+If you enable this policy setting, Windows Defender Firewall opens these ports so that this computer can receive print jobs and requests for access to shared files. You must specify the IP addresses or subnets from which these incoming messages are allowed. In the Windows Defender Firewall component of Control Panel, the "File and Printer Sharing" check box is selected and administrators cannot clear it.
+
+If you disable this policy setting, Windows Defender Firewall blocks these ports, which prevents this computer from sharing files and printers. If an administrator attempts to open any of these ports by adding them to a local port exceptions list, Windows Defender Firewall does not open the port. In the Windows Defender Firewall component of Control Panel, the "File and Printer Sharing" check box is cleared and administrators cannot select it.
+
+If you do not configure this policy setting, Windows Defender Firewall does not open these ports. Therefore, the computer cannot share files or printers unless an administrator uses other policy settings to open the required ports. In the Windows Defender Firewall component of Control Panel, the "File and Printer Sharing" check box is cleared. Administrators can change this check box.
+
+Note: If any policy setting opens TCP port 445, Windows Defender Firewall allows inbound ICMP echo requests (the message sent by the Ping utility), even if the "Windows Defender Firewall: Allow ICMP exceptions" policy setting would block them. Policy settings that can open TCP port 445 include "Windows Defender Firewall: Allow inbound file and printer sharing exception," "Windows Defender Firewall: Allow inbound remote administration exception," and "Windows Defender Firewall: Define inbound port exceptions."</q3:Explain>
+          <q3:Supported>At least Windows XP Professional with SP2</q3:Supported>
+          <q3:Category>Network/Network Connections/Windows Defender Firewall/Standard Profile</q3:Category>
+          <q3:EditText>
+            <q3:Name>Allow unsolicited incoming messages from these IP addresses:</q3:Name>
+            <q3:State>Enabled</q3:State>
+            <q3:Value />
+          </q3:EditText>
+          <q3:Text>
+            <q3:Name>Syntax:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Type "*" to allow messages from any network, or</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>else type a comma-separated list that contains</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>any number or combination of these:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   IP addresses, such as 10.0.0.1</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   Subnet descriptions, such as 10.2.3.0/24</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   The string "localsubnet"</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Example: to allow messages from 10.0.0.1,</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>10.0.0.2, and from any system on the</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>local subnet or on the 10.3.4.x subnet,</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>type the following in the "Allow unsolicited" </q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>incoming messages from these IP addresses":</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>  10.0.0.1,10.0.0.2,localsubnet,10.3.4.0/24</q3:Name>
+          </q3:Text>
+        </q3:Policy>
+        <q3:Policy>
+          <q3:Name>Windows Defender Firewall: Allow inbound remote administration exception </q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>Allows remote administration of this computer using administrative tools such as the Microsoft Management Console (MMC) and Windows Management Instrumentation (WMI). To do this, Windows Defender Firewall opens TCP ports 135 and 445. Services typically use these ports to communicate using remote procedure calls (RPC) and Distributed Component Object Model (DCOM). Additionally, on Windows XP Professional with at least SP2 and Windows Server 2003 with at least SP1, this policy setting also allows SVCHOST.EXE and LSASS.EXE to receive unsolicited incoming messages and allows hosted services to open additional dynamically-assigned ports, typically in the range of 1024 to 1034.  On Windows Vista, this policy setting does not control connections to SVCHOST.EXE and LSASS.EXE.
+
+If you enable this policy setting, Windows Defender Firewall allows the computer to receive the unsolicited incoming messages associated with remote administration. You must specify the IP addresses or subnets from which these incoming messages are allowed.
+
+If you disable or do not configure this policy setting, Windows Defender Firewall does not open TCP port 135 or 445. Also, on Windows XP Professional with at least SP2 and Windows Server 2003 with at least SP1, Windows Defender Firewall prevents SVCHOST.EXE and LSASS.EXE from receiving unsolicited incoming messages, and prevents hosted services from opening additional dynamically-assigned ports. Because disabling this policy setting does not block TCP port 445, it does not conflict with the "Windows Defender Firewall: Allow file and printer sharing exception" policy setting.
+
+Note: Malicious users often attempt to attack networks and computers using RPC and DCOM. We recommend that you contact the manufacturers of your critical programs to determine if they are hosted by SVCHOST.exe or LSASS.exe or if they require RPC and DCOM communication. If they do not, then do not enable this policy setting.
+
+Note: If any policy setting opens TCP port 445, Windows Defender Firewall allows inbound ICMP echo request messages (the message sent by the Ping utility), even if the "Windows Defender Firewall: Allow ICMP exceptions" policy setting would block them. Policy settings that can open TCP port 445 include "Windows Defender Firewall: Allow inbound file and printer sharing exception," "Windows Defender Firewall: Allow inbound remote administration exception," and "Windows Defender Firewall: Define inbound port exceptions."</q3:Explain>
+          <q3:Supported>At least Windows XP Professional with SP2</q3:Supported>
+          <q3:Category>Network/Network Connections/Windows Defender Firewall/Standard Profile</q3:Category>
+          <q3:EditText>
+            <q3:Name>Allow unsolicited incoming messages from these IP addresses:</q3:Name>
+            <q3:State>Enabled</q3:State>
+            <q3:Value />
+          </q3:EditText>
+          <q3:Text>
+            <q3:Name>Syntax:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Type "*" to allow messages from any network, or</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>else type a comma-separated list that contains</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>any number or combination of these:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   IP addresses, such as 10.0.0.1</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   Subnet descriptions, such as 10.2.3.0/24</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>   The string "localsubnet"</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Example: to allow messages from 10.0.0.1,</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>10.0.0.2, and from any system on the</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>local subnet or on the 10.3.4.x subnet,</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>type the following in the "Allow unsolicited" </q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>incoming messages from these IP addresses":</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>  10.0.0.1,10.0.0.2,localsubnet,10.3.4.0/24</q3:Name>
+          </q3:Text>
+        </q3:Policy>
+        <q3:Policy>
+          <q3:Name>Windows Defender Firewall: Define inbound port exceptions</q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>Allows you to view and change the inbound port exceptions list defined by Group Policy. Windows Defender Firewall uses two port exception lists: one is defined by Group Policy settings and the other is defined by the Windows Defender Firewall component in Control Panel.
+
+If you enable this policy setting, you can view and change the inbound port exceptions list defined by Group Policy. To view this port exceptions list, enable the policy setting and then click the Show button. To add a port, enable the policy setting, note the syntax, click the Show button. In the Show Contents dialog box type a definition string that uses the syntax format. To remove a port, click its definition, and then press the DELETE key. To edit a definition, remove the current definition from the list and add a new one with different parameters. To allow administrators to add ports to the local port exceptions list that is defined by the Windows Defender Firewall component in Control Panel, also enable the "Windows Defender Firewall: Allow local port exceptions" policy setting.
+
+If you disable this policy setting, the port exceptions list defined by Group Policy is deleted, but other policy settings can continue to open or block ports. Also, if a local port exceptions list exists, it is ignored unless you enable the "Windows Defender Firewall: Allow local port exceptions" policy setting.
+
+If you do not configure this policy setting, Windows Defender Firewall uses only the local port exceptions list that administrators define by using the Windows Defender Firewall component in Control Panel. Other policy settings can continue to open or block ports.
+
+Note: If you type an invalid definition string, Windows Defender Firewall adds it to the list without checking for errors, and therefore you can accidentally create multiple entries for the same port with conflicting Scope or Status values. Scope parameters are combined for multiple entries. If entries have different Status values, any definition with the Status set to "disabled" overrides all definitions with the Status set to "enabled," and the port does not receive messages. Therefore, if you set the Status of a port to "disabled," you can prevent administrators from using the Windows Defender Firewall component in Control Panel to enable the port.
+
+Note: The only effect of setting the Status value to "disabled" is that Windows Defender Firewall ignores other definitions for that port that set the Status to "enabled." If another policy setting opens a port, or if a program in the program exceptions list asks Windows Defender Firewall to open a port, Windows Defender Firewall opens the port.
+
+Note: If any policy setting opens TCP port 445, Windows Defender Firewall allows inbound ICMP echo request messages (the message sent by the Ping utility), even if the "Windows Defender Firewall: Allow ICMP exceptions" policy setting would block them. Policy settings that can open TCP port 445 include "Windows Defender Firewall: Allow inbound file and printer sharing exception," "Windows Defender Firewall: Allow inbound remote administration exception," and "Windows Defender Firewall: Define inbound port exceptions."</q3:Explain>
+          <q3:Supported>At least Windows XP Professional with SP2</q3:Supported>
+          <q3:Category>Network/Network Connections/Windows Defender Firewall/Standard Profile</q3:Category>
+          <q3:ListBox>
+            <q3:Name>Define port exceptions:</q3:Name>
+            <q3:State>Enabled</q3:State>
+            <q3:ExplicitValue>false</q3:ExplicitValue>
+            <q3:Additive>true</q3:Additive>
+            <q3:Value>
+              <q3:Element>
+                <q3:Data>123:udp:*:enabled:NTP</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>3268:tcp:*:enabled:Global Catalog LDAP</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>389:tcp:*:enabled:LDAP</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>389:udp:*:enabled:LDAP</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>53:tcp:*:enabled:DNS</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>53:udp:*:enabled:DNS</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>53211:tcp:*:enabled:AD Replication</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>53212:tcp:*:enabled:File Replication Service</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>88:tcp:*:enabled:Kerberos</q3:Data>
+              </q3:Element>
+              <q3:Element>
+                <q3:Data>88:udp:*:enabled:Kerberos</q3:Data>
+              </q3:Element>
+            </q3:Value>
+          </q3:ListBox>
+          <q3:Text>
+            <q3:Name>Specify the port to open or block.</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Syntax:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>  &lt;Port&gt;:&lt;Transport&gt;:&lt;Scope&gt;:&lt;Status&gt;:&lt;Name&gt;</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>    &lt;Port&gt; is a decimal port number</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>    &lt;Transport&gt; is either "TCP" or "UDP"</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>    &lt;Scope&gt; is either "*" (for all networks) or</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>      a comma-separated list that contains</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>      any number or combination of these:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>        IP addresses, such as 10.0.0.1</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>        Subnet descriptions, such as 10.2.3.0/24</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>        The string "localsubnet"</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>    &lt;Status&gt; is either "enabled" or "disabled"</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>    &lt;Name&gt; is a text string</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>Example:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>The following definition string adds TCP port 80</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>to the port exceptions list and allows it to</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>receive messages from 10.0.0.1, 10.0.0.2, or any</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>system on the 10.3.4.x subnet:</q3:Name>
+          </q3:Text>
+          <q3:Text>
+            <q3:Name>  80:TCP:10.0.0.1,10.0.0.2,10.3.4.0/24:enabled:Web service</q3:Name>
+          </q3:Text>
+        </q3:Policy>
+        <q3:Policy>
+          <q3:Name>Windows Defender Firewall: Protect all network connections</q3:Name>
+          <q3:State>Enabled</q3:State>
+          <q3:Explain>Turns on Windows Defender Firewall.
+
+If you enable this policy setting, Windows Defender Firewall runs and ignores the "Computer Configuration\Administrative Templates\Network\Network Connections\Prohibit use of Internet Connection Firewall on your DNS domain network" policy setting.
+
+If you disable this policy setting, Windows Defender Firewall does not run. This is the only way to ensure that Windows Defender Firewall does not run and administrators who log on locally cannot start it.
+
+If you do not configure this policy setting, administrators can use the Windows Defender Firewall component in Control Panel to turn Windows Defender Firewall on or off, unless the "Prohibit use of Internet Connection Firewall on your DNS domain network" policy setting overrides.</q3:Explain>
+          <q3:Supported>At least Windows XP Professional with SP2</q3:Supported>
+          <q3:Category>Network/Network Connections/Windows Defender Firewall/Standard Profile</q3:Category>
+        </q3:Policy>
+        <q3:Blocked>false</q3:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>0</VersionDirectory>
+    <VersionSysvol>0</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>Domain Controllers</SOMName>
+    <SOMPath>corp.fabrikam.com/Domain Controllers</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

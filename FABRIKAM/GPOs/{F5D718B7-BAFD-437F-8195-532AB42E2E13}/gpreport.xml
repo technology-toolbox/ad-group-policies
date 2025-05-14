@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{a6624e32-db52-4b1c-ae30-8a136b3a4b9a}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.fabrikam.com</Domain>
+  </Identifier>
+  <Name>Folder Redirection Policy</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2014-01-17T21:16:00</CreatedTime>
+  <ModifiedTime>2025-01-02T00:49:34</ModifiedTime>
+  <ReadTime>2025-05-14T14:33:48.3105258Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;S-1-5-21-1354021876-1831262814-3449474082-4604)(A;;LCRPRC;;;DC)(A;CI;LCRPRC;;;S-1-5-21-1354021876-1831262814-3449474082-4604)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-1354021876-1831262814-3449474082-519)(A;CI;LCRPRC;;;AU)(A;CI;LCRPLORC;;;ED)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-4604</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Folder Redirection Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-515</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Computers</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>false</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>2</VersionDirectory>
+    <VersionSysvol>2</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q1:RegistrySettings">
+        <q1:Policy>
+          <q1:Name>Synchronize all offline files before logging off</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Determines whether offline files are fully synchronized when users log off.
+
+This setting also disables the "Synchronize all offline files before logging off" option on the Offline Files tab. This prevents users from trying to change the option while a setting controls it.
+
+If you enable this setting, offline files are fully synchronized. Full synchronization ensures that offline files are complete and current.
+
+If you disable this setting, the system only performs a quick synchronization. Quick synchronization ensures that files are complete, but does not ensure that they are current.
+
+If you do not configure this setting, the system performs a quick synchronization by default, but users can change this option.
+
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
+
+Tip: To change the synchronization method without changing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then select the "Synchronize all offline files before logging off" option.</q1:Explain>
+          <q1:Supported>Windows Server 2003, Windows XP, and Windows 2000 only</q1:Supported>
+          <q1:Category>Network/Offline Files</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Synchronize offline files before suspend</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Determines whether offline files are synchonized before a computer is suspended.
+
+If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
+
+If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
+
+Note: If the computer is suspended by closing the display on a portable computer, files are not synchronized. If multiple users are logged on to the computer at the time the computer is suspended, a synchronization is not performed.</q1:Explain>
+          <q1:Supported>Windows Server 2003, Windows XP, and Windows 2000 only</q1:Supported>
+          <q1:Category>Network/Offline Files</q1:Category>
+          <q1:Text>
+            <q1:Name>Type of synchronization to perform when suspending:</q1:Name>
+          </q1:Text>
+          <q1:Text>
+            <q1:Name> </q1:Name>
+          </q1:Text>
+          <q1:DropDownList>
+            <q1:Name>Action:</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Full</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>19</VersionDirectory>
+    <VersionSysvol>19</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/FolderRedirection" xsi:type="q2:FolderRedirectionSettings">
+        <q2:Folder>
+          <q2:Id>{3EB685DB-65F9-4CF6-A03A-E3EF65729F3D}</q2:Id>
+          <q2:Location>
+            <q2:DestinationPath>\\FAB-FS01\Users$\%USERNAME%\Application Data</q2:DestinationPath>
+            <q2:SecurityGroup>
+              <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">s-1-1-0</SID>
+              <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+            </q2:SecurityGroup>
+          </q2:Location>
+          <q2:GrantExclusiveRights>true</q2:GrantExclusiveRights>
+          <q2:MoveContents>true</q2:MoveContents>
+          <q2:FollowParent>false</q2:FollowParent>
+          <q2:ApplyToDownLevel>true</q2:ApplyToDownLevel>
+          <q2:DoNotCare>false</q2:DoNotCare>
+          <q2:RedirectToLocal>false</q2:RedirectToLocal>
+          <q2:PolicyRemovalBehavior>RestoreContents</q2:PolicyRemovalBehavior>
+          <q2:ConfigurationControl>GP</q2:ConfigurationControl>
+          <q2:PrimaryComputerEvaluation>PrimaryComputerPolicyDisabled</q2:PrimaryComputerEvaluation>
+        </q2:Folder>
+        <q2:Folder>
+          <q2:Id>{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}</q2:Id>
+          <q2:Location>
+            <q2:DestinationPath>\\FAB-FS01\Users$\%USERNAME%\Desktop</q2:DestinationPath>
+            <q2:SecurityGroup>
+              <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">s-1-1-0</SID>
+              <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+            </q2:SecurityGroup>
+          </q2:Location>
+          <q2:GrantExclusiveRights>true</q2:GrantExclusiveRights>
+          <q2:MoveContents>true</q2:MoveContents>
+          <q2:FollowParent>false</q2:FollowParent>
+          <q2:ApplyToDownLevel>true</q2:ApplyToDownLevel>
+          <q2:DoNotCare>false</q2:DoNotCare>
+          <q2:RedirectToLocal>false</q2:RedirectToLocal>
+          <q2:PolicyRemovalBehavior>RestoreContents</q2:PolicyRemovalBehavior>
+          <q2:ConfigurationControl>GP</q2:ConfigurationControl>
+          <q2:PrimaryComputerEvaluation>PrimaryComputerPolicyDisabled</q2:PrimaryComputerEvaluation>
+        </q2:Folder>
+        <q2:Folder>
+          <q2:Id>{FDD39AD0-238F-46AF-ADB4-6C85480369C7}</q2:Id>
+          <q2:Location>
+            <q2:DestinationPath>\\FAB-FS01\Users$\%USERNAME%\My Documents</q2:DestinationPath>
+            <q2:SecurityGroup>
+              <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">s-1-1-0</SID>
+              <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+            </q2:SecurityGroup>
+          </q2:Location>
+          <q2:GrantExclusiveRights>true</q2:GrantExclusiveRights>
+          <q2:MoveContents>true</q2:MoveContents>
+          <q2:FollowParent>false</q2:FollowParent>
+          <q2:ApplyToDownLevel>true</q2:ApplyToDownLevel>
+          <q2:DoNotCare>false</q2:DoNotCare>
+          <q2:RedirectToLocal>false</q2:RedirectToLocal>
+          <q2:PolicyRemovalBehavior>RestoreContents</q2:PolicyRemovalBehavior>
+          <q2:ConfigurationControl>GP</q2:ConfigurationControl>
+          <q2:PrimaryComputerEvaluation>PrimaryComputerPolicyDisabled</q2:PrimaryComputerEvaluation>
+        </q2:Folder>
+        <q2:Folder>
+          <q2:Id>{33E28130-4E1E-4676-835A-98395C3BC3BB}</q2:Id>
+          <q2:Location>
+            <q2:DestinationPath>My Pictures</q2:DestinationPath>
+            <q2:SecurityGroup>
+              <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">s-1-1-0</SID>
+              <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+            </q2:SecurityGroup>
+          </q2:Location>
+          <q2:GrantExclusiveRights>false</q2:GrantExclusiveRights>
+          <q2:MoveContents>false</q2:MoveContents>
+          <q2:FollowParent>true</q2:FollowParent>
+          <q2:ApplyToDownLevel>true</q2:ApplyToDownLevel>
+          <q2:DoNotCare>false</q2:DoNotCare>
+          <q2:RedirectToLocal>false</q2:RedirectToLocal>
+          <q2:PolicyRemovalBehavior>LeaveContents</q2:PolicyRemovalBehavior>
+          <q2:ConfigurationControl>GP</q2:ConfigurationControl>
+          <q2:PrimaryComputerEvaluation>PrimaryComputerPolicyDisabled</q2:PrimaryComputerEvaluation>
+        </q2:Folder>
+        <q2:Folder>
+          <q2:Id>{4BD8D571-6D19-48D3-BE97-422220080E43}</q2:Id>
+          <q2:Location>
+            <q2:DestinationPath>My Music</q2:DestinationPath>
+            <q2:SecurityGroup>
+              <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">s-1-1-0</SID>
+              <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+            </q2:SecurityGroup>
+          </q2:Location>
+          <q2:GrantExclusiveRights>false</q2:GrantExclusiveRights>
+          <q2:MoveContents>false</q2:MoveContents>
+          <q2:FollowParent>true</q2:FollowParent>
+          <q2:ApplyToDownLevel>true</q2:ApplyToDownLevel>
+          <q2:DoNotCare>false</q2:DoNotCare>
+          <q2:RedirectToLocal>false</q2:RedirectToLocal>
+          <q2:PolicyRemovalBehavior>LeaveContents</q2:PolicyRemovalBehavior>
+          <q2:ConfigurationControl>GP</q2:ConfigurationControl>
+          <q2:PrimaryComputerEvaluation>PrimaryComputerPolicyDisabled</q2:PrimaryComputerEvaluation>
+        </q2:Folder>
+        <q2:Folder>
+          <q2:Id>{18989B1D-99B5-455B-841C-AB7C74E4DDFC}</q2:Id>
+          <q2:Location>
+            <q2:DestinationPath>My Videos</q2:DestinationPath>
+            <q2:SecurityGroup>
+              <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">s-1-1-0</SID>
+              <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+            </q2:SecurityGroup>
+          </q2:Location>
+          <q2:GrantExclusiveRights>false</q2:GrantExclusiveRights>
+          <q2:MoveContents>false</q2:MoveContents>
+          <q2:FollowParent>true</q2:FollowParent>
+          <q2:ApplyToDownLevel>true</q2:ApplyToDownLevel>
+          <q2:DoNotCare>false</q2:DoNotCare>
+          <q2:RedirectToLocal>false</q2:RedirectToLocal>
+          <q2:PolicyRemovalBehavior>LeaveContents</q2:PolicyRemovalBehavior>
+          <q2:ConfigurationControl>GP</q2:ConfigurationControl>
+          <q2:PrimaryComputerEvaluation>PrimaryComputerPolicyDisabled</q2:PrimaryComputerEvaluation>
+        </q2:Folder>
+        <q2:Folder>
+          <q2:Id>{1777F761-68AD-4D8A-87BD-30B759FA33DD}</q2:Id>
+          <q2:Location>
+            <q2:DestinationPath>\\FAB-FS01\Users$\%USERNAME%\Favorites</q2:DestinationPath>
+            <q2:SecurityGroup>
+              <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">s-1-1-0</SID>
+              <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+            </q2:SecurityGroup>
+          </q2:Location>
+          <q2:GrantExclusiveRights>true</q2:GrantExclusiveRights>
+          <q2:MoveContents>true</q2:MoveContents>
+          <q2:FollowParent>false</q2:FollowParent>
+          <q2:ApplyToDownLevel>false</q2:ApplyToDownLevel>
+          <q2:DoNotCare>false</q2:DoNotCare>
+          <q2:RedirectToLocal>false</q2:RedirectToLocal>
+          <q2:PolicyRemovalBehavior>RestoreContents</q2:PolicyRemovalBehavior>
+          <q2:ConfigurationControl>GP</q2:ConfigurationControl>
+          <q2:PrimaryComputerEvaluation>PrimaryComputerPolicyDisabled</q2:PrimaryComputerEvaluation>
+        </q2:Folder>
+        <q2:Folder>
+          <q2:Id>{56784854-C6CB-462B-8169-88E350ACB882}</q2:Id>
+          <q2:Location>
+            <q2:DestinationPath>\\FAB-FS01\Users$\%USERNAME%\Contacts</q2:DestinationPath>
+            <q2:SecurityGroup>
+              <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">s-1-1-0</SID>
+              <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+            </q2:SecurityGroup>
+          </q2:Location>
+          <q2:GrantExclusiveRights>true</q2:GrantExclusiveRights>
+          <q2:MoveContents>true</q2:MoveContents>
+          <q2:FollowParent>false</q2:FollowParent>
+          <q2:ApplyToDownLevel>false</q2:ApplyToDownLevel>
+          <q2:DoNotCare>false</q2:DoNotCare>
+          <q2:RedirectToLocal>false</q2:RedirectToLocal>
+          <q2:PolicyRemovalBehavior>RestoreContents</q2:PolicyRemovalBehavior>
+          <q2:ConfigurationControl>GP</q2:ConfigurationControl>
+          <q2:PrimaryComputerEvaluation>PrimaryComputerPolicyDisabled</q2:PrimaryComputerEvaluation>
+        </q2:Folder>
+        <q2:Folder>
+          <q2:Id>{374DE290-123F-4565-9164-39C4925E467B}</q2:Id>
+          <q2:Location>
+            <q2:DestinationPath />
+            <q2:SecurityGroup>
+              <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">s-1-1-0</SID>
+              <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+            </q2:SecurityGroup>
+          </q2:Location>
+          <q2:GrantExclusiveRights>true</q2:GrantExclusiveRights>
+          <q2:MoveContents>true</q2:MoveContents>
+          <q2:FollowParent>false</q2:FollowParent>
+          <q2:ApplyToDownLevel>false</q2:ApplyToDownLevel>
+          <q2:DoNotCare>false</q2:DoNotCare>
+          <q2:RedirectToLocal>true</q2:RedirectToLocal>
+          <q2:PolicyRemovalBehavior>RestoreContents</q2:PolicyRemovalBehavior>
+          <q2:ConfigurationControl>GP</q2:ConfigurationControl>
+          <q2:PrimaryComputerEvaluation>PrimaryComputerPolicyDisabled</q2:PrimaryComputerEvaluation>
+        </q2:Folder>
+        <q2:Folder>
+          <q2:Id>{BFB9D5E0-C6A9-404C-B2B2-AE6DB6AF4968}</q2:Id>
+          <q2:Location>
+            <q2:DestinationPath>\\FAB-FS01\Users$\%USERNAME%\Links</q2:DestinationPath>
+            <q2:SecurityGroup>
+              <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">s-1-1-0</SID>
+              <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+            </q2:SecurityGroup>
+          </q2:Location>
+          <q2:GrantExclusiveRights>true</q2:GrantExclusiveRights>
+          <q2:MoveContents>true</q2:MoveContents>
+          <q2:FollowParent>false</q2:FollowParent>
+          <q2:ApplyToDownLevel>false</q2:ApplyToDownLevel>
+          <q2:DoNotCare>false</q2:DoNotCare>
+          <q2:RedirectToLocal>false</q2:RedirectToLocal>
+          <q2:PolicyRemovalBehavior>RestoreContents</q2:PolicyRemovalBehavior>
+          <q2:ConfigurationControl>GP</q2:ConfigurationControl>
+          <q2:PrimaryComputerEvaluation>PrimaryComputerPolicyDisabled</q2:PrimaryComputerEvaluation>
+        </q2:Folder>
+      </Extension>
+      <Name>Folder Redirection</Name>
+    </ExtensionData>
+  </User>
+  <LinksTo>
+    <SOMName>corp</SOMName>
+    <SOMPath>corp.fabrikam.com</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

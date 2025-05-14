@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{82bb994c-9982-42c4-b7c1-0e61a3c2f580}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.fabrikam.com</Domain>
+  </Identifier>
+  <Name>Windows Update Policy - WSUS</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2013-05-10T10:35:30</CreatedTime>
+  <ModifiedTime>2025-05-06T11:54:00</ModifiedTime>
+  <ReadTime>2025-05-14T14:33:43.3575362Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DUD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-1354021876-1831262814-3449474082-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-513</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Users</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>9</VersionDirectory>
+    <VersionSysvol>9</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q1:RegistrySettings">
+        <q1:Policy>
+          <q1:Name>Specify settings for optional component installation and component repair</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>
+This policy setting specifies the network locations that will be used for the repair of operating system corruption and for enabling optional features that have had their payload files removed.
+
+If you enable this policy setting and specify the new location, the files in that location will be used to repair operating system corruption and for enabling optional features that have had their payload files removed. You must enter the fully qualified path to the new location in the ""Alternate source file path"" text box. Multiple locations can be specified when each path is separated by a semicolon. 
+
+The network location can be either a folder, or a WIM file. If it is a WIM file, the location should be specified by prefixing the path with “wim:” and include the index of the image to use in the WIM file. For example “wim:\\server\share\install.wim:3”.
+
+If you disable or do not configure this policy setting, or if the required files cannot be found at the locations specified in this policy setting, the files will be downloaded from Windows Update, if that is allowed by the policy settings for the computer.
+      </q1:Explain>
+          <q1:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q1:Supported>
+          <q1:Category>System</q1:Category>
+          <q1:EditText>
+            <q1:Name>Alternate source file path</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value />
+          </q1:EditText>
+          <q1:CheckBox>
+            <q1:Name>Never attempt to download payload from Windows Update</q1:Name>
+            <q1:State>Disabled</q1:State>
+          </q1:CheckBox>
+          <q1:CheckBox>
+            <q1:Name>Download repair content and optional features directly from Windows Update instead of Windows Server Update Services (WSUS)</q1:Name>
+            <q1:State>Enabled</q1:State>
+          </q1:CheckBox>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Specify intranet Microsoft update service location</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>
+        Specifies an intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
+
+        This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
+
+        To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update Agent to download updates from an alternate download server instead of the intranet update service.
+
+        If the status is set to Enabled, the Automatic Updates client connects to the specified intranet Microsoft update service (or alternate download server), instead of Windows Update, to search for and download updates. Enabling this setting means that end users in your organization don't have to go through a firewall to get updates, and it gives you the opportunity to test updates before deploying them.
+
+        If the status is set to Disabled or Not Configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
+
+        The alternate download server configures the Windows Update Agent to download files from an alternative download server instead of the intranet update service.
+
+        The option to download files with missing Urls allows content to be downloaded from the Alternate Download Server when there are no download Urls for files in the update metadata. This option should only be used when the intranet update service does not provide download Urls in the update metadata for files which are present on the alternate download server.
+
+        Note: If the "Configure Automatic Updates" policy is disabled, then this policy has no effect.
+
+        Note: If the "Alternate Download Server" is not set, it will use the intranet update service by default to download updates.
+
+        Note: The option to "Download files with no Url..." is only used if the "Alternate Download Server" is set.
+
+        Note: This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
+
+        To ensure the highest level of security, Microsoft recommends securing WSUS with TLS/SSL protocol, thereby using HTTPS based intranet servers to keep systems secure. If a proxy is required, we recommend configuring system proxy. To ensure highest levels of security, additionally leverage WSUS TLS certificate pinning on all devices.
+
+        In order to keep clients inherently secure, we are no longer allowing intranet servers to leverage user proxy by default for detecting updates. If you need to leverage user proxy for detecting updates while using an intranet server despite the vulnerabilities it presents, you must configure the proxy behavior to "Allow user proxy to be used as a fallback if detection using system proxy fails".
+
+        Detection for updates against intranet servers will fail when user proxy is needed as a fallback and the alternate proxy behavior is not configured.</q1:Explain>
+          <q1:Supported>At least Windows XP Professional Service Pack 1 or Windows 2000 Service Pack 3, excluding Windows RT</q1:Supported>
+          <q1:Category>Windows Components/Windows Update</q1:Category>
+          <q1:EditText>
+            <q1:Name>Set the intranet update service for detecting updates:</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>https://wsus.technologytoolbox.com:8531</q1:Value>
+          </q1:EditText>
+          <q1:EditText>
+            <q1:Name>Set the intranet statistics server:</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>https://wsus.technologytoolbox.com:8531</q1:Value>
+          </q1:EditText>
+          <q1:EditText>
+            <q1:Name>Set the alternate download server:</q1:Name>
+            <q1:State>NotConfigured</q1:State>
+          </q1:EditText>
+          <q1:Text>
+            <q1:Name>(example: https://IntranetUpd01)</q1:Name>
+          </q1:Text>
+          <q1:CheckBox>
+            <q1:Name>Download files with no Url in the metadata if alternate download server is set.</q1:Name>
+            <q1:State>NotConfigured</q1:State>
+          </q1:CheckBox>
+          <q1:CheckBox>
+            <q1:Name>Do not enforce TLS certificate pinning for Windows Update client for detecting updates.</q1:Name>
+            <q1:State>NotConfigured</q1:State>
+          </q1:CheckBox>
+          <q1:DropDownList>
+            <q1:Name>Select the proxy behavior for Windows Update client for detecting updates:</q1:Name>
+            <q1:State>NotConfigured</q1:State>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>0</VersionDirectory>
+    <VersionSysvol>0</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>corp</SOMName>
+    <SOMPath>corp.fabrikam.com</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

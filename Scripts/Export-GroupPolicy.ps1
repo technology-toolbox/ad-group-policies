@@ -12,7 +12,7 @@ Compliance Toolkit 1.0 (https://www.microsoft.com/en-us/download/details.aspx?id
 .\Export-GroupPolicy.ps1 -Verbose
 #>
 [CmdletBinding()]
-Param()
+Param([string] $Server)
 
 Begin
 {
@@ -22,6 +22,14 @@ Begin
 
 Process
 {
+    if ([string]::IsNullOrEmpty($Server) -eq $true) {
+        Write-Verbose "Server not specified, defaulting to `"first`" DC..."
+
+        $Server = Get-ADDomainController -Filter * |
+            Sort-Object HostName |
+            Select-Object -First 1 -ExpandProperty HostName
+    }
+
     # Export group policy objects (using backup format)
 
     Write-Verbose "Exporting group policy objects..."
@@ -34,7 +42,7 @@ Process
 
     $basePath = Resolve-Path $basePath
 
-    Backup-GPO -All -Path $basePath | Out-Null
+    Backup-GPO -Path $basePath -Server $Server -All | Out-Null
 
     # Export group policy reports
 
@@ -53,7 +61,7 @@ Process
 
     [string] $fileNameReplacePattern = "[" + [Regex]::Escape($invalidFileNameChars -join "") + "]"
 
-    Get-GPO -All |
+    Get-GPO -Server $Server -All |
         ForEach-Object {
             $baseName = [Regex]::Replace($_.DisplayName, $fileNameReplacePattern, "~")
 
@@ -61,6 +69,6 @@ Process
                 $basePath,
                 $baseName + ".html")
 
-            $_ | Get-GPOReport -ReportType HTML -Path $reportPath
+            $_ | Get-GPOReport -ReportType HTML -Path $reportPath -Server $Server
         }
 }

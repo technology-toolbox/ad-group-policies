@@ -3,10 +3,11 @@
 Exports group policy objects and group policy reports from Active Directory.
 
 .DESCRIPTION
-Group policy objects are exported to the "..\GPOs" folder (using the backup format).
-Group policy reports are exported to the "..\GP Reports" folder (using HTML format).
-This folder structure is identical to the one used in the Microsoft Security
-Compliance Toolkit 1.0 (https://www.microsoft.com/en-us/download/details.aspx?id=55319).
+Group policy objects are exported to the "..\{domain name}\GPOs" folder (using
+the backup format). Group policy reports are exported to the
+"..\{domain name}\GP Reports" folder (using HTML format). This folder structure
+is based on the one used in the Microsoft Security Compliance Toolkit 1.0
+(https://www.microsoft.com/en-us/download/details.aspx?id=55319).
 
 .EXAMPLE
 .\Export-GroupPolicy.ps1 -Verbose
@@ -22,6 +23,8 @@ Begin
     Function ExportGroupPolicyObject(
         [Microsoft.GroupPolicy.Gpo] $gpo =
             $(Throw "Value cannot be null: gpo"),
+        [string] $domainNetBiosName =
+            $(Throw "Value cannot be null: domainNetBiosName"),
         [string] $server =
             $(Throw "Value cannot be null: server"))
     {
@@ -29,7 +32,11 @@ Begin
 
         Write-Verbose "Exporting group policy object ($($gpo.DisplayName))..."
 
-        [string] $basePath = [System.IO.Path]::Combine($PSScriptRoot, "..\\GPOs")
+        [string] $basePath = [System.IO.Path]::Combine(
+            $PSScriptRoot,
+            "..",
+            $domainNetBiosName,
+            "GPOs")
 
         if ((Test-Path $basePath) -eq $false) {
             New-Item $basePath -Type Directory | Out-Null
@@ -43,6 +50,8 @@ Begin
     Function ExportGroupPolicyReport(
         [Microsoft.GroupPolicy.Gpo] $gpo =
             $(Throw "Value cannot be null: gpo"),
+        [string] $domainNetBiosName =
+            $(Throw "Value cannot be null: domainNetBiosName"),
         [string] $server =
             $(Throw "Value cannot be null: server"))
     {
@@ -50,7 +59,11 @@ Begin
 
         Write-Verbose "Exporting group policy report ($($gpo.DisplayName))..."
 
-        $basePath = [System.IO.Path]::Combine($PSScriptRoot, "..\\GP Reports")
+        [string] $basePath = [System.IO.Path]::Combine(
+            $PSScriptRoot,
+            "..",
+            $domainNetBiosName,
+            "GP Reports")
 
         if ((Test-Path $basePath) -eq $false) {
             New-Item $basePath -Type Directory | Out-Null
@@ -72,11 +85,17 @@ Begin
         Get-GPOReport -Guid $gpo.Id -ReportType HTML -Path $reportPath -Server $server
     }
 
-    Function FormatGpoManifestFile()
+    Function FormatGpoManifestFile(
+        [string] $domainNetBiosName =
+            $(Throw "Value cannot be null: domainNetBiosName"))
     {
         Write-Verbose "Formatting GPO manifest file..."
 
-        [string] $path = [System.IO.Path]::Combine($PSScriptRoot, "..\\GPOs\manifest.xml")
+        [string] $path = [System.IO.Path]::Combine(
+            $PSScriptRoot,
+            "..",
+            $domainNetBiosName,
+            "GPOs\manifest.xml")
 
         $path = Resolve-Path $path
 
@@ -106,15 +125,18 @@ Process
             Select-Object -First 1 -ExpandProperty HostName
     }
 
+    [string] $domainNetBiosName = Get-ADDomain |
+        Select-Object -ExpandProperty NetBIOSName
+
     $groupPolicies = Get-GPO -Server $server -All |
         Sort-Object CreationTime
 
     $groupPolicies |
         ForEach-Object {
-            ExportGroupPolicyObject $_ $server
+            ExportGroupPolicyObject $_ $domainNetBiosName $server
 
-            ExportGroupPolicyReport $_ $server
+            ExportGroupPolicyReport $_ $domainNetBiosName $server
         }
 
-    FormatGpoManifestFile
+    FormatGpoManifestFile $domainNetBiosName
 }

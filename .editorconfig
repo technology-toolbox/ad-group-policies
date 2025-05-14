@@ -1,0 +1,18 @@
+# EditorConfig is awesome: https://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+# indent_size intentionally not specified in this section
+indent_style = space
+insert_final_newline = true
+
+# Markdown
+[*.md]
+indent_size = 2
+
+# Source code
+[*.{ps1}]
+indent_size = 4

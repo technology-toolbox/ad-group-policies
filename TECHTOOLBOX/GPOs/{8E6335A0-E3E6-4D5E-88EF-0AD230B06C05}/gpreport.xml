@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{db2ba0a6-0edd-41fa-98da-5f5d63237768}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.technologytoolbox.com</Domain>
+  </Identifier>
+  <Name>Desktop Settings Policy</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2018-10-06T14:19:40</CreatedTime>
+  <ModifiedTime>2024-12-23T12:49:30</ModifiedTime>
+  <ReadTime>2025-05-14T14:29:35.1916051Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-3914637029-2275272621-3670275343-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>3</VersionDirectory>
+    <VersionSysvol>3</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q1:RegistrySettings">
+        <q1:Policy>
+          <q1:Name>Force a specific background and accent color</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Forces Windows to use the specified colors for the background and accent. The color values are specified in hex as #RGB.
+
+By default, users can change the background and accent colors.
+
+If this setting is enabled, the background and accent colors of Windows will be set to the specified colors and users cannot change those colors. This setting will not be applied if the specified colors do not meet a contrast ratio of 2:1 with white text.</q1:Explain>
+          <q1:Supported>Windows Server 2012 R2, Windows 8.1 or Windows RT 8.1 only</q1:Supported>
+          <q1:Category>Control Panel/Personalization</q1:Category>
+          <q1:EditText>
+            <q1:Name>Start background color:</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>#006400</q1:Value>
+          </q1:EditText>
+          <q1:EditText>
+            <q1:Name>Accent color:</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>#004000</q1:Value>
+          </q1:EditText>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Configure user Group Policy loopback processing mode</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting directs the system to apply the set of Group Policy objects for the computer to any user who logs on to a computer affected by this setting. It is intended for special-use computers, such as those in public places, laboratories, and classrooms, where you must modify the user setting based on the computer that is being used.
+
+By default, the user's Group Policy Objects determine which user settings apply. If this setting is enabled, then, when a user logs on to this computer, the computer's Group Policy Objects determine which set of Group Policy Objects applies.
+
+If you enable this setting, you can select one of the following modes from the Mode box:
+
+"Replace" indicates that the user settings defined in the computer's Group Policy Objects replace the user settings normally applied to the user.
+
+"Merge" indicates that the user settings defined in the computer's Group Policy Objects and the user settings normally applied to the user are combined. If the settings conflict, the user settings in the computer's Group Policy Objects take precedence over the user's normal settings.
+
+If you disable this setting or do not configure it, the user's Group Policy Objects determines which user settings apply.
+
+Note: This setting is effective only when both the computer account and the user account are in at least Windows 2000 domains.</q1:Explain>
+          <q1:Supported>At least Windows 2000</q1:Supported>
+          <q1:Category>System/Group Policy</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Mode:</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Replace</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn off Local Group Policy Objects processing</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting prevents Local Group Policy Objects (Local GPOs) from being applied.
+
+By default, the policy settings in Local GPOs are applied before any domain-based GPO policy settings. These policy settings can apply to both users and the local computer. You can disable the processing and application of all Local GPOs to ensure that only domain-based GPOs are applied.
+
+If you enable this policy setting, the system does not process and apply any Local GPOs.
+
+If you disable or do not configure this policy setting, Local GPOs continue to be applied.
+
+Note: For computers joined to a domain, it is strongly recommended that you only configure this policy setting  in domain-based GPOs. This policy setting will be ignored on computers that are joined to a workgroup.
+</q1:Explain>
+          <q1:Supported>At least Windows Vista</q1:Supported>
+          <q1:Category>System/Group Policy</q1:Category>
+        </q1:Policy>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>10</VersionDirectory>
+    <VersionSysvol>10</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/Windows/Registry" xsi:type="q2:RegistrySettings">
+        <q2:RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}">
+          <q2:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="Background" status="Background" image="7" changed="2018-10-06 14:59:59" uid="{65F89FC7-9CF5-4115-A166-23DEF9A8A91B}">
+            <q2:GPOSettingOrder>1</q2:GPOSettingOrder>
+            <q2:Properties action="U" displayDecimal="0" default="0" hive="HKEY_CURRENT_USER" key="Control Panel\Colors" name="Background" type="REG_SZ" value="79 79 79">
+              <q2:Values />
+            </q2:Properties>
+            <q2:Filters />
+          </q2:Registry>
+          <q2:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="WallPaper" status="WallPaper" image="7" changed="2018-10-06 14:52:31" uid="{E0453707-9FD9-4BC8-A45D-82659E044B9E}">
+            <q2:GPOSettingOrder>2</q2:GPOSettingOrder>
+            <q2:Properties action="U" displayDecimal="0" default="0" hive="HKEY_CURRENT_USER" key="Control Panel\Desktop" name="WallPaper" type="REG_SZ" value="">
+              <q2:Values />
+            </q2:Properties>
+            <q2:Filters />
+          </q2:Registry>
+        </q2:RegistrySettings>
+      </Extension>
+      <Name>Windows Registry</Name>
+    </ExtensionData>
+  </User>
+  <LinksTo>
+    <SOMName>Resources</SOMName>
+    <SOMPath>corp.technologytoolbox.com/Information Technology/Resources</SOMPath>
+    <Enabled>false</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

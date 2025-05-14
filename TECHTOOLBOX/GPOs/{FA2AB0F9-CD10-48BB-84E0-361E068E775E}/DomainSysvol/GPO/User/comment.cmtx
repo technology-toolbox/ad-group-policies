@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Microsoft.Policies.UserProfiles"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:ExcludeDirectories" commentText="$(resource.ns0_ExcludeDirectories)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_ExcludeDirectories">2018-06-07 - On a new Windows 10 VM, when logged in as TECHTOOLBOX\jjameson-admin, the user profile size exceeded 250 MB (e.g. 127 MB in the AppData\Local\Microsoft\OneDrive folder alone). Note that AppData\Local is *supposed* to be excluded from roaming profiles by default -- so this appears to be a bug.
+
+After running the Disk Cleanup utility, the profile size was reduced to 232 MB.
+
+To resolve the issue, this group policy setting was enabled and configured with the default value ("AppData\Local;AppData\LocalLow;$Recycle.Bin"). After rebooting the VM, the user profile size was reduced to 3 MB.
+
+References:
+
+Appdata\Local and LocalLow following roaming profile?? - https://social.technet.microsoft.com/Forums/en-US/1c618a22-b48a-43ca-81cc-64836c058207/appdatalocal-and-locallow-following-roaming-profile?forum=winserverGP</string>
+    </stringTable>
+  </resources>
+</policyComments>

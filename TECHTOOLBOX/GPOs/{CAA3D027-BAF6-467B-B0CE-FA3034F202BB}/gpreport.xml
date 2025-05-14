@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{c9da5101-db22-4bb0-9dee-0926897532ab}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.technologytoolbox.com</Domain>
+  </Identifier>
+  <Name>PKI Policy</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2021-05-14T14:05:22</CreatedTime>
+  <ModifiedTime>2024-12-23T12:49:30</ModifiedTime>
+  <ReadTime>2025-05-14T14:29:38.8202774Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-3914637029-2275272621-3670275343-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>8</VersionDirectory>
+    <VersionSysvol>8</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Security" xsi:type="q1:SecuritySettings">
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Security</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q2="http://www.microsoft.com/GroupPolicy/Settings/Windows/Registry" xsi:type="q2:RegistrySettings">
+        <q2:RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}">
+          <q2:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="EnumerateECCCerts" status="EnumerateECCCerts" image="12" changed="2021-05-14 16:23:37" uid="{67C0EA6F-EA5F-428E-905D-DBC415101060}">
+            <q2:GPOSettingOrder>1</q2:GPOSettingOrder>
+            <q2:Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SOFTWARE\Policies\Microsoft\Windows\SmartCardCredentialProvider" name="EnumerateECCCerts" type="REG_DWORD" value="00000001">
+              <q2:Values />
+            </q2:Properties>
+            <q2:Filters />
+          </q2:Registry>
+        </q2:RegistrySettings>
+      </Extension>
+      <Name>Windows Registry</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q3="http://www.microsoft.com/GroupPolicy/Settings/PublicKey" xsi:type="q3:PublicKeySettings">
+        <q3:AutoEnrollmentSettings>
+          <q3:EnrollCertificatesAutomatically>true</q3:EnrollCertificatesAutomatically>
+          <q3:Options>
+            <q3:RenewUpdateRevoke>true</q3:RenewUpdateRevoke>
+            <q3:UpdateTemplates>true</q3:UpdateTemplates>
+          </q3:Options>
+          <q3:ExpiryNotification>false</q3:ExpiryNotification>
+          <q3:NotifyPercent>
+            <q3:Present>true</q3:Present>
+            <q3:Value>10</q3:Value>
+          </q3:NotifyPercent>
+          <q3:NotifyStoreNames />
+        </q3:AutoEnrollmentSettings>
+        <q3:EFSSettings>
+          <q3:AllowEFS>2</q3:AllowEFS>
+          <q3:Options>0</q3:Options>
+          <q3:CacheTimeout>0</q3:CacheTimeout>
+          <q3:KeyLen>0</q3:KeyLen>
+        </q3:EFSSettings>
+        <q3:RootCertificateSettings>
+          <q3:AllowNewCAs>true</q3:AllowNewCAs>
+          <q3:TrustThirdPartyCAs>true</q3:TrustThirdPartyCAs>
+          <q3:RequireUPNNamingConstraints>false</q3:RequireUPNNamingConstraints>
+        </q3:RootCertificateSettings>
+      </Extension>
+      <Name>Public Key</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q4="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q4:RegistrySettings">
+        <q4:RegistrySetting>
+          <q4:KeyPath>Software\Policies\Microsoft\SystemCertificates\DPNGRA\Certificates</q4:KeyPath>
+          <q4:AdmSetting>false</q4:AdmSetting>
+        </q4:RegistrySetting>
+        <q4:RegistrySetting>
+          <q4:KeyPath>Software\Policies\Microsoft\SystemCertificates\DPNGRA\CRLs</q4:KeyPath>
+          <q4:AdmSetting>false</q4:AdmSetting>
+        </q4:RegistrySetting>
+        <q4:RegistrySetting>
+          <q4:KeyPath>Software\Policies\Microsoft\SystemCertificates\DPNGRA\CTLs</q4:KeyPath>
+          <q4:AdmSetting>false</q4:AdmSetting>
+        </q4:RegistrySetting>
+        <q4:RegistrySetting>
+          <q4:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE\Certificates</q4:KeyPath>
+          <q4:AdmSetting>false</q4:AdmSetting>
+        </q4:RegistrySetting>
+        <q4:RegistrySetting>
+          <q4:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE\CRLs</q4:KeyPath>
+          <q4:AdmSetting>false</q4:AdmSetting>
+        </q4:RegistrySetting>
+        <q4:RegistrySetting>
+          <q4:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE\CTLs</q4:KeyPath>
+          <q4:AdmSetting>false</q4:AdmSetting>
+        </q4:RegistrySetting>
+        <q4:RegistrySetting>
+          <q4:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE_NKP\Certificates</q4:KeyPath>
+          <q4:AdmSetting>false</q4:AdmSetting>
+        </q4:RegistrySetting>
+        <q4:RegistrySetting>
+          <q4:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE_NKP\CRLs</q4:KeyPath>
+          <q4:AdmSetting>false</q4:AdmSetting>
+        </q4:RegistrySetting>
+        <q4:RegistrySetting>
+          <q4:KeyPath>Software\Policies\Microsoft\SystemCertificates\FVE_NKP\CTLs</q4:KeyPath>
+          <q4:AdmSetting>false</q4:AdmSetting>
+        </q4:RegistrySetting>
+        <q4:Blocked>false</q4:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>2</VersionDirectory>
+    <VersionSysvol>2</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q5="http://www.microsoft.com/GroupPolicy/Settings/PublicKey" xsi:type="q5:PublicKeySettings">
+        <q5:AutoEnrollmentSettings>
+          <q5:EnrollCertificatesAutomatically>true</q5:EnrollCertificatesAutomatically>
+          <q5:Options>
+            <q5:RenewUpdateRevoke>true</q5:RenewUpdateRevoke>
+            <q5:UpdateTemplates>true</q5:UpdateTemplates>
+          </q5:Options>
+          <q5:ExpiryNotification>true</q5:ExpiryNotification>
+          <q5:NotifyPercent>
+            <q5:Present>true</q5:Present>
+            <q5:Value>10</q5:Value>
+          </q5:NotifyPercent>
+          <q5:NotifyStoreNames />
+        </q5:AutoEnrollmentSettings>
+      </Extension>
+      <Name>Public Key</Name>
+    </ExtensionData>
+    <ExtensionData>
+      <Extension xmlns:q6="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q6:RegistrySettings">
+        <q6:Blocked>false</q6:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </User>
+  <LinksTo>
+    <SOMName>corp</SOMName>
+    <SOMPath>corp.technologytoolbox.com</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

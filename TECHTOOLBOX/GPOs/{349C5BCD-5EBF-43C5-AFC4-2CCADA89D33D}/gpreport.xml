@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{6ac1786c-016f-11d2-945f-00c04fb984f9}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.technologytoolbox.com</Domain>
+  </Identifier>
+  <Name>Default Domain Controllers Policy</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2006-08-16T13:19:19</CreatedTime>
+  <ModifiedTime>2025-05-06T11:37:44</ModifiedTime>
+  <ReadTime>2025-05-14T14:29:08.6800682Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-3914637029-2275272621-3670275343-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:PAI</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>64</VersionDirectory>
+    <VersionSysvol>64</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Security" xsi:type="q1:SecuritySettings">
+        <q1:Audit>
+          <q1:Name>AuditAccountLogon</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditAccountManage</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditDSAccess</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditLogonEvents</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditObjectAccess</q1:Name>
+          <q1:SuccessAttempts>false</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditPolicyChange</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditPrivilegeUse</q1:Name>
+          <q1:SuccessAttempts>false</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditProcessTracking</q1:Name>
+          <q1:SuccessAttempts>false</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:Audit>
+          <q1:Name>AuditSystemEvents</q1:Name>
+          <q1:SuccessAttempts>true</q1:SuccessAttempts>
+          <q1:FailureAttempts>false</q1:FailureAttempts>
+        </q1:Audit>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeAssignPrimaryTokenPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-19</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\LOCAL SERVICE</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-20</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\NETWORK SERVICE</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeAuditPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-19</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\LOCAL SERVICE</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-20</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\NETWORK SERVICE</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeBackupPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-551</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Backup Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeBatchLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-1001</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\SUPPORT_388945a0</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-19</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\LOCAL SERVICE</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-1118</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\IIS_WPG</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeChangeNotifyPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-1-0</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-554</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Pre-Windows 2000 Compatible Access</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeCreatePagefilePrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeCreatePermanentPrivilege</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeCreateTokenPrivilege</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeDebugPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeDenyBatchLogonRight</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeDenyInteractiveLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-1001</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\SUPPORT_388945a0</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeDenyNetworkLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-1001</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\SUPPORT_388945a0</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeDenyServiceLogonRight</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeEnableDelegationPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeIncreaseBasePriorityPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeIncreaseQuotaPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-19</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\LOCAL SERVICE</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-20</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\NETWORK SERVICE</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeInteractiveLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-548</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Account Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-551</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Backup Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-550</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Print Operators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeLoadDriverPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-550</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Print Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeLockMemoryPrivilege</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeMachineAccountPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeNetworkLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-1-0</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">Everyone</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-554</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Pre-Windows 2000 Compatible Access</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeProfileSingleProcessPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeRemoteShutdownPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeRestorePrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-551</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Backup Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeSecurityPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeServiceLogonRight</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-20</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\NETWORK SERVICE</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeShutdownPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-550</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Print Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-551</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Backup Operators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeSyncAgentPrivilege</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeSystemEnvironmentPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeSystemProfilePrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeSystemTimePrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-549</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Server Operators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeTakeOwnershipPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeTcbPrivilege</q1:Name>
+        </q1:UserRightsAssignment>
+        <q1:UserRightsAssignment>
+          <q1:Name>SeUndockPrivilege</q1:Name>
+          <q1:Member>
+            <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-32-544</SID>
+            <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">BUILTIN\Administrators</Name>
+          </q1:Member>
+        </q1:UserRightsAssignment>
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel</q1:KeyName>
+          <q1:SettingNumber>2</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Network security: LAN Manager authentication level</q1:Name>
+            <q1:Units />
+            <q1:DisplayString>Send NTLM response only</q1:DisplayString>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\EnableSecuritySignature</q1:KeyName>
+          <q1:SettingNumber>1</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Microsoft network server: Digitally sign communications (if client agrees)</q1:Name>
+            <q1:Units />
+            <q1:DisplayBoolean>true</q1:DisplayBoolean>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\RequireSecuritySignature</q1:KeyName>
+          <q1:SettingNumber>1</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Microsoft network server: Digitally sign communications (always)</q1:Name>
+            <q1:Units />
+            <q1:DisplayBoolean>true</q1:DisplayBoolean>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireSignOrSeal</q1:KeyName>
+          <q1:SettingNumber>1</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Domain member: Digitally encrypt or sign secure channel data (always)</q1:Name>
+            <q1:Units />
+            <q1:DisplayBoolean>true</q1:DisplayBoolean>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:SecurityOptions>
+          <q1:KeyName>MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\LDAPServerIntegrity</q1:KeyName>
+          <q1:SettingNumber>2</q1:SettingNumber>
+          <q1:Display>
+            <q1:Name>Domain controller: LDAP server signing requirements</q1:Name>
+            <q1:Units />
+            <q1:DisplayString>Require signing</q1:DisplayString>
+          </q1:Display>
+        </q1:SecurityOptions>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Security</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>2</VersionDirectory>
+    <VersionSysvol>2</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>Domain Controllers</SOMName>
+    <SOMPath>corp.technologytoolbox.com/Domain Controllers</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

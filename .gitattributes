@@ -1,0 +1,14 @@
+# Group policy reports are UTF-16 little endian encoded -- which is problematic
+# when storing the files in Git using the default configuration (in particular
+# when using `git diff` to compare files). To avoid these encoding issues,
+# assign attributes to group policy HTML and XML files to force Git to handle
+# them as expected.
+
+# Note that various XML files stored in group policy backups are UTF-8 encoded
+# (e.g. Backup.xml, bkupInfo.xml, and Registry.xml). Therefore, specify paths
+# to avoid treating *all* HTML and XML files as UTF-16LE.
+#
+# *.html                text working-tree-encoding=UTF-16LE-BOM eol=crlf
+# *.xml                 text working-tree-encoding=UTF-16LE-BOM eol=crlf
+"**/GP Reports/*.html"	text working-tree-encoding=UTF-16LE-BOM eol=crlf
+**/GPOs/**/gpreport.xml text working-tree-encoding=UTF-16LE-BOM eol=crlf

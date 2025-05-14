@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{87cb3221-f08d-4dc1-83c6-6d63f39b3feb}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">extranet.technologytoolbox.com</Domain>
+  </Identifier>
+  <Name>Enable LDAP Query Logging</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2025-01-06T15:41:30</CreatedTime>
+  <ModifiedTime>2025-05-06T11:56:37</ModifiedTime>
+  <ReadTime>2025-05-14T14:35:58.0504397Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-224930944-1780242101-1199596236-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-224930944-1780242101-1199596236-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">EXTRANET\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-224930944-1780242101-1199596236-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">EXTRANET\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-224930944-1780242101-1199596236-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">EXTRANET\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-224930944-1780242101-1199596236-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">EXTRANET\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>30</VersionDirectory>
+    <VersionSysvol>30</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Windows/Registry" xsi:type="q1:RegistrySettings">
+        <q1:RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}">
+          <q1:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="MaxSize" status="MaxSize" image="12" changed="2025-01-06 17:01:21" uid="{2E1FDA18-BB07-4EF4-8B58-939FCA3DF530}">
+            <q1:GPOSettingOrder>1</q1:GPOSettingOrder>
+            <q1:Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Services\EventLog\Directory Service" name="MaxSize" type="REG_DWORD" value="186A0000">
+              <q1:Values />
+            </q1:Properties>
+            <q1:Filters />
+          </q1:Registry>
+          <q1:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="15 Field Engineering" status="15 Field Engineering" image="12" changed="2025-01-06 16:28:34" uid="{DE28BC0B-31B9-444E-9C9D-B808BBE16082}">
+            <q1:GPOSettingOrder>2</q1:GPOSettingOrder>
+            <q1:Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Services\NTDS\Diagnostics" name="15 Field Engineering" type="REG_DWORD" value="00000005">
+              <q1:Values />
+            </q1:Properties>
+            <q1:Filters />
+          </q1:Registry>
+          <q1:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="Expensive Search Results Threshold" status="Expensive Search Results Threshold" image="12" changed="2025-01-06 16:38:20" uid="{C33A37B8-A3A7-4A22-8B4D-13397787E129}">
+            <q1:GPOSettingOrder>3</q1:GPOSettingOrder>
+            <q1:Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Services\NTDS\Parameters" name="Expensive Search Results Threshold" type="REG_DWORD" value="00000000">
+              <q1:Values />
+            </q1:Properties>
+            <q1:Filters />
+          </q1:Registry>
+          <q1:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="Inefficient Search Results Threshold" status="Inefficient Search Results Threshold" image="12" changed="2025-01-06 16:38:27" uid="{1E7342A7-3F7B-41F7-94BA-4635676FB614}">
+            <q1:GPOSettingOrder>4</q1:GPOSettingOrder>
+            <q1:Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Services\NTDS\Parameters" name="Inefficient Search Results Threshold" type="REG_DWORD" value="00000000">
+              <q1:Values />
+            </q1:Properties>
+            <q1:Filters />
+          </q1:Registry>
+          <q1:Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="Search Time Threshold (msecs)" status="Search Time Threshold (msecs)" image="12" changed="2025-01-06 15:46:50" uid="{1947FF34-0F45-43A8-B8E1-F8C1288688E0}">
+            <q1:GPOSettingOrder>5</q1:GPOSettingOrder>
+            <q1:Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Services\NTDS\Parameters" name="Search Time Threshold (msecs)" type="REG_DWORD" value="00000001">
+              <q1:Values />
+            </q1:Properties>
+            <q1:Filters />
+          </q1:Registry>
+        </q1:RegistrySettings>
+      </Extension>
+      <Name>Windows Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>0</VersionDirectory>
+    <VersionSysvol>0</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>Domain Controllers</SOMName>
+    <SOMPath>extranet.technologytoolbox.com/Domain Controllers</SOMPath>
+    <Enabled>false</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

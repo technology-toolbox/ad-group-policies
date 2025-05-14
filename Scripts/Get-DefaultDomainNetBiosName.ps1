@@ -22,6 +22,14 @@ Begin
 
 Process
 {
-    Get-ADDomain |
-        Select-Object -ExpandProperty NetBIOSName
+    if (Get-Command Get-ADDomain -ErrorAction SilentlyContinue)
+    {
+        Get-ADDomain |
+            Select-Object -ExpandProperty NetBIOSName
+    }
+    else {
+        # If the Active Directory cmdlets are not available, default to the
+        # domain for the current user
+        $env:USERDOMAIN
+    }
 }

@@ -121,8 +121,8 @@ Process
             Select-Object -First 1 -ExpandProperty HostName
     }
 
-    [string] $domainNetBiosName = Get-ADDomain |
-        Select-Object -ExpandProperty NetBIOSName
+    [string] $domainNetBiosName = `
+        & "$PSScriptRoot\Get-DefaultDomainNetBiosName.ps1"
 
     $groupPolicies = Get-GPO -Server $server -All |
         Sort-Object CreationTime

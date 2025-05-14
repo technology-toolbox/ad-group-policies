@@ -18,6 +18,58 @@ Begin
 {
     Set-StrictMode -Version Latest
     $ErrorActionPreference = "Stop"
+
+    Function ExportGroupPolicyObjects(
+        [string] $server =
+            $(Throw "Value cannot be null: server"))
+    {
+        # Export group policy objects (using backup format)
+
+        Write-Verbose "Exporting group policy objects..."
+
+        [string] $basePath = [System.IO.Path]::Combine($PSScriptRoot, "..\\GPOs")
+
+        if ((Test-Path $basePath) -eq $false) {
+            New-Item $basePath -Type Directory | Out-Null
+        }
+
+        $basePath = Resolve-Path $basePath
+
+        Backup-GPO -Path $basePath -Server $Server -All | Out-Null
+    }
+
+    Function ExportGroupPolicyReports(
+        [string] $server =
+            $(Throw "Value cannot be null: server"))
+    {
+        # Export group policy reports
+
+        Write-Verbose "Exporting group policy reports..."
+
+        $basePath = [System.IO.Path]::Combine($PSScriptRoot, "..\\GP Reports")
+
+        if ((Test-Path $basePath) -eq $false) {
+            New-Item $basePath -Type Directory | Out-Null
+        }
+
+        $basePath = Resolve-Path $basePath
+
+        [string[]] $invalidFileNameChars = ([System.IO.Path]::GetInvalidFileNameChars() |
+            Where-Object { 32 -le [int]$_ -and [int]$_ -le 127 })
+
+        [string] $fileNameReplacePattern = "[" + [Regex]::Escape($invalidFileNameChars -join "") + "]"
+
+        Get-GPO -Server $Server -All |
+            ForEach-Object {
+                $baseName = [Regex]::Replace($_.DisplayName, $fileNameReplacePattern, "~")
+
+                [string] $reportPath = [System.IO.Path]::Combine(
+                    $basePath,
+                    $baseName + ".html")
+
+                $_ | Get-GPOReport -ReportType HTML -Path $reportPath -Server $Server
+            }
+    }
 }
 
 Process
@@ -30,45 +82,7 @@ Process
             Select-Object -First 1 -ExpandProperty HostName
     }
 
-    # Export group policy objects (using backup format)
+    ExportGroupPolicyObjects $server
 
-    Write-Verbose "Exporting group policy objects..."
-
-    [string] $basePath = [System.IO.Path]::Combine($PSScriptRoot, "..\\GPOs")
-
-    if ((Test-Path $basePath) -eq $false) {
-        New-Item $basePath -Type Directory | Out-Null
-    }
-
-    $basePath = Resolve-Path $basePath
-
-    Backup-GPO -Path $basePath -Server $Server -All | Out-Null
-
-    # Export group policy reports
-
-    Write-Verbose "Exporting group policy reports..."
-
-    $basePath = [System.IO.Path]::Combine($PSScriptRoot, "..\\GP Reports")
-
-    if ((Test-Path $basePath) -eq $false) {
-        New-Item $basePath -Type Directory | Out-Null
-    }
-
-    $basePath = Resolve-Path $basePath
-
-    [string[]] $invalidFileNameChars = ([System.IO.Path]::GetInvalidFileNameChars() |
-        Where-Object { 32 -le [int]$_ -and [int]$_ -le 127 })
-
-    [string] $fileNameReplacePattern = "[" + [Regex]::Escape($invalidFileNameChars -join "") + "]"
-
-    Get-GPO -Server $Server -All |
-        ForEach-Object {
-            $baseName = [Regex]::Replace($_.DisplayName, $fileNameReplacePattern, "~")
-
-            [string] $reportPath = [System.IO.Path]::Combine(
-                $basePath,
-                $baseName + ".html")
-
-            $_ | Get-GPOReport -ReportType HTML -Path $reportPath -Server $Server
-        }
+    ExportGroupPolicyReports $server    
 }

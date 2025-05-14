@@ -59,17 +59,13 @@ Begin
 
         Write-Verbose "Exporting group policy report ($($gpo.DisplayName))..."
 
-        [string] $basePath = [System.IO.Path]::Combine(
-            $PSScriptRoot,
-            "..",
-            $domainNetBiosName,
-            "GP Reports")
+        [string] $reportFolder = `
+            & "$PSScriptRoot\Get-GroupPolicyReportPath.ps1" `
+                $domainNetBiosName
 
-        if ((Test-Path $basePath) -eq $false) {
-            New-Item $basePath -Type Directory | Out-Null
+        if ((Test-Path $reportFolder) -eq $false) {
+            New-Item $reportFolder -Type Directory | Out-Null
         }
-
-        $basePath = Resolve-Path $basePath
 
         [string[]] $invalidFileNameChars = ([System.IO.Path]::GetInvalidFileNameChars() |
             Where-Object { 32 -le [int]$_ -and [int]$_ -le 127 })
@@ -79,7 +75,7 @@ Begin
         $baseName = [Regex]::Replace($gpo.DisplayName, $fileNameReplacePattern, "~")
 
         [string] $reportPath = [System.IO.Path]::Combine(
-            $basePath,
+            $reportFolder,
             $baseName + ".html")
 
         Get-GPOReport -Guid $gpo.Id -ReportType HTML -Path $reportPath -Server $server

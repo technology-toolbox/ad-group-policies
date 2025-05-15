@@ -25,7 +25,7 @@ FABRIKAM Default Domain Controllers Policy      4/28/2025 12:22:50 PM
 #>
 [CmdletBinding()]
 Param(
-    [Parameter(Position=1, Mandatory=$false)]
+    [Parameter(Position=0, Mandatory=$false)]
     [string] $DomainNetBiosName)
 
 Begin

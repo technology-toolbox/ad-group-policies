@@ -19,7 +19,7 @@ C:\BackedUp\GitHub\technology-toolbox\ad-group-policies\FABRIKAM\GPOs
 #>
 [CmdletBinding()]
 Param(
-    [Parameter(Position=1, Mandatory=$false)]
+    [Parameter(Position=0, Mandatory=$false)]
     [string] $DomainNetBiosName)
 
 Begin

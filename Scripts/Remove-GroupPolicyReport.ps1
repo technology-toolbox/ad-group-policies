@@ -15,9 +15,9 @@ the current environment is used.
 #>
 [CmdletBinding()]
 Param(
-    [Parameter(Position=1, Mandatory=$true)]
+    [Parameter(Position=0, Mandatory=$true)]
     [Guid] $GroupPolicyId,
-    [Parameter(Position=2, Mandatory=$false)]
+    [Parameter(Position=1, Mandatory=$false)]
     [string] $DomainNetBiosName)
 
 Begin

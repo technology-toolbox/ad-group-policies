@@ -25,7 +25,7 @@ FABRIKAM Default Domain Policy.html                  {31b2f340-016d-11d2-945f-00
 #>
 [CmdletBinding()]
 Param(
-    [Parameter(Position=1, Mandatory=$false)]
+    [Parameter(Position=0, Mandatory=$false)]
     [string] $DomainNetBiosName)
 
 Begin

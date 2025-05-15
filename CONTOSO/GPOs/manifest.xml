@@ -1,5 +1,15 @@
 <Backups xmlns="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" xmlns:mfst="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" mfst:version="1.0">
   <BackupInst>
+    <GPOGuid><![CDATA[{4a65e711-798d-40b0-9dfe-12f118e2d0b1}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.contoso.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{23ab8f37-732c-4394-a64c-c963e83bada0}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[CON-DC07.corp.contoso.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-15T15:50:21]]></BackupTime>
+    <ID><![CDATA[{04BF876B-159D-45B4-A6FF-FE848223AFDD}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Internet Explorer 11 - Computer]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
     <GPOGuid><![CDATA[{d0b57fea-9fb0-4e43-8f35-fa597d1a64f9}]]></GPOGuid>
     <GPODomain><![CDATA[corp.contoso.com]]></GPODomain>
     <GPODomainGuid><![CDATA[{23ab8f37-732c-4394-a64c-c963e83bada0}]]></GPODomainGuid>

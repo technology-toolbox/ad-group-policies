@@ -10,10 +10,30 @@ is based on the one used in the Microsoft Security Compliance Toolkit 1.0
 (https://www.microsoft.com/en-us/download/details.aspx?id=55319).
 
 .EXAMPLE
-.\Export-GroupPolicy.ps1 -Verbose
+.\Export-GroupPolicy.ps1 31b2f340-016d-11d2-945f-00c04fb984f9
+
+.EXAMPLE
+.\Export-GroupPolicy.ps1 'Default Domain Policy'
+
+.EXAMPLE
+.\Export-GroupPolicy.ps1 -All
 #>
-[CmdletBinding()]
-Param([string] $Server)
+[CmdletBinding(DefaultParameterSetName='ByGUID')]
+Param(
+    [Parameter(ParameterSetName='ByGUID', Position=0, Mandatory=$true)]
+    [guid] $GroupPolicyId,
+
+    [Parameter(ParameterSetName='ByName', Position=0, Mandatory=$true)]
+    [string] $Name,
+
+    [Parameter(ParameterSetName='ByGUID', Position=1, Mandatory=$false)]
+    [Parameter(ParameterSetName='ByName', Position=1, Mandatory=$false)]
+    [Parameter(ParameterSetName='GetAll', Position=1, Mandatory=$false)]
+    [string] $Server,
+
+    [Parameter(ParameterSetName='GetAll', Mandatory=$true)]
+    [switch] $All
+)
 
 Begin
 {
@@ -113,6 +133,11 @@ Begin
 
 Process
 {
+    Write-Debug "GroupPolicyId: $GroupPolicyId"
+    Write-Debug "Name: $Name"
+    Write-Debug "Server: $Server"
+    Write-Debug "All: $All"
+
     if ([string]::IsNullOrEmpty($Server) -eq $true) {
         Write-Verbose "Server not specified, defaulting to `"first`" DC..."
 
@@ -121,17 +146,32 @@ Process
             Select-Object -First 1 -ExpandProperty HostName
     }
 
+    Write-Verbose "Exporting group policies from server ($Server)..."
+
     [string] $domainNetBiosName = `
         & "$PSScriptRoot\Get-DefaultDomainNetBiosName.ps1"
 
-    $groupPolicies = Get-GPO -Server $server -All |
-        Sort-Object CreationTime
-
+    switch ($PSCmdlet.ParameterSetName) {
+        'ByName' {
+            $groupPolicies = Get-GPO -Name $Name -Server $Server
+        }
+        'ByGUID' {
+            $groupPolicies = Get-GPO -Guid $GroupPolicyId -Server $Server
+        }
+        'GetAll' {
+            $groupPolicies = Get-GPO -Server $Server -All |
+                Sort-Object CreationTime
+          }
+        default {
+            throw "Unexpected parameter set ($($PSCmdlet.ParameterSetName))."
+        }
+    }
+    
     $groupPolicies |
         ForEach-Object {
-            ExportGroupPolicyObject $_ $domainNetBiosName $server
+            ExportGroupPolicyObject $_ $domainNetBiosName $Server
 
-            ExportGroupPolicyReport $_ $domainNetBiosName $server
+            ExportGroupPolicyReport $_ $domainNetBiosName $Server
         }
 
     FormatGpoManifestFile $domainNetBiosName

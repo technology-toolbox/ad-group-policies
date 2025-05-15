@@ -61,8 +61,9 @@ Begin
             + " domain ($domainNetBiosName)...")
 
         [PSCustomObject] $backups = `
-            & "$PSScriptRoot\Get-GroupPolicyBackup.ps1" $domainNetBiosName |
-            Where-Object { $_.GroupPolicyId -eq $groupPolicyId }
+            & "$PSScriptRoot\Get-GroupPolicyBackup.ps1" `
+                -DomainNetBiosName $domainNetBiosName |
+                Where-Object { $_.GroupPolicyId -eq $groupPolicyId }
 
         if ($null -eq $backups) {
             throw ("Cannot find any group policy backups for domain" `

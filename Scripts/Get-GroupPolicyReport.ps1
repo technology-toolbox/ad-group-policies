@@ -44,7 +44,7 @@ Begin
 
         [string] $reportFolder = `
             & "$PSScriptRoot\Get-GroupPolicyReportPath.ps1" `
-                $domainNetBiosName
+                -DomainNetBiosName $domainNetBiosName
 
         if ((Test-Path $reportFolder) -eq $false) {
             Write-Warning ("No group policy reports found for domain" `

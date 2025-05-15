@@ -35,8 +35,9 @@ Begin
             + " domain ($domainNetBiosName)...")
 
         [PSCustomObject] $report = `
-            & "$PSScriptRoot\Get-GroupPolicyReport.ps1" $domainNetBiosName |
-            Where-Object { $_.GroupPolicyId -eq $groupPolicyId }
+            & "$PSScriptRoot\Get-GroupPolicyReport.ps1" `
+                -DomainNetBiosName $domainNetBiosName |
+                Where-Object { $_.GroupPolicyId -eq $groupPolicyId }
 
         if ($null -eq $report) {
             throw ("Cannot find group policy report for domain" `

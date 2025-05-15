@@ -61,7 +61,7 @@ Begin
 
         [string] $reportFolder = `
             & "$PSScriptRoot\Get-GroupPolicyReportPath.ps1" `
-                $domainNetBiosName
+                -DomainNetBiosName $domainNetBiosName
 
         if ((Test-Path $reportFolder) -eq $false) {
             New-Item $reportFolder -Type Directory | Out-Null

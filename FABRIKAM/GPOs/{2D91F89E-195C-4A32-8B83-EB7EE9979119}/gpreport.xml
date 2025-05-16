@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{911fcf7e-1c95-4889-8bab-0d5c3562a8d4}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.fabrikam.com</Domain>
+  </Identifier>
+  <Name>Advanced Auditing</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2025-05-16T14:37:37</CreatedTime>
+  <ModifiedTime>2025-05-16T14:37:38</ModifiedTime>
+  <ReadTime>2025-05-16T14:38:13.9591699Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-1354021876-1831262814-3449474082-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-1354021876-1831262814-3449474082-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">FABRIKAM\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>1</VersionDirectory>
+    <VersionSysvol>1</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Auditing" xsi:type="q1:AuditSettings">
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Credential Validation</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce923f-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Security Group Management</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9237-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>1</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit User Account Management</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9235-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit PNP Activity</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9248-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>1</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Process Creation</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce922b-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>1</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Account Lockout</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9217-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>2</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Group Membership</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9249-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>1</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Logon</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9215-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Other Logon/Logoff Events</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce921c-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Special Logon</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce921b-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>1</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Detailed File Share</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9244-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>2</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit File Share</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9224-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Other Object Access Events</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9227-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Removable Storage</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9245-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Audit Policy Change</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce922f-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>1</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Authentication Policy Change</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9230-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>1</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit MPSSVC Rule-Level Policy Change</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9232-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Other Policy Change Events</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9234-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>2</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Sensitive Privilege Use</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9228-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Other System Events</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9214-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Security State Change</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9210-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>1</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit Security System Extension</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9211-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>1</q1:SettingValue>
+        </q1:AuditSetting>
+        <q1:AuditSetting>
+          <q1:PolicyTarget>System</q1:PolicyTarget>
+          <q1:SubcategoryName>Audit System Integrity</q1:SubcategoryName>
+          <q1:SubcategoryGuid>{0cce9212-69ae-11d9-bed3-505054503030}</q1:SubcategoryGuid>
+          <q1:SettingValue>3</q1:SettingValue>
+        </q1:AuditSetting>
+      </Extension>
+      <Name>Advanced Audit Configuration</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>1</VersionDirectory>
+    <VersionSysvol>1</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>corp</SOMName>
+    <SOMPath>corp.fabrikam.com</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

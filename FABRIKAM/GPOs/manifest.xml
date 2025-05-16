@@ -1,5 +1,15 @@
 <Backups xmlns="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" xmlns:mfst="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" mfst:version="1.0">
   <BackupInst>
+    <GPOGuid><![CDATA[{911fcf7e-1c95-4889-8bab-0d5c3562a8d4}]]></GPOGuid>
+    <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[FAB-DC07.corp.fabrikam.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-16T14:38:13]]></BackupTime>
+    <ID><![CDATA[{2D91F89E-195C-4A32-8B83-EB7EE9979119}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Advanced Auditing]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
     <GPOGuid><![CDATA[{bf419b66-fd27-4592-9efe-2d299acda41f}]]></GPOGuid>
     <GPODomain><![CDATA[corp.fabrikam.com]]></GPODomain>
     <GPODomainGuid><![CDATA[{392217a3-8119-47ee-ae41-50b8a7144a3c}]]></GPODomainGuid>

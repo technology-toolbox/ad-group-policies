@@ -1,5 +1,15 @@
 <Backups xmlns="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" xmlns:mfst="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest" mfst:version="1.0">
   <BackupInst>
+    <GPOGuid><![CDATA[{8ec0741a-52e2-4cca-9479-abe712fb67f6}]]></GPOGuid>
+    <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
+    <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>
+    <GPODomainController><![CDATA[EXT-DC11B.extranet.technologytoolbox.com]]></GPODomainController>
+    <BackupTime><![CDATA[2025-05-16T15:22:43]]></BackupTime>
+    <ID><![CDATA[{4833A095-80EA-48CA-8443-C5EC1EED92AC}]]></ID>
+    <Comment><![CDATA[]]></Comment>
+    <GPODisplayName><![CDATA[Event Log]]></GPODisplayName>
+  </BackupInst>
+  <BackupInst>
     <GPOGuid><![CDATA[{a4023473-d04d-4dba-a47d-eac4434eb031}]]></GPOGuid>
     <GPODomain><![CDATA[extranet.technologytoolbox.com]]></GPODomain>
     <GPODomainGuid><![CDATA[{9b0ef3b3-2e61-4b83-a4c5-c2322f3c43a6}]]></GPODomainGuid>

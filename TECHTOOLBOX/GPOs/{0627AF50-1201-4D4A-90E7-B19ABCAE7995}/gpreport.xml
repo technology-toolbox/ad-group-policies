@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{dbb6ef8f-630e-4121-95c6-10f5ad3dee42}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.technologytoolbox.com</Domain>
+  </Identifier>
+  <Name>Defender Antivirus</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2025-05-27T19:51:58</CreatedTime>
+  <ModifiedTime>2025-05-27T19:51:59</ModifiedTime>
+  <ReadTime>2025-05-27T19:52:18.4963257Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-3914637029-2275272621-3670275343-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>1</VersionDirectory>
+    <VersionSysvol>1</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q1:RegistrySettings">
+        <q1:Policy>
+          <q1:Name>Configure detection for potentially unwanted applications</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>
+        Enable or disable detection for potentially unwanted applications. You can choose to block, audit, or allow when potentially unwanted software is being downloaded or attempts to install itself on your computer.
+
+        Enabled:
+        Specify the mode in the Options section:
+        -Block: Potentially unwanted software will be blocked.
+        -Audit Mode: Potentially unwanted software will not be blocked, however if this feature would have blocked access if it were set to Block, then a record of the event will be in the event logs.
+
+        Disabled:
+        Potentially unwanted software will not be blocked.
+
+        Not configured:
+        Same as Disabled.
+    </q1:Explain>
+          <q1:Supported>At least Windows Server 2016, Windows 10 Version 1607</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus</q1:Category>
+          <q1:DropDownList>
+            <q1:Name />
+            <q1:State>NotConfigured</q1:State>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Configure the 'Block at First Sight' feature</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This feature ensures the device checks in real time with the Microsoft Active Protection Service (MAPS) before allowing certain content to be run or accessed. If this feature is disabled, the check will not occur, which will lower the protection state of the device.
+	Enabled – The Block at First Sight setting is turned on.
+	Disabled – The Block at First Sight setting is turned off.
+	
+	This feature requires these Group Policy settings to be set as follows:
+	MAPS -&gt; The “Join Microsoft MAPS” must be enabled or the “Block at First Sight” feature will not function.
+	MAPS -&gt; The “Send file samples when further analysis is required” should be set to 1 (Send safe samples) or 3 (Send all samples). Setting to 0 (Always Prompt) will lower the protection state of the device.  Setting to 2 (Never send) means the “Block at First Sight” feature will not function.
+	Real-time Protection -&gt; The “Scan all downloaded files and attachments” policy must be enabled or the “Block at First Sight” feature will not function.
+	Real-time Protection -&gt; Do not enable the “Turn off real-time protection” policy or the “Block at First Sight” feature will not function.</q1:Explain>
+          <q1:Supported>At least Windows Server 2016, Windows 10</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/MAPS</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Join Microsoft MAPS</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to join Microsoft MAPS. Microsoft MAPS is the online community that helps you choose how to respond to potential threats. The community also helps stop the spread of new malicious software infections.
+
+    You can choose to send basic or additional information about detected software. Additional information helps Microsoft create new definitions and help it to protect your computer. This information can include things like location of detected items on your computer if harmful software was removed. The information will be automatically collected and sent. In some instances, personal information might unintentionally be sent to Microsoft. However, Microsoft will not use this information to identify you or contact you.
+
+    Possible options are:
+    (0x0) Disabled (default)
+    (0x1) Basic membership
+    (0x2) Advanced membership
+
+    Basic membership will send basic information to Microsoft about software that has been detected, including where the software came from, the actions that you apply or that are applied automatically, and whether the actions were successful.
+
+    Advanced membership, in addition to basic information, will send more information to Microsoft about malicious software, spyware, and potentially unwanted software, including the location of the software, file names, how the software operates, and how it has impacted your computer.
+
+    If you enable this setting, you will join Microsoft MAPS with the membership specified.
+
+    If you disable or do not configure this setting, you will not join Microsoft MAPS.
+  
+    In Windows 10, Basic membership is no longer available, so setting the value to 1 or 2 enrolls the device into Advanced membership.</q1:Explain>
+          <q1:Supported>At least Windows Vista</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/MAPS</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Join Microsoft MAPS</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Advanced MAPS</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Send file samples when further analysis is required</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>
+        This policy setting configures behaviour of samples submission when opt-in for MAPS telemetry is set.
+
+        Possible options are:
+        (0x0) Always prompt
+        (0x1) Send safe samples automatically
+        (0x2) Never send
+        (0x3) Send all samples automatically
+    </q1:Explain>
+          <q1:Supported>At least Windows Vista</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/MAPS</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Send file samples when further analysis is required</q1:Name>
+            <q1:State>NotConfigured</q1:State>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Select cloud protection level</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>
+      This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files.
+
+      If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
+      
+      For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
+
+      Note: This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
+
+      Possible options are:
+      (0x0) Default windows defender blocking level
+      (0x2) High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)
+      (0x4) High+ blocking level – aggressively block unknowns and apply additional protection measures (may impact  client performance)
+      (0x6) Zero tolerance blocking level – block all unknown executables
+    </q1:Explain>
+          <q1:Supported>At least Windows Server 2016, Windows 10</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/MpEngine</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Select cloud blocking level</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>High blocking level</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Scan all downloaded files and attachments</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to configure scanning for all downloaded files and attachments.
+
+    If you enable or do not configure this setting, scanning for all downloaded files and attachments will be enabled.
+
+    If you disable this setting, scanning for all downloaded files and attachments will be disabled.</q1:Explain>
+          <q1:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/Real-time Protection</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn off real-time protection</q1:Name>
+          <q1:State>Disabled</q1:State>
+          <q1:Explain>This policy setting turns off real-time protection prompts for known malware detection.
+
+    Windows Defender Antivirus alerts you when malware or potentially unwanted software attempts to install itself or to run on your computer.
+
+    If you enable this policy setting, Windows Defender Antivirus will not prompt users to take actions on malware detections.
+
+    If you disable or do not configure this policy setting, Windows Defender Antivirus will prompt users to take actions on malware detections.</q1:Explain>
+          <q1:Supported>At least Windows Vista</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/Real-time Protection</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on behavior monitoring</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to configure behavior monitoring.
+
+    If you enable or do not configure this setting, behavior monitoring will be enabled.
+
+    If you disable this setting, behavior monitoring will be disabled.</q1:Explain>
+          <q1:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/Real-time Protection</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Scan removable drives</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether or not to scan for malicious software and unwanted software in the contents of removable drives, such as USB flash drives, when running a full scan.
+
+    If you enable this setting, removable drives will be scanned during any type of scan.
+
+    If you disable or do not configure this setting, removable drives will not be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.</q1:Explain>
+          <q1:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/Scan</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on e-mail scanning</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to configure e-mail scanning. When e-mail scanning is enabled, the engine will parse the mailbox and mail files, according to their specific format, in order to analyze the mail bodies and attachments. Several e-mail formats are currently supported, for example: pst (Outlook), dbx, mbx, mime (Outlook Express), binhex (Mac).
+
+    If you enable this setting, e-mail scanning will be enabled.
+
+    If you disable or do not configure this setting, e-mail scanning will be disabled.</q1:Explain>
+          <q1:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/Scan</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Configure Attack Surface Reduction rules</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>
+    Set the state for each Attack Surface Reduction (ASR) rule.
+
+    After enabling this setting, you can set each rule to the following in the Options section:
+    - Block: the rule will be applied
+    - Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule will not actually be applied)
+    - Off: the rule will not be applied
+
+    Enabled:
+    Specify the state for each ASR rule under the Options section for this setting.
+    Enter each rule on a new line as a name-value pair:
+    - Name column: Enter a valid ASR rule ID
+    - Value column: Enter the status ID that relates to state you want to specify for the associated rule
+
+    The following status IDs are permitted under the value column:
+    - 1 (Block)
+    - 0 (Off)
+    - 2 (Audit)
+    
+    Example:
+    xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            0
+    xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            1
+    xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            2
+
+    Disabled:
+    No ASR rules will be configured.
+
+    Not configured:
+    Same as Disabled.
+
+    You can exclude folders or files in the ""Exclude files and paths from Attack Surface Reduction Rules"" GP setting.
+    </q1:Explain>
+          <q1:Supported>At least Windows Server 2016, Windows 10 Version 1709</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction</q1:Category>
+          <q1:ListBox>
+            <q1:Name>Set the state for each ASR rule:</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:ExplicitValue>true</q1:ExplicitValue>
+            <q1:Additive>true</q1:Additive>
+            <q1:Value>
+              <q1:Element>
+                <q1:Name>75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>3b576869-a4ec-4529-8536-b80a7769e899</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>d4f940ab-401b-4efc-aadc-ad5f3c50688a</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>5beb7efe-fd9a-4556-801d-275e5ffc04cc</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>d3e037e1-3eb8-44c8-a917-57927947596d</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>be9ba2d9-53ea-4cdc-84e5-9b1eeee46550</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>26190899-1602-49e8-8b27-eb1d0a1ce869</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>c1db55ab-c21a-4637-bb3f-a12568109d35</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+              <q1:Element>
+                <q1:Name>e6db77e5-3df2-4cf1-b95a-636979351e5b</q1:Name>
+                <q1:Data>1</q1:Data>
+              </q1:Element>
+            </q1:Value>
+          </q1:ListBox>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Prevent users and apps from accessing dangerous websites</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>
+    Enable or disable Windows Defender Exploit Guard network protection to prevent employees from using any application to access dangerous domains that may host phishing scams, exploit-hosting sites, and other malicious content on the Internet.
+
+    Enabled:
+    Specify the mode in the Options section:
+    -Block: Users and applications will not be able to access dangerous domains
+    -Audit Mode: Users and applications can connect to dangerous domains, however if this feature would have blocked access if it were set to Block, then a record of the event will be in the event logs.
+
+    Disabled:
+    Users and applications will not be blocked from connecting to dangerous domains.
+
+    Not configured:
+    Same as Disabled.
+    </q1:Explain>
+          <q1:Supported>At least Windows Server 2016, Windows 10 Version 1709</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Network Protection</q1:Category>
+          <q1:DropDownList>
+            <q1:Name />
+            <q1:State>NotConfigured</q1:State>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Configure Windows Defender SmartScreen</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy allows you to turn Windows Defender SmartScreen on or off.  SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet.  This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious.  No dialog is shown for apps that do not appear to be suspicious.
+
+Some information is sent to Microsoft about files and programs run on PCs with this feature enabled.
+
+If you enable this policy, SmartScreen will be turned on for all users.  Its behavior can be controlled by the following options:
+
+• Warn and prevent bypass
+• Warn
+
+If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs will not present the user with the option to disregard the warning and run the app.  SmartScreen will continue to show the warning on subsequent attempts to run the app.
+
+If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway.  SmartScreen will not warn the user again for that app if the user tells SmartScreen to run the app.
+
+If you disable this policy, SmartScreen will be turned off for all users.  Users will not be warned if they try to run suspicious apps from the Internet.
+
+If you do not configure this policy, SmartScreen will be enabled by default, but users may change their settings.</q1:Explain>
+          <q1:Supported>At least Windows Server 2012, Windows 8 or Windows RT</q1:Supported>
+          <q1:Category>Windows Components/Windows Defender SmartScreen/Explorer</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Pick one of the following settings:</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Warn and prevent bypass</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Configure Windows Defender SmartScreen</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting lets you configure whether to turn on Windows Defender SmartScreen. Windows Defender SmartScreen provides warning messages to help protect your employees from potential phishing scams and malicious software. By default, Windows Defender SmartScreen is turned on.
+
+If you enable this setting, Windows Defender SmartScreen is turned on and employees can't turn it off.
+
+If you disable this setting, Windows Defender SmartScreen is turned off and employees can't turn it on.
+
+If you don't configure this setting, employees can choose whether to use Windows Defender SmartScreen.</q1:Explain>
+          <q1:Category>Windows Components/Windows Defender SmartScreen/Microsoft Edge</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Prevent bypassing Windows Defender SmartScreen prompts for sites</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about potentially malicious websites.
+
+If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they are blocked from continuing to the site.
+
+If you disable or don't configure this setting, employees can ignore Windows Defender SmartScreen warnings and continue to the site.
+    </q1:Explain>
+          <q1:Category>Windows Components/Windows Defender SmartScreen/Microsoft Edge</q1:Category>
+        </q1:Policy>
+        <q1:RegistrySetting>
+          <q1:KeyPath>Software\Policies\Microsoft\Windows Defender\Real-Time Protection</q1:KeyPath>
+          <q1:AdmSetting>false</q1:AdmSetting>
+          <q1:Value>
+            <q1:Name>DisableScriptScanning</q1:Name>
+            <q1:Number>0</q1:Number>
+          </q1:Value>
+        </q1:RegistrySetting>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>1</VersionDirectory>
+    <VersionSysvol>1</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>corp</SOMName>
+    <SOMPath>corp.technologytoolbox.com</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>

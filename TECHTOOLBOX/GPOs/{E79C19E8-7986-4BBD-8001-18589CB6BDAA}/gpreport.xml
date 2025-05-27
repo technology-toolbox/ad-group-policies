@@ -1,0 +1,2362 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GPO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.microsoft.com/GroupPolicy/Settings">
+  <Identifier>
+    <Identifier xmlns="http://www.microsoft.com/GroupPolicy/Types">{c04afa70-5af1-4454-9dbc-b8d34d0614d2}</Identifier>
+    <Domain xmlns="http://www.microsoft.com/GroupPolicy/Types">corp.technologytoolbox.com</Domain>
+  </Identifier>
+  <Name>Internet Explorer 11 - Computer</Name>
+  <IncludeComments>true</IncludeComments>
+  <CreatedTime>2025-05-27T19:48:17</CreatedTime>
+  <ModifiedTime>2025-05-27T19:48:17</ModifiedTime>
+  <ReadTime>2025-05-27T19:48:42.9822307Z</ReadTime>
+  <SecurityDescriptor>
+    <SDDL xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">O:DAG:DAD:PAI(OA;CI;CR;edacfd8f-ffb3-11d1-b41d-00a0c968f939;;AU)(A;;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;DA)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;S-1-5-21-3914637029-2275272621-3670275343-519)(A;CI;LCRPLORC;;;ED)(A;CI;LCRPLORC;;;AU)(A;CI;CCDCLCSWRPWPDTLOSDRCWDWO;;;SY)(A;CIIO;CCDCLCSWRPWPDTLOSDRCWDWO;;;CO)S:AI(OU;CIIDSA;WPWD;;f30e3bc2-9ff0-11d1-b603-0000f80367c1;WD)(OU;CIIOIDSA;WP;f30e3bbe-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)(OU;CIIOIDSA;WP;f30e3bbf-9ff0-11d1-b603-0000f80367c1;bf967aa5-0de6-11d0-a285-00aa003049e2;WD)</SDDL>
+    <Owner xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+    </Owner>
+    <Group xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+      <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+    </Group>
+    <PermissionsPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">true</PermissionsPresent>
+    <Permissions xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">
+      <InheritsFromParent>false</InheritsFromParent>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-519</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Enterprise Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-9</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Read</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-18</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\SYSTEM</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-11</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">NT AUTHORITY\Authenticated Users</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Apply Group Policy</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+      <TrusteePermissions>
+        <Trustee>
+          <SID xmlns="http://www.microsoft.com/GroupPolicy/Types">S-1-5-21-3914637029-2275272621-3670275343-512</SID>
+          <Name xmlns="http://www.microsoft.com/GroupPolicy/Types">TECHTOOLBOX\Domain Admins</Name>
+        </Trustee>
+        <Type xsi:type="PermissionType">
+          <PermissionType>Allow</PermissionType>
+        </Type>
+        <Inherited>false</Inherited>
+        <Applicability>
+          <ToSelf>true</ToSelf>
+          <ToDescendantObjects>false</ToDescendantObjects>
+          <ToDescendantContainers>true</ToDescendantContainers>
+          <ToDirectDescendantsOnly>false</ToDirectDescendantsOnly>
+        </Applicability>
+        <Standard>
+          <GPOGroupedAccessEnum>Edit, delete, modify security</GPOGroupedAccessEnum>
+        </Standard>
+        <AccessMask>0</AccessMask>
+      </TrusteePermissions>
+    </Permissions>
+    <AuditingPresent xmlns="http://www.microsoft.com/GroupPolicy/Types/Security">false</AuditingPresent>
+  </SecurityDescriptor>
+  <FilterDataAvailable>true</FilterDataAvailable>
+  <Computer>
+    <VersionDirectory>1</VersionDirectory>
+    <VersionSysvol>1</VersionSysvol>
+    <Enabled>true</Enabled>
+    <ExtensionData>
+      <Extension xmlns:q1="http://www.microsoft.com/GroupPolicy/Settings/Registry" xsi:type="q1:RegistrySettings">
+        <q1:Policy>
+          <q1:Name>Prevent bypassing SmartScreen Filter warnings</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter prevents the user from browsing to or downloading from sites that are known to host malicious content. SmartScreen Filter also prevents the execution of files that are known to be malicious.
+
+If you enable this policy setting, SmartScreen Filter warnings block the user.
+
+If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users do not commonly download from the Internet.
+
+If you enable this policy setting, SmartScreen Filter warnings block the user.
+
+If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 9.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Prevent managing SmartScreen Filter</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting prevents the user from managing SmartScreen Filter, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware.
+
+If you enable this policy setting, the user is not prompted to turn on SmartScreen Filter. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the user.
+
+If you disable or do not configure this policy setting, the user is prompted to decide whether to turn on SmartScreen Filter during the first-run experience.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 9.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Select SmartScreen Filter mode</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>On</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Prevent per-user installation of ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to prevent the installation of ActiveX controls on a per-user basis.
+
+If you enable this policy setting, ActiveX controls cannot be installed on a per-user basis.
+
+If you disable or do not configure this policy setting, ActiveX controls can be installed on a per-user basis.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Security Zones: Do not allow users to add/delete sites</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Prevents users from adding or removing sites from security zones. A security zone is a group of Web sites with the same security level.
+
+If you enable this policy, the site management settings for security zones are disabled. (To see the site management settings for security zones, in the Internet Options dialog box, click the Security tab, and then click the Sites button.)
+
+If you disable this policy or do not configure it, users can add Web sites to or remove sites from the Trusted Sites and Restricted Sites zones, and alter settings for the Local Intranet zone.
+
+This policy prevents users from changing site management settings for security zones established by the administrator.
+
+Note:  The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it is enabled, this policy is ignored.
+
+Also, see the "Security zones: Use only machine settings" policy.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 5.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Security Zones: Do not allow users to change policies</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Prevents users from changing security zone settings. A security zone is a group of Web sites with the same security level.
+
+If you enable this policy, the Custom Level button and security-level slider on the Security tab in the Internet Options dialog box are disabled.
+
+If you disable this policy or do not configure it, users can change the settings for security zones.
+
+This policy prevents users from changing security zone settings established by the administrator.
+
+Note: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it is enabled, this policy is ignored.
+
+Also, see the "Security zones: Use only machine settings" policy.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 5.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Security Zones: Use only machine settings </q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Applies security zone information to all users of the same computer. A security zone is a group of Web sites with the same security level.
+
+If you enable this policy, changes that the user makes to a security zone will apply to all users of that computer.
+
+If you disable this policy or do not configure it, users of the same computer can establish their own security zone settings.
+
+This policy is intended to ensure that security zone settings apply uniformly to the same computer and do not vary from user to user.
+
+Also, see the "Security zones: Do not allow users to change policies" policy.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 5.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Specify use of ActiveX Installer Service for installation of ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to specify how ActiveX controls are installed.
+
+If you enable this policy setting, ActiveX controls are installed only if the ActiveX Installer Service is present and has been configured to allow the installation of ActiveX controls.
+
+If you disable or do not configure this policy setting, ActiveX controls, including per-user controls, are installed through the standard installation process.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn off Crash Detection</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage the crash detection feature of add-on Management.
+
+If you enable this policy setting, a crash in Internet Explorer will exhibit behavior found in Windows XP Professional Service Pack 1 and earlier, namely to invoke Windows Error Reporting. All policy settings for Windows Error Reporting continue to apply.
+
+If you disable or do not configure this policy setting, the crash detection feature for add-on management will be functional.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn off the Security Settings Check feature</q1:Name>
+          <q1:State>Disabled</q1:State>
+          <q1:Explain>This policy setting turns off the Security Settings Check feature, which checks Internet Explorer security settings to determine when the settings put Internet Explorer at risk.
+
+If you enable this policy setting, the feature is turned off.
+
+If you disable or do not configure this policy setting, the feature is turned on.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Prevent ignoring certificate errors</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting prevents the user from ignoring Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificate errors that interrupt browsing (such as "expired", "revoked", or "name mismatch" errors) in Internet Explorer.
+
+If you enable this policy setting, the user cannot continue browsing.
+
+If you disable or do not configure this policy setting, the user can choose to ignore certificate errors and continue browsing.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow software to run or install even if the signature is invalid</q1:Name>
+          <q1:State>Disabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether software, such as ActiveX controls and file downloads, can be installed or run by the user even though the signature is invalid. An invalid signature might indicate that someone has tampered with the file.
+
+If you enable this policy setting, users will be prompted to install or run files with an invalid signature.
+
+If you disable this policy setting, users cannot run or install files with an invalid signature.
+
+If you do not configure this policy, users can choose to run or install files with an invalid signature.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Check for server certificate revocation</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether Internet Explorer will check revocation status of servers' certificates. Certificates are revoked when they have been compromised or are no longer valid, and this option protects users from submitting confidential data to a site that may be fraudulent or not secure.
+
+If you enable this policy setting, Internet Explorer will check to see if server certificates have been revoked.
+
+If you disable this policy setting, Internet Explorer will not check server certificates to see if they have been revoked.
+
+If you do not configure this policy setting, Internet Explorer will not check server certificates to see if they have been revoked.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows 2003 Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Check for signatures on downloaded programs</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether Internet Explorer checks for digital signatures (which identifies the publisher of signed software and verifies it hasn't been modified or tampered with) on user computers before downloading executable programs.
+
+If you enable this policy setting, Internet Explorer will check the digital signatures of executable programs and display their identities before downloading them to user computers.
+
+If you disable this policy setting, Internet Explorer will not check the digital signatures of executable programs or display their identities before downloading them to user computers.
+
+If you do not configure this policy, Internet Explorer will not check the digital signatures of executable programs or display their identities before downloading them to user computers.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows 2003 Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Do not allow ActiveX controls to run in Protected Mode when Enhanced Protected Mode is enabled</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting prevents ActiveX controls from running in Protected Mode when Enhanced Protected Mode is enabled. When a user has an ActiveX control installed that is not compatible with Enhanced Protected Mode and a website attempts to load the control, Internet Explorer notifies the user and gives the option to run the website in regular Protected Mode. This policy setting disables this notification and forces all websites to run in Enhanced Protected Mode.
+
+Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system.
+
+When Enhanced Protected Mode is enabled, and a user encounters a website that attempts to load an ActiveX control that is not compatible with Enhanced Protected Mode, Internet Explorer notifies the user and gives the option to disable Enhanced Protected Mode for that particular website.
+
+If you enable this policy setting, Internet Explorer will not give the user the option to disable Enhanced Protected Mode. All Protected Mode websites will run in Enhanced Protected Mode.
+
+If you disable or do not configure this policy setting, Internet Explorer notifies users and provides an option to run websites with incompatible ActiveX controls in regular Protected Mode. This is the default behavior.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 10.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn off encryption support</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to turn off support for Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0, or SSL 3.0 in the browser. TLS and SSL are protocols that help protect communication between the browser and the target server. When the browser attempts to set up a protected communication with the target server, the browser and server negotiate which protocol and version to use. The browser and server attempt to match each other’s list of supported protocols and versions, and they select the most preferred match.
+
+If you enable this policy setting, the browser negotiates or does not negotiate an encryption tunnel by using the encryption methods that you select from the drop-down list.
+
+If you disable or do not configure this policy setting, the user can select which encryption method the browser supports.
+
+Note: SSL 2.0 is off by default and is no longer supported starting with Windows 10 Version 1607. SSL 2.0 is an outdated security protocol, and enabling SSL 2.0 impairs the performance and functionality of TLS 1.0.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Secure Protocol combinations</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Use TLS 1.1 and TLS 1.2</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether Internet Explorer 11 uses 64-bit processes (for greater security) or 32-bit processes (for greater compatibility) when running in Enhanced Protected Mode on 64-bit versions of Windows.
+
+Important: Some ActiveX controls and toolbars may not be available when 64-bit processes are used.
+
+If you enable this policy setting, Internet Explorer 11 will use 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows.
+
+If you disable this policy setting, Internet Explorer 11 will use 32-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows.
+
+If you don't configure this policy setting, users can turn this feature on or off using Internet Explorer settings. This feature is turned off by default.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 11.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on Enhanced Protected Mode</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system.
+
+If you enable this policy setting, Enhanced Protected Mode will be turned on. Any zone that has Protected Mode enabled will use Enhanced Protected Mode. Users will not be able to disable Enhanced Protected Mode.
+
+If you disable this policy setting, Enhanced Protected Mode will be turned off. Any zone that has Protected Mode enabled will use the version of Protected Mode introduced in Internet Explorer 7 for Windows Vista.
+
+If you do not configure this policy, users will be able to turn on or turn off Enhanced Protected Mode on the Advanced tab of the Internet Options dialog.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 10.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Intranet Sites: Include all network paths (UNCs)</q1:Name>
+          <q1:State>Disabled</q1:State>
+          <q1:Explain>This policy setting controls whether URLs representing UNCs are mapped into the local Intranet security zone.
+
+If you enable this policy setting, all network paths are mapped into the Intranet Zone.
+
+If you disable this policy setting, network paths are not necessarily mapped into the Intranet Zone (other rules might map one there).
+
+If you do not configure this policy setting, users choose whether network paths are mapped into the Intranet Zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on certificate address mismatch warning</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to turn on the certificate address mismatch security warning. When this policy setting is turned on, the user is warned when visiting Secure HTTP (HTTPS) websites that present certificates issued for a different website address. This warning helps prevent spoofing attacks.
+
+If you enable this policy setting, the certificate address mismatch warning always appears.
+
+If you disable or do not configure this policy setting, the user can choose whether the certificate address mismatch warning appears (by using the Advanced page in the Internet Control panel).</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Access data sources across domains</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+
+If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
+
+If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+
+If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Access data sources across domains</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow cut, copy or paste operations from the clipboard via script</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region.
+
+If you enable this policy setting, a script can perform a clipboard operation.
+
+If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations.
+
+If you disable this policy setting, a script cannot perform a clipboard operation.
+
+If you do not configure this policy setting, a script can perform a clipboard operation.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow paste operations via script</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow drag and drop or copy and paste files</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether users can drag files or copy and paste files from a source within the zone.
+
+If you enable this policy setting, users can drag files or copy and paste files from this zone automatically. If you select Prompt in the drop-down box, users are queried to choose whether to drag or copy files from this zone.
+
+If you disable this policy setting, users are prevented from dragging files or copying and pasting files from this zone.
+
+If you do not configure this policy setting, users can drag files or copy and paste files from this zone automatically.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow drag and drop or copy and paste files</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow loading of XAML files</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage the loading of Extensible Application Markup Language (XAML) files. XAML is an XML-based declarative markup language commonly used for creating rich user interfaces and graphics that take advantage of the Windows Presentation Foundation.
+
+If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user cannot change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files.
+
+If you disable this policy setting, XAML files are not loaded inside Internet Explorer. The user cannot change this behavior.
+
+If you do not configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>XAML Files</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow only approved domains to use ActiveX controls without prompt</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether or not the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control.
+
+If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites.
+
+If you disable this policy setting, the user does not see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Only allow approved domains to use ActiveX controls without prompt</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow only approved domains to use the TDC ActiveX control</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether or not the user is allowed to run the TDC ActiveX control on websites.
+
+If you enable this policy setting, the TDC ActiveX control will not run from websites in this zone.
+
+If you disable this policy setting, the TDC Active X control will run from all sites in this zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 11.0 on Windows 10, vertion 1607 or later</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Only allow approved domains to use the TDC ActiveX control</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow scripting of Internet Explorer WebBrowser controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether a page can control embedded WebBrowser controls via script.
+
+If you enable this policy setting, script access to the WebBrowser control is allowed.
+
+If you disable this policy setting, script access to the WebBrowser control is not allowed.
+
+If you do not configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Internet Explorer web browser control</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow script-initiated windows without size or position constraints</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage restrictions on script-initiated pop-up windows and windows that include the title and status bars.
+
+If you enable this policy setting, Windows Restrictions security will not apply in this zone. The security zone runs without the added layer of security provided by this feature.
+
+If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
+
+If you do not configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow script-initiated windows without size or position constraints</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow scriptlets</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether the user can run scriptlets.
+
+If you enable this policy setting, the user can run scriptlets.
+
+If you disable this policy setting, the user cannot run scriptlets.
+
+If you do not configure this policy setting, the user can enable or disable scriptlets.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Scriptlets</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow updates to status bar via script</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether script is allowed to update the status bar within the zone.
+
+If you enable this policy setting, script is allowed to update the status bar.
+
+If you disable or do not configure this policy setting, script is not allowed to update the status bar.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Status bar updates via script</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow VBScript to run in Internet Explorer</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether VBScript can be run on pages from the specified zone in Internet Explorer.
+
+If you selected Enable in the drop-down box, VBScript can run without user intervention.
+
+If you selected Prompt in the drop-down box, users are asked to choose whether to allow VBScript to run.
+
+If you selected Disable in the drop-down box, VBScript is prevented from running.
+
+If you do not configure or disable this policy setting, VBScript is prevented from running.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 11.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow VBScript to run in Internet Explorer</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Automatic prompting for file downloads</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+
+If you enable this setting, users will receive a file download dialog for automatic download attempts.
+
+If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Automatic prompting for file downloads</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Don't run antimalware programs against ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages.
+
+If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+
+If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+
+If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 11.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Don't run antimalware programs against ActiveX controls</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Download signed ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether users may download signed ActiveX controls from a page in the zone.
+
+If you enable this policy, users can download signed controls without user intervention. If you select Prompt in the drop-down box, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
+
+If you disable the policy setting, signed controls cannot be downloaded.
+
+If you do not configure this policy setting, users are queried whether to download controls signed by publishers who aren't trusted.  Code signed by trusted publishers is silently downloaded.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Download signed ActiveX controls</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Download unsigned ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone.
+
+If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run.
+
+If you disable this policy setting, users cannot run unsigned controls.
+
+If you do not configure this policy setting, users cannot run unsigned controls.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Download unsigned ActiveX controls</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Enable dragging of content from different domains across windows</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows.
+
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+
+If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
+
+In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
+
+In Internet Explorer 9 and earlier versions, if you disable this policy or do not configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Enable dragging of content from different domains across windows</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Enable dragging of content from different domains within a window</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window.
+
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
+
+If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+
+In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
+
+In Internet Explorer 9 and earlier versions, if you disable this policy setting or do not configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Enable dragging of content from different domains within a window</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Include local path when user is uploading files to a server</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether or not local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path.
+
+If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form.
+
+If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form.
+
+If you do not configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Include local directory path when uploading files to a server</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Initialize and script ActiveX controls not marked as safe</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage ActiveX controls not marked as safe.
+
+If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+
+If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
+
+If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+
+If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Initialize and script ActiveX controls not marked as safe</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Java permissions</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage permissions for Java applets.
+
+If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually.
+
+Low Safety enables applets to perform all operations.
+
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+
+High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
+
+If you disable this policy setting, Java applets cannot run.
+
+If you do not configure this policy setting, the permission is set to High Safety.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Java permissions</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable Java</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Launching applications and files in an IFRAME</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether applications may be run and files may be downloaded from an IFRAME reference in the HTML of the pages in this zone.
+
+If you enable this policy setting, users can run applications and download files from IFRAMEs on the pages in this zone without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone.
+
+If you disable this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
+
+If you do not configure this policy setting, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Launching applications and files in an IFRAME</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Logon options</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage settings for logon options.
+
+If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.
+
+If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+If you do not configure this policy setting, logon is set to Automatic logon only in Intranet zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Logon options</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Prompt for user name and password</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Navigate windows and frames across different domains</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
+
+If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+
+If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+
+If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Navigate windows and frames across different domains</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Run .NET Framework-reliant components not signed with Authenticode</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+
+If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+
+If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Run .NET Framework-reliant components not signed with Authenticode</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Run .NET Framework-reliant components signed with Authenticode</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+
+If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
+
+If you disable this policy setting, Internet Explorer will not execute signed managed components.
+
+If you do not configure this policy setting, Internet Explorer will execute signed managed components.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Run .NET Framework-reliant components signed with Authenticode</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Show security warning for potentially unsafe files</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether or not the "Open File - Security Warning" message appears when the user tries to open executable files or other potentially unsafe files (from an intranet file share by using File Explorer, for example).
+
+If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open.
+
+If you disable this policy setting, these files do not open.
+
+If you do not configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Launching programs and unsafe files</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Prompt</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on Cross-Site Scripting Filter</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy controls whether or not the Cross-Site Scripting (XSS) Filter will detect and prevent cross-site script injections into websites in this zone.
+
+If you enable this policy setting, the XSS Filter is turned on for sites in this zone, and the XSS Filter attempts to block cross-site script injections.
+
+If you disable this policy setting, the XSS Filter is turned off for sites in this zone, and Internet Explorer permits cross-site script injections.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Turn on Cross-Site Scripting (XSS) Filter</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on Protected Mode</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system.
+
+If you enable this policy setting, Protected Mode is turned on. The user cannot turn off Protected Mode.
+
+If you disable this policy setting, Protected Mode is turned off. The user cannot turn on Protected Mode.
+
+If you do not configure this policy setting, the user can turn on or turn off Protected Mode.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0 in Windows Vista</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Protected Mode</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on SmartScreen Filter scan</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+
+If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+
+If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+
+If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+
+Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Use SmartScreen Filter</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Use Pop-up Blocker</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link are not blocked.
+
+If you enable this policy setting, most unwanted pop-up windows are prevented from appearing.
+
+If you disable this policy setting, pop-up windows are not prevented from appearing.
+
+If you do not configure this policy setting, most unwanted pop-up windows are prevented from appearing.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Use Pop-up Blocker</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Userdata persistence</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.
+
+If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+
+If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+
+If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Userdata persistence</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Web sites in less privileged Web content zones can navigate into this zone</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
+
+If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.  The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+
+If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Web sites in less privileged Web content zones can navigate into this zone</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Don't run antimalware programs against ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages.
+
+If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+
+If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+
+If you don't configure this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 11.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Don't run antimalware programs against ActiveX controls</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Initialize and script ActiveX controls not marked as safe</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage ActiveX controls not marked as safe.
+
+If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+
+If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
+
+If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+
+If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Initialize and script ActiveX controls not marked as safe</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Java permissions</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage permissions for Java applets.
+
+If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually.
+
+Low Safety enables applets to perform all operations.
+
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+
+High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
+
+If you disable this policy setting, Java applets cannot run.
+
+If you do not configure this policy setting, the permission is set to Medium Safety.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Java permissions</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>High safety</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Don't run antimalware programs against ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages.
+
+If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+
+If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+
+If you don't configure this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 11.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Don't run antimalware programs against ActiveX controls</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Java permissions</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage permissions for Java applets.
+
+If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually.
+
+Low Safety enables applets to perform all operations.
+
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+
+High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
+
+If you disable this policy setting, Java applets cannot run.
+
+If you do not configure this policy setting, the permission is set to Medium Safety.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Java permissions</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable Java</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on SmartScreen Filter scan</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+
+If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+
+If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+
+If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+
+Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Use SmartScreen Filter</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Java permissions</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage permissions for Java applets.
+
+If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually.
+
+Low Safety enables applets to perform all operations.
+
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+
+High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
+
+If you disable this policy setting, Java applets cannot run.
+
+If you do not configure this policy setting, Java applets are disabled.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Java permissions</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable Java</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Java permissions</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage permissions for Java applets.
+
+If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually.
+
+Low Safety enables applets to perform all operations.
+
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+
+High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
+
+If you disable this policy setting, Java applets cannot run.
+
+If you do not configure this policy setting, Java applets are disabled.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Java permissions</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable Java</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Java permissions</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage permissions for Java applets.
+
+If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually.
+
+Low Safety enables applets to perform all operations.
+
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+
+High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
+
+If you disable this policy setting, Java applets cannot run.
+
+If you do not configure this policy setting, Java applets are disabled.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Java permissions</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable Java</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on SmartScreen Filter scan</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+
+If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+
+If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+
+If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+
+Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Use SmartScreen Filter</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Java permissions</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage permissions for Java applets.
+
+If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually.
+
+Low Safety enables applets to perform all operations.
+
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+
+High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
+
+If you disable this policy setting, Java applets cannot run.
+
+If you do not configure this policy setting, Java applets are disabled.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Java permissions</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable Java</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Access data sources across domains</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+
+If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
+
+If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+
+If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Access data sources across domains</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow active scripting</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether script code on pages in the zone is run.
+
+If you enable this policy setting, script code on pages in the zone can run automatically. If you select Prompt in the drop-down box, users are queried to choose whether to allow script code on pages in the zone to run.
+
+If you disable this policy setting, script code on pages in the zone is prevented from running.
+
+If you do not configure this policy setting, script code on pages in the zone is prevented from running.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow active scripting</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow binary and script behaviors</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage dynamic binary and script behaviors: components that encapsulate specific functionality for HTML elements to which they were attached.
+
+If you enable this policy setting, binary and script behaviors are available. If you select Administrator approved in the drop-down box, only behaviors listed in the Admin-approved Behaviors under Binary Behaviors Security Restriction policy are available.
+
+If you disable this policy setting, binary and script behaviors are not available unless applications have implemented a custom security manager.
+
+If you do not configure this policy setting, binary and script behaviors are not available unless applications have implemented a custom security manager.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow Binary and Script Behaviors</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow cut, copy or paste operations from the clipboard via script</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region.
+
+If you enable this policy setting, a script can perform a clipboard operation.
+
+If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations.
+
+If you disable this policy setting, a script cannot perform a clipboard operation.
+
+If you do not configure this policy setting, a script cannot perform a clipboard operation.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow paste operations via script</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow drag and drop or copy and paste files</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether users can drag files or copy and paste files from a source within the zone.
+
+If you enable this policy setting, users can drag files or copy and paste files from this zone automatically. If you select Prompt in the drop-down box, users are queried to choose whether to drag or copy files from this zone.
+
+If you disable this policy setting, users are prevented from dragging files or copying and pasting files from this zone.
+
+If you do not configure this policy setting, users are queried to choose whether to drag or copy files from this zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow drag and drop or copy and paste files</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow file downloads</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether file downloads are permitted from the zone. This option is determined by the zone of the page with the link causing the download, not the zone from which the file is delivered.
+
+If you enable this policy setting, files can be downloaded from the zone.
+
+If you disable this policy setting, files are prevented from being downloaded from the zone.
+
+ If you do not configure this policy setting, files are prevented from being downloaded from the zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow file downloads</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow loading of XAML files</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage the loading of Extensible Application Markup Language (XAML) files. XAML is an XML-based declarative markup language commonly used for creating rich user interfaces and graphics that take advantage of the Windows Presentation Foundation.
+
+If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user cannot change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files.
+
+If you disable this policy setting, XAML files are not loaded inside Internet Explorer. The user cannot change this behavior.
+
+If you do not configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>XAML Files</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow META REFRESH</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether a user's browser can be redirected to another Web page if the author of the Web page uses the Meta Refresh setting (tag) to redirect browsers to another Web page.
+
+If you enable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can be redirected to another Web page.
+
+If you disable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting cannot be redirected to another Web page.
+
+If you do not configure this policy setting, a user's browser that loads a page containing an active Meta Refresh setting cannot be redirected to another Web page.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow META REFRESH</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow only approved domains to use ActiveX controls without prompt</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether or not the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control.
+
+If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites.
+
+If you disable this policy setting, the user does not see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Only allow approved domains to use ActiveX controls without prompt</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow only approved domains to use the TDC ActiveX control</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether or not the user is allowed to run the TDC ActiveX control on websites.
+
+If you enable this policy setting, the TDC ActiveX control will not run from websites in this zone.
+
+If you disable this policy setting, the TDC Active X control will run from all sites in this zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 11.0 on Windows 10, vertion 1607 or later</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Only allow approved domains to use the TDC ActiveX control</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow scripting of Internet Explorer WebBrowser controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether a page can control embedded WebBrowser controls via script.
+
+If you enable this policy setting, script access to the WebBrowser control is allowed.
+
+If you disable this policy setting, script access to the WebBrowser control is not allowed.
+
+If you do not configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Internet Explorer web browser control</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow script-initiated windows without size or position constraints</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage restrictions on script-initiated pop-up windows and windows that include the title and status bars.
+
+If you enable this policy setting, Windows Restrictions security will not apply in this zone. The security zone runs without the added layer of security provided by this feature.
+
+If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
+
+If you do not configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow script-initiated windows without size or position constraints</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow scriptlets</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether the user can run scriptlets.
+
+If you enable this policy setting, the user can run scriptlets.
+
+If you disable this policy setting, the user cannot run scriptlets.
+
+If you do not configure this policy setting, the user can enable or disable scriptlets.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Scriptlets</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow updates to status bar via script</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether script is allowed to update the status bar within the zone.
+
+If you enable this policy setting, script is allowed to update the status bar.
+
+If you disable or do not configure this policy setting, script is not allowed to update the status bar.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Status bar updates via script</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow VBScript to run in Internet Explorer</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether VBScript can be run on pages from the specified zone in Internet Explorer.
+
+If you selected Enable in the drop-down box, VBScript can run without user intervention.
+
+If you selected Prompt in the drop-down box, users are asked to choose whether to allow VBScript to run.
+
+If you selected Disable in the drop-down box, VBScript is prevented from running.
+
+If you do not configure or disable this policy setting, VBScript is prevented from running.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 11.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow VBScript to run in Internet Explorer</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Automatic prompting for file downloads</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+
+If you enable this setting, users will receive a file download dialog for automatic download attempts.
+
+If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Automatic prompting for file downloads</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Don't run antimalware programs against ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages.
+
+If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+
+If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+
+If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 11.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Don't run antimalware programs against ActiveX controls</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Download signed ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether users may download signed ActiveX controls from a page in the zone.
+
+If you enable this policy, users can download signed controls without user intervention. If you select Prompt in the drop-down box, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
+
+If you disable the policy setting, signed controls cannot be downloaded.
+
+If you do not configure this policy setting, signed controls cannot be downloaded.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Download signed ActiveX controls</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Download unsigned ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone.
+
+If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run.
+
+If you disable this policy setting, users cannot run unsigned controls.
+
+If you do not configure this policy setting, users cannot run unsigned controls.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Download unsigned ActiveX controls</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Enable dragging of content from different domains across windows</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows.
+
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+
+If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
+
+In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
+
+In Internet Explorer 9 and earlier versions, if you disable this policy or do not configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Enable dragging of content from different domains across windows</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Enable dragging of content from different domains within a window</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window.
+
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
+
+If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+
+In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
+
+In Internet Explorer 9 and earlier versions, if you disable this policy setting or do not configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Enable dragging of content from different domains within a window</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Include local path when user is uploading files to a server</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether or not local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path.
+
+If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form.
+
+If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form.
+
+If you do not configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Include local directory path when uploading files to a server</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Initialize and script ActiveX controls not marked as safe</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage ActiveX controls not marked as safe.
+
+If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+
+If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
+
+If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+
+If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Initialize and script ActiveX controls not marked as safe</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Java permissions</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage permissions for Java applets.
+
+If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually.
+
+Low Safety enables applets to perform all operations.
+
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+
+High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
+
+If you disable this policy setting, Java applets cannot run.
+
+If you do not configure this policy setting, Java applets are disabled.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Java permissions</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable Java</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Launching applications and files in an IFRAME</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether applications may be run and files may be downloaded from an IFRAME reference in the HTML of the pages in this zone.
+
+If you enable this policy setting, users can run applications and download files from IFRAMEs on the pages in this zone without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone.
+
+If you disable this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
+
+If you do not configure this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Launching applications and files in an IFRAME</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Logon options</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage settings for logon options.
+
+If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.
+
+If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+If you do not configure this policy setting, logon is set to Prompt for username and password.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Logon options</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Anonymous logon</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Navigate windows and frames across different domains</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
+
+If you enable this policy setting, users can open additional windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.
+
+If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.
+
+If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Navigate windows and frames across different domains</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Run .NET Framework-reliant components not signed with Authenticode</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+
+If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+
+If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Run .NET Framework-reliant components not signed with Authenticode</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Run .NET Framework-reliant components signed with Authenticode</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+
+If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
+
+If you disable this policy setting, Internet Explorer will not execute signed managed components.
+
+If you do not configure this policy setting, Internet Explorer will not execute signed managed components.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Run .NET Framework-reliant components signed with Authenticode</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Run ActiveX controls and plugins</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether ActiveX controls and plug-ins can be run on pages from the specified zone.
+
+If you enable this policy setting, controls and plug-ins can run without user intervention.
+
+If you selected Prompt in the drop-down box, users are asked to choose whether to allow the controls or plug-in to run.
+
+If you disable this policy setting, controls and plug-ins are prevented from running.
+
+If you do not configure this policy setting, controls and plug-ins are prevented from running.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Run ActiveX controls and plugins</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Script ActiveX controls marked safe for scripting</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether an ActiveX control marked safe for scripting can interact with a script.
+
+If you enable this policy setting, script interaction can occur automatically without user intervention.
+
+If you select Prompt in the drop-down box, users are queried to choose whether to allow script interaction.
+
+If you disable this policy setting, script interaction is prevented from occurring.
+
+If you do not configure this policy setting, script interaction is prevented from occurring.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Script ActiveX controls marked safe for scripting</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Scripting of Java applets</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether applets are exposed to scripts within the zone.
+
+If you enable this policy setting, scripts can access applets automatically without user intervention.
+
+If you select Prompt in the drop-down box, users are queried to choose whether to allow scripts to access applets.
+
+If you disable this policy setting, scripts are prevented from accessing applets.
+
+If you do not configure this policy setting, scripts are prevented from accessing applets.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Scripting of Java applets</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Show security warning for potentially unsafe files</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether or not the "Open File - Security Warning" message appears when the user tries to open executable files or other potentially unsafe files (from an intranet file share by using File Explorer, for example).
+
+If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open.
+
+If you disable this policy setting, these files do not open.
+
+If you do not configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Launching programs and unsafe files</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on Cross-Site Scripting Filter</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy controls whether or not the Cross-Site Scripting (XSS) Filter will detect and prevent cross-site script injections into websites in this zone.
+
+If you enable this policy setting, the XSS Filter is turned on for sites in this zone, and the XSS Filter attempts to block cross-site script injections.
+
+If you disable this policy setting, the XSS Filter is turned off for sites in this zone, and Internet Explorer permits cross-site script injections.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Turn on Cross-Site Scripting (XSS) Filter</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on Protected Mode</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system.
+
+If you enable this policy setting, Protected Mode is turned on. The user cannot turn off Protected Mode.
+
+If you disable this policy setting, Protected Mode is turned off. The user cannot turn on Protected Mode.
+
+If you do not configure this policy setting, the user can turn on or turn off Protected Mode.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0 in Windows Vista</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Protected Mode</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn on SmartScreen Filter scan</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+
+If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+
+If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+
+If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+
+Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Use SmartScreen Filter</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Use Pop-up Blocker</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link are not blocked.
+
+If you enable this policy setting, most unwanted pop-up windows are prevented from appearing.
+
+If you disable this policy setting, pop-up windows are not prevented from appearing.
+
+If you do not configure this policy setting, most unwanted pop-up windows are prevented from appearing.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Use Pop-up Blocker</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Enable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Userdata persistence</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.
+
+If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+
+If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+
+If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Userdata persistence</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Web sites in less privileged Web content zones can navigate into this zone</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
+
+If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+
+If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Web sites in less privileged Web content zones can navigate into this zone</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Don't run antimalware programs against ActiveX controls</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages.
+
+If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+
+If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+
+If you don't configure this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 11.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Don't run antimalware programs against ActiveX controls</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Initialize and script ActiveX controls not marked as safe</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage ActiveX controls not marked as safe.
+
+If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+
+If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
+
+If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+
+If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Initialize and script ActiveX controls not marked as safe</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>Disable</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Java permissions</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage permissions for Java applets.
+
+If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually.
+
+Low Safety enables applets to perform all operations.
+
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+
+High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
+
+If you disable this policy setting, Java applets cannot run.
+
+If you do not configure this policy setting, the permission is set to Low Safety.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Java permissions</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>High safety</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Allow fallback to SSL 3.0 (Internet Explorer)</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to block an insecure fallback to SSL 3.0. When this policy is enabled, Internet Explorer will attempt to connect to sites using SSL 3.0 or below when TLS 1.0 or greater fails.
+
+We recommend that you do not allow insecure fallback in order to prevent a man-in-the-middle attack.
+
+This policy does not affect which security protocols are enabled.
+
+If you disable this policy, system defaults will be used.
+</q1:Explain>
+          <q1:Supported>At least Internet Explorer 7.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features</q1:Category>
+          <q1:DropDownList>
+            <q1:Name>Allow insecure fallback for:</q1:Name>
+            <q1:State>Enabled</q1:State>
+            <q1:Value>
+              <q1:Name>No Sites</q1:Name>
+            </q1:Value>
+          </q1:DropDownList>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Remove "Run this time" button for outdated ActiveX controls in Internet Explorer </q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to stop users from seeing the "Run this time" button and from running specific outdated ActiveX controls in Internet Explorer.
+
+If you enable this policy setting, users won't see the "Run this time" button on the warning message that appears when Internet Explorer blocks an outdated ActiveX control.
+
+If you disable or don't configure this policy setting, users will see the "Run this time" button on the warning message that appears when Internet Explorer blocks an outdated ActiveX control. Clicking this button lets the user run the outdated ActiveX control once.
+
+For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features/Add-on Management</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Turn off blocking of outdated ActiveX controls for Internet Explorer</q1:Name>
+          <q1:State>Disabled</q1:State>
+          <q1:Explain>This policy setting determines whether Internet Explorer blocks specific outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone.
+
+If you enable this policy setting, Internet Explorer stops blocking outdated ActiveX controls.
+
+If you disable or don't configure this policy setting, Internet Explorer continues to block specific outdated ActiveX controls.
+
+For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 8.0</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features/Add-on Management</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Internet Explorer Processes</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Internet Explorer uses Multipurpose Internet Mail Extensions (MIME) data to determine file handling procedures for files received through a Web server.
+
+This policy setting determines whether Internet Explorer requires that all file-type information provided by Web servers be consistent. For example, if the MIME type of a file is text/plain but the MIME sniff indicates that the file is really an executable file, Internet Explorer renames the file by saving it in the Internet Explorer cache and changing its extension.
+
+If you enable this policy setting, Internet Explorer requires consistent MIME data for all received files.
+
+If you disable this policy setting, Internet Explorer will not require consistent MIME data for all received files.
+
+If you do not configure this policy setting, Internet Explorer requires consistent MIME data for all received files.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features/Consistent Mime Handling</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Internet Explorer Processes</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting determines whether Internet Explorer MIME sniffing will prevent promotion of a file of one type to a more dangerous file type.
+
+If you enable this policy setting, MIME sniffing will never promote a file of one type to a more dangerous file type.
+
+If you disable this policy setting, Internet Explorer processes will allow a MIME sniff promoting a file of one type to a more dangerous file type.
+
+If you do not configure this policy setting, MIME sniffing will never promote a file of one type to a more dangerous file type.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features/Mime Sniffing Safety Feature</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Internet Explorer Processes</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>The MK Protocol Security Restriction policy setting reduces attack surface area by preventing the MK protocol. Resources hosted on the MK protocol will fail.
+
+If you enable this policy setting, the MK Protocol is prevented for File Explorer and Internet Explorer, and resources hosted on the MK protocol will fail.
+
+If you disable this policy setting, applications can use the MK protocol API. Resources hosted on the MK protocol will work for the File Explorer and Internet Explorer processes.
+
+If you do not configure this policy setting, the MK Protocol is prevented for File Explorer and Internet Explorer, and resources hosted on the MK protocol will fail.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features/MK Protocol Security Restriction</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Internet Explorer Processes</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting allows you to manage whether the Notification bar is displayed for Internet Explorer processes when file or code installs are restricted. By default, the Notification bar is displayed for Internet Explorer processes.
+
+If you enable this policy setting, the Notification bar will be displayed for Internet Explorer Processes.
+
+If you disable this policy setting, the Notification bar will not be displayed for Internet Explorer processes.
+
+If you do not configure this policy setting, the Notification bar will be displayed for Internet Explorer Processes.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features/Notification bar</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Internet Explorer Processes</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Internet Explorer places restrictions on each Web page it opens. The restrictions are dependent upon the location of the Web page (Internet, Intranet, Local Machine zone, etc.). Web pages on the local computer have the fewest security restrictions and reside in the Local Machine zone, making the Local Machine security zone a prime target for malicious users. Zone Elevation also disables JavaScript navigation if there is no security context.
+
+If you enable this policy setting, any zone can be protected from zone elevation by Internet Explorer processes.
+
+If you disable this policy setting, no zone receives such protection for Internet Explorer processes.
+
+If you do not configure this policy setting, any zone can be protected from zone elevation by Internet Explorer processes.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features/Protection From Zone Elevation</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Internet Explorer Processes</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting enables blocking of ActiveX control installation prompts for Internet Explorer processes.
+
+If you enable this policy setting, prompting for ActiveX control installations will be blocked for Internet Explorer processes.
+
+If you disable this policy setting, prompting for ActiveX control installations will not be blocked for Internet Explorer processes.
+
+If you do not configure this policy setting, the user's preference will be used to determine whether to block ActiveX control installations for Internet Explorer processes.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features/Restrict ActiveX Install</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Internet Explorer Processes</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>This policy setting enables blocking of file download prompts that are not user initiated.
+
+If you enable this policy setting, file download prompts that are not user initiated will be blocked for Internet Explorer processes.
+
+If you disable this policy setting, prompting will occur for file downloads that are not user initiated for Internet Explorer processes.
+
+If you do not configure this policy setting, the user's preference determines whether to prompt for file downloads that are not user initiated for Internet Explorer processes.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features/Restrict File Download</q1:Category>
+        </q1:Policy>
+        <q1:Policy>
+          <q1:Name>Internet Explorer Processes</q1:Name>
+          <q1:State>Enabled</q1:State>
+          <q1:Explain>Internet Explorer allows scripts to programmatically open, resize, and reposition windows of various types. The Window Restrictions security feature restricts popup windows and prohibits scripts from displaying windows in which the title and status bars are not visible to the user or obfuscate other Windows' title and status bars.
+
+If you enable this policy setting, popup windows and other restrictions apply for File Explorer and Internet Explorer processes.
+
+If you disable this policy setting, scripts can continue to create popup windows and windows that obfuscate other windows.
+
+If you do not configure this policy setting, popup windows and other restrictions apply for File Explorer and Internet Explorer processes.</q1:Explain>
+          <q1:Supported>At least Internet Explorer 6.0 in Windows XP with Service Pack 2 or Windows Server 2003 with Service Pack 1</q1:Supported>
+          <q1:Category>Windows Components/Internet Explorer/Security Features/Scripted Window Security Restrictions</q1:Category>
+        </q1:Policy>
+        <q1:Blocked>false</q1:Blocked>
+      </Extension>
+      <Name>Registry</Name>
+    </ExtensionData>
+  </Computer>
+  <User>
+    <VersionDirectory>1</VersionDirectory>
+    <VersionSysvol>1</VersionSysvol>
+    <Enabled>false</Enabled>
+  </User>
+  <LinksTo>
+    <SOMName>corp</SOMName>
+    <SOMPath>corp.technologytoolbox.com</SOMPath>
+    <Enabled>true</Enabled>
+    <NoOverride>false</NoOverride>
+  </LinksTo>
+</GPO>
